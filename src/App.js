@@ -4,10 +4,12 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
 
 function App() {
 	return (
-		<Fragment>
+		<div className="text-light">
+			<Navbar />
 			<Route path="/">
 				<Home />
 			</Route>
@@ -20,7 +22,7 @@ function App() {
 			<Route path="/contact">
 				<Contact />
 			</Route>
-		</Fragment>
+		</div>
 	);
 }
 
