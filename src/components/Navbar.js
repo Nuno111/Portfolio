@@ -11,8 +11,6 @@ const Navbar = () => {
 		event.preventDefault();
 
 		setDarkMode((prevState) => !prevState);
-
-		console.log(darkMode);
 	};
 
 	useEffect(() => {
@@ -23,8 +21,6 @@ const Navbar = () => {
 		const root = window.document.documentElement;
 
 		darkMode ? root.classList.add("dark") : root.classList.remove("dark");
-
-		console.log("Component rendered");
 	}, [darkMode]);
 
 	return (
@@ -33,7 +29,7 @@ const Navbar = () => {
 				<NavLink activeClassName="" to="/">
 					<h2 className="text-xl text-txtPrimary">Nuno Carro</h2>
 				</NavLink>
-				<ThemeToggler onTogglerClick={toggleDarkMode} />
+				{burgerOpen && <ThemeToggler onTogglerClick={toggleDarkMode} />}
 				<ul className="flex hidden sm:flex">
 					<li className="px-2">
 						<NavLink activeClassName="text-txtPrimary" exact to="/">
