@@ -1,10 +1,13 @@
 const ThemeToggler = ({ onTogglerClick, darkMode }) => {
 	return (
-		<button onClick={onTogglerClick}>
+		<button
+			onClick={onTogglerClick}
+			className="transform transition duration-500 hover:scale-150"
+		>
 			{darkMode && (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					className="w-10 h-10 fill-current text-darkTxtPrimary"
+					className="w-10 h-10 fill-current text-darkTxtPrimary "
 					viewBox="0 0 24 24"
 				>
 					<path

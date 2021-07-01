@@ -1,35 +1,60 @@
 import ThemeToggler from "./ThemeToggler";
 import { NavLink } from "react-router-dom";
 
-//Box shadow to end of menu?? Icons for sure, lines under each li? transition??
 const BurgerMenu = ({ onTogglerClick, darkMode }) => {
 	return (
 		<div
-			className="w-full bg-lightBgSecondary absolute dark:bg-darkBgSecondary top-9 bg-lightBgSecondary dark:bg-darkBgSecondary border-solid
-			border-lightTxtPrimary dark:border-darkTxtPrimary border-b-2 "
+			className="transition-all duration-500 ease-in-out dark:bg-darkBgSecondary
+			bg-lightBgSecondary absolute top-9 w-full border-b-2 border-solid
+			dark:border-darkTxtPrimary border-lightTxtPrimary md:hidden"
 		>
-			<ul className="flex flex-col items-center justify-center ">
+			<ul className="flex flex-col items-center justify-center">
 				<li className="flex-1 py-2">
-					<NavLink activeClassName="text-txtPrimary" exact to="/">
+					<NavLink
+						activeClassName="text-lightTxtPrimary
+						dark:text-darkTxtPrimary"
+						exact
+						to="/"
+						className="dark:border-darkTxtPrimary
+						border-lightTxtPrimary border-b-2"
+					>
 						Home
 					</NavLink>
 				</li>
 				<li className="flex-1 py-2">
-					<NavLink activeClassName="text-txtPrimary" to="/about">
+					<NavLink
+						activeClassName="text-lightTxtPrimary
+						dark:text-darkTxtPrimary"
+						to="/about"
+						className="dark:border-darkTxtPrimary
+						border-lightTxtPrimary border-b-2"
+					>
 						About
 					</NavLink>
 				</li>
 				<li className="flex-1 py-2">
-					<NavLink activeClassName="text-txtPrimary" to="/projects">
+					<NavLink
+						activeClassName="text-lightTxtPrimary
+						dark:text-darkTxtPrimary"
+						to="/projects"
+						className="dark:border-darkTxtPrimary
+						border-lightTxtPrimary border-b-2"
+					>
 						Projects
 					</NavLink>
 				</li>
 				<li className="flex-1 py-2">
-					<NavLink activeClassName="text-txtPrimary" to="/contact">
+					<NavLink
+						activeClassName="text-lightTxtPrimary
+						dark:text-darkTxtPrimary"
+						to="/contact"
+						className="dark:border-darkTxtPrimary
+						border-lightTxtPrimary border-b-2"
+					>
 						Contact
 					</NavLink>
 				</li>
-				<li className="flex-1 py-2">
+				<li className="flex flex-1 py-2">
 					<ThemeToggler
 						onTogglerClick={onTogglerClick}
 						darkMode={darkMode}

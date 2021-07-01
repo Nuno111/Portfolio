@@ -21,21 +21,20 @@ const Navbar = () => {
 	useEffect(() => {
 		const root = window.document.documentElement;
 
-		darkMode ? root.classList.add("dark") : root.classList.remove("dark");
+		darkMode
+			? root.classList.add("dark")
+			: root.classList.remove("dark");
 	}, [darkMode]);
 
 	return (
 		<nav
-			className="sticky top-0 z-50 min-h-2
-			bg-lightBgSecondary dark:bg-darkBgSecondary border-solid
-			border-lightTxtPrimary dark:border-darkTxtPrimary border-b-2"
+			className="min-h-2
+			bg-lightBgSecondary border-solid
+			border-lightTxtPrimary sticky z-50 top-0 dark:bg-darkBgSecondary border-b-2 dark:border-darkTxtPrimary"
 		>
-			<div
-				className="container md:py-2 flex items-center justify-between 
-				"
-			>
+			<div className="container flex items-center justify-between md:py-2">
 				<NavLink activeClassName="" to="/">
-					<h2 className="text-2xl text-lightTxtPrimary dark:text-darkTxtPrimary">
+					<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-2xl">
 						Nuno Carro
 					</h2>
 				</NavLink>
@@ -51,6 +50,7 @@ const Navbar = () => {
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/"
+							className="hover:text-lightTxtPrimary dark:hover:text-darkTxtPrimary"
 						>
 							Home
 						</NavLink>
@@ -59,6 +59,7 @@ const Navbar = () => {
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/about"
+							className="hover:text-lightTxtPrimary dark:hover:text-darkTxtPrimary"
 						>
 							About
 						</NavLink>
@@ -67,6 +68,7 @@ const Navbar = () => {
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/projects"
+							className="hover:text-lightTxtPrimary dark:hover:text-darkTxtPrimary"
 						>
 							Projects
 						</NavLink>
@@ -75,12 +77,13 @@ const Navbar = () => {
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/contact"
+							className="hover:text-lightTxtPrimary dark:hover:text-darkTxtPrimary"
 						>
 							Contact
 						</NavLink>
 					</li>
 				</ul>
-				<div className="text-lightTxtPrimary dark:text-darkTxtPrimary md:hidden">
+				<div className="dark:text-darkTxtPrimary text-lightTxtPrimary md:hidden">
 					<Hamburger
 						size={30}
 						toggled={burgerOpen}
