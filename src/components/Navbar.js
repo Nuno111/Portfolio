@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import ThemeToggler from "./ThemeToggler";
+import DesktopThemeToggler from "./DesktopThemeToggler";
+import BurgerMenu from "./BurgerMenu";
 
 const Navbar = () => {
 	const [burgerOpen, setBurgerOpen] = useState(false);
@@ -24,42 +25,66 @@ const Navbar = () => {
 	}, [darkMode]);
 
 	return (
-		<nav className="sticky top-0 z-50 h-20 bg-bgSecondary">
-			<div className="container flex items-center justify-between p-5 mx-auto">
+		<nav className="sticky top-0 z-50 bg-lightBgSecondary dark:bg-darkBgSecondary ">
+			<div className="container md:py-2 flex items-center justify-between">
 				<NavLink activeClassName="" to="/">
-					<h2 className="text-xl text-txtPrimary">Nuno Carro</h2>
+					<h2 className="text-2xl text-lightTxtPrimary dark:text-darkTxtPrimary">
+						Nuno Carro
+					</h2>
 				</NavLink>
-				{burgerOpen && <ThemeToggler onTogglerClick={toggleDarkMode} />}
-				<ul className="flex hidden sm:flex">
-					<li className="px-2">
-						<NavLink activeClassName="text-txtPrimary" exact to="/">
+				{burgerOpen && (
+					<BurgerMenu
+						onTogglerClick={toggleDarkMode}
+						darkMode={darkMode}
+					/>
+				)}
+				<div className="hidden md:block">
+					<DesktopThemeToggler
+						onTogglerClick={toggleDarkMode}
+						darkMode={darkMode}
+					/>
+				</div>
+				<ul className="flex hidden md:flex">
+					<li className="px-2 md:text-lg">
+						<NavLink
+							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+							exact
+							to="/"
+						>
 							Home
 						</NavLink>
 					</li>
-					<li className="px-2">
-						<NavLink activeClassName="text-txtPrimary" to="/about">
+					<li className="px-2 md:text-lg">
+						<NavLink
+							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+							to="/about"
+						>
 							About
 						</NavLink>
 					</li>
-					<li className="px-2">
+					<li className="px-2 md:text-lg">
 						<NavLink
-							activeClassName="text-txtPrimary"
+							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/projects"
 						>
 							Projects
 						</NavLink>
 					</li>
-					<li className="px-2">
+					<li className="px-2 md:text-lg">
 						<NavLink
-							activeClassName="text-txtPrimary"
+							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/contact"
 						>
 							Contact
 						</NavLink>
 					</li>
 				</ul>
-				<div className="text-txtPrimary sm:hidden">
-					<Hamburger toggled={burgerOpen} toggle={setBurgerOpen} />
+				<div className="text-lightTxtPrimary dark:text-darkTxtPrimary md:hidden">
+					<Hamburger
+						size={30}
+						toggled={burgerOpen}
+						toggle={setBurgerOpen}
+					/>
 				</div>
 			</div>
 		</nav>

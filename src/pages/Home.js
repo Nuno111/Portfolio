@@ -2,9 +2,9 @@ import { Fragment } from "react";
 
 const Home = () => {
 	return (
-		<Fragment>
+		<div className="bg-lightBgPrimary dark:bg-darkBgPrimary h-screen ">
 			<h1>Hello from Home</h1>
-		</Fragment>
+		</div>
 	);
 };
 
