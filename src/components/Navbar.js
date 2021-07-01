@@ -25,19 +25,20 @@ const Navbar = () => {
 	}, [darkMode]);
 
 	return (
-		<nav className="sticky top-0 z-50 bg-lightBgSecondary dark:bg-darkBgSecondary ">
-			<div className="container md:py-2 flex items-center justify-between">
+		<nav
+			className="sticky top-0 z-50 min-h-2
+			bg-lightBgSecondary dark:bg-darkBgSecondary border-solid
+			border-lightTxtPrimary dark:border-darkTxtPrimary border-b-2"
+		>
+			<div
+				className="container md:py-2 flex items-center justify-between 
+				"
+			>
 				<NavLink activeClassName="" to="/">
 					<h2 className="text-2xl text-lightTxtPrimary dark:text-darkTxtPrimary">
 						Nuno Carro
 					</h2>
 				</NavLink>
-				{burgerOpen && (
-					<BurgerMenu
-						onTogglerClick={toggleDarkMode}
-						darkMode={darkMode}
-					/>
-				)}
 				<div className="hidden md:block">
 					<DesktopThemeToggler
 						onTogglerClick={toggleDarkMode}
@@ -87,6 +88,12 @@ const Navbar = () => {
 					/>
 				</div>
 			</div>
+			{burgerOpen && (
+				<BurgerMenu
+					onTogglerClick={toggleDarkMode}
+					darkMode={darkMode}
+				/>
+			)}
 		</nav>
 	);
 };
