@@ -15,7 +15,7 @@ function App() {
 			<Route path="/about">
 				<About />
 			</Route>
-			<Route className="flex" path="/projects">
+			<Route path="/projects">
 				<Projects />
 			</Route>
 			<Route path="/contact">

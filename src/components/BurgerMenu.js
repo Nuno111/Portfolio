@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const BurgerMenu = ({ onTogglerClick, darkMode }) => {
 	return (
 		<div
-			className="transition-all duration-500 ease-in-out dark:bg-darkBgSecondary
+			className="dark:bg-darkBgSecondary
 			bg-lightBgSecondary absolute top-9 w-full border-b-2 border-solid
 			dark:border-darkTxtPrimary border-lightTxtPrimary md:hidden"
 		>
