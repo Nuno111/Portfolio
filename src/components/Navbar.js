@@ -29,9 +29,10 @@ const Navbar = () => {
 	return (
 		<nav
 			className="border-solid
-			border-lightTxtPrimary sticky z-50 inset-0 dark:bg-darkBgSecondary bg-lightBgSecondary border-b-2 dark:border-darkTxtPrimary"
+			border-lightTxtPrimary dark:bg-darkBgSecondary bg-lightBgSecondary
+			border-b-2 dark:border-darkTxtPrimary h-10v flex items-center"
 		>
-			<div className="container flex items-center justify-between py-4">
+			<div className="container flex items-center justify-between">
 				<NavLink activeClassName="" to="/">
 					<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-2xl">
 						Nuno Carro
