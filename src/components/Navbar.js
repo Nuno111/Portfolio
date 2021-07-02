@@ -28,62 +28,61 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className="min-h-2
-			bg-lightBgSecondary border-solid
-			border-lightTxtPrimary sticky z-50 top-0 dark:bg-darkBgSecondary border-b-2 dark:border-darkTxtPrimary"
+			className="border-solid
+			border-lightTxtPrimary sticky z-50 inset-0 dark:bg-darkBgSecondary bg-lightBgSecondary border-b-2 dark:border-darkTxtPrimary"
 		>
-			<div className="container flex items-center justify-between md:py-2">
+			<div className="container flex items-center justify-between py-4">
 				<NavLink activeClassName="" to="/">
 					<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-2xl">
 						Nuno Carro
 					</h2>
 				</NavLink>
-				<div className="hidden md:block">
+				<div className="hidden sm:block">
 					<DesktopThemeToggler
 						onTogglerClick={toggleDarkMode}
 						darkMode={darkMode}
 					/>
 				</div>
-				<ul className="flex hidden md:flex">
-					<li className="px-2 md:text-lg">
+				<ul className="flex hidden sm:flex">
+					<li className="px-2 sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/"
-							className="hover:text-lightTxtPrimary dark:hover:text-darkTxtPrimary"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
 						>
 							Home
 						</NavLink>
 					</li>
-					<li className="px-2 md:text-lg">
+					<li className="px-2 sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/about"
-							className="hover:text-lightTxtPrimary dark:hover:text-darkTxtPrimary"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
 						>
 							About
 						</NavLink>
 					</li>
-					<li className="px-2 md:text-lg">
+					<li className="px-2 sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/projects"
-							className="hover:text-lightTxtPrimary dark:hover:text-darkTxtPrimary"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
 						>
 							Projects
 						</NavLink>
 					</li>
-					<li className="px-2 md:text-lg">
+					<li className="px-2 sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/contact"
-							className="hover:text-lightTxtPrimary dark:hover:text-darkTxtPrimary"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
 						>
 							Contact
 						</NavLink>
 					</li>
 				</ul>
-				<div className="dark:text-darkTxtPrimary text-lightTxtPrimary md:hidden">
+				<div className="dark:text-darkTxtPrimary text-lightTxtPrimary sm:hidden">
 					<Hamburger
 						size={30}
 						toggled={burgerOpen}

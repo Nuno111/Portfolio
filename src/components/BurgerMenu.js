@@ -5,8 +5,8 @@ const BurgerMenu = ({ onTogglerClick, darkMode }) => {
 	return (
 		<div
 			className="dark:bg-darkBgSecondary
-			bg-lightBgSecondary absolute top-9 w-full border-b-2 border-solid
-			dark:border-darkTxtPrimary border-lightTxtPrimary md:hidden"
+			bg-lightBgSecondary absolute top-14 w-full border-b-2 border-solid
+			dark:border-darkTxtPrimary border-lightTxtPrimary sm:hidden"
 		>
 			<ul className="flex flex-col items-center justify-center">
 				<li className="flex-1 py-2">

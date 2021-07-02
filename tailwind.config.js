@@ -11,7 +11,7 @@ module.exports = {
 				dark: "#000000",
 				darkTxtPrimary: "#BB86FC",
 				darkTxtSecondary: "#333333",
-				darkBgPrimary: "#070707",
+				darkBgPrimary: "#282c35",
 				darkBgSecondary: "#161b22",
 				lightBgPrimary: "#543543",
 				lightBgSecondary: "#DBEAFE",
