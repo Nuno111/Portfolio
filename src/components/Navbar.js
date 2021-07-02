@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import { Transition } from "@headlessui/react";
 import DesktopThemeToggler from "./DesktopThemeToggler";
 import BurgerMenu from "./BurgerMenu";
+import ThemeToggler from "./ThemeToggler";
 
 const Navbar = () => {
 	const [burgerOpen, setBurgerOpen] = useState(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
 		<nav
 			className="border-solid
 			border-lightTxtPrimary bg-lightBgSecondary
-			border-b-2 flex items-center h-10v dark:bg-darkBgSecondary dark:border-darkTxtPrimary"
+			border-b-2 flex items-center min-h-10v dark:bg-darkBgSecondary dark:border-darkTxtPrimary"
 		>
 			<div className="container flex items-center justify-between">
 				<NavLink activeClassName="" to="/">
@@ -39,8 +39,9 @@ const Navbar = () => {
 						Nuno Carro
 					</h2>
 				</NavLink>
-				<div className="hidden sm:block">
-					<DesktopThemeToggler
+				<div className="flex hidden items-center sm:block">
+					<ThemeToggler
+						className="px-2 sm:px-8"
 						onTogglerClick={toggleDarkMode}
 						darkMode={darkMode}
 					/>
@@ -51,7 +52,7 @@ const Navbar = () => {
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl lg:text-2xl"
 						>
 							Home
 						</NavLink>
@@ -60,7 +61,7 @@ const Navbar = () => {
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/about"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl lg:text-2xl"
 						>
 							About
 						</NavLink>
@@ -69,7 +70,7 @@ const Navbar = () => {
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/projects"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl lg:text-2xl"
 						>
 							Projects
 						</NavLink>
@@ -78,7 +79,7 @@ const Navbar = () => {
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/contact"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl lg:text-2xl"
 						>
 							Contact
 						</NavLink>

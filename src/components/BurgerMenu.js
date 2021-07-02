@@ -17,7 +17,7 @@ const BurgerMenu = ({
 			leaveFrom="opacity-100"
 			leaveTo="opacity-0"
 			className="dark:bg-darkBgSecondary
-			bg-lightBgSecondary absolute top-14 w-full border-b-2 border-solid
+			bg-lightBgSecondary absolute top-20 w-full border-b-2 border-solid
 			dark:border-darkTxtPrimary border-lightTxtPrimary sm:hidden"
 		>
 			<ul className="flex flex-col items-center justify-center">
