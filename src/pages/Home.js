@@ -1,18 +1,19 @@
 import Button from "../components/Button";
+import LandingSvg from "../images/vectorpaint.svg";
 
 const Home = () => {
 	return (
 		<div className="h-screen dark:bg-darkBgPrimary bg-lightBgPrimary">
-			<div className="container flex flex-col items-center justify-center h-full">
+			<div className="container flex flex-col items-center justify-center h-screen space-y-10">
 				<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary font-title text-4xl">
 					Nuno Carro
 				</h2>
-				<div className="py-6 w-6/12 sm:w-2/12">
+				<div className="py-6 w-full">
 					{/* Need to remove shadow if unnoticed*/}
 					<img
-						src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-2-800x800.jpg"
+						src={LandingSvg}
 						alt="Photograph of Nuno Carro Web Developer"
-						className="shadow-4xl align-middle max-w-full h-auto rounded-full"
+						className="shadow-4xl align-middle m-auto w-full lg:w-1/2 h-auto"
 					/>
 				</div>
 				<h1 className="text-center font-title text-xl">
