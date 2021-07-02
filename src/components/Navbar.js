@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
+import { Transition } from "@headlessui/react";
 import DesktopThemeToggler from "./DesktopThemeToggler";
 import BurgerMenu from "./BurgerMenu";
 
@@ -29,8 +30,8 @@ const Navbar = () => {
 	return (
 		<nav
 			className="border-solid
-			border-lightTxtPrimary dark:bg-darkBgSecondary bg-lightBgSecondary
-			border-b-2 dark:border-darkTxtPrimary h-10v flex items-center"
+			border-lightTxtPrimary bg-lightBgSecondary
+			border-b-2 flex items-center h-10v dark:bg-darkBgSecondary dark:border-darkTxtPrimary"
 		>
 			<div className="container flex items-center justify-between">
 				<NavLink activeClassName="" to="/">
@@ -91,12 +92,11 @@ const Navbar = () => {
 					/>
 				</div>
 			</div>
-			{burgerOpen && (
-				<BurgerMenu
-					onTogglerClick={toggleDarkMode}
-					darkMode={darkMode}
-				/>
-			)}
+			<BurgerMenu
+				onTogglerClick={toggleDarkMode}
+				darkMode={darkMode}
+				burgerOpen={burgerOpen}
+			/>
 		</nav>
 	);
 };

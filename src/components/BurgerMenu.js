@@ -1,9 +1,21 @@
 import ThemeToggler from "./ThemeToggler";
 import { NavLink } from "react-router-dom";
+import { Transition } from "@headlessui/react";
 
-const BurgerMenu = ({ onTogglerClick, darkMode }) => {
+const BurgerMenu = ({
+	onTogglerClick,
+	darkMode,
+	burgerOpen,
+}) => {
 	return (
-		<div
+		<Transition
+			show={burgerOpen}
+			enter="transition-opacity duration-500"
+			enterFrom="opacity-0"
+			enterTo="opacity-100"
+			leave="transition-opacity duration-500"
+			leaveFrom="opacity-100"
+			leaveTo="opacity-0"
 			className="dark:bg-darkBgSecondary
 			bg-lightBgSecondary absolute top-14 w-full border-b-2 border-solid
 			dark:border-darkTxtPrimary border-lightTxtPrimary sm:hidden"
@@ -61,7 +73,7 @@ const BurgerMenu = ({ onTogglerClick, darkMode }) => {
 					/>
 				</li>
 			</ul>
-		</div>
+		</Transition>
 	);
 };
 
