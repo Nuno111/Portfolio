@@ -35,7 +35,7 @@ const Navbar = () => {
 		>
 			<div className="container flex items-center justify-between">
 				<NavLink activeClassName="" to="/">
-					<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-2xl">
+					<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-xl md:text-3xl">
 						Nuno Carro
 					</h2>
 				</NavLink>
@@ -52,7 +52,7 @@ const Navbar = () => {
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl lg:text-2xl"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>
 							Home
 						</NavLink>
@@ -61,7 +61,7 @@ const Navbar = () => {
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/about"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl lg:text-2xl"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>
 							About
 						</NavLink>
@@ -70,7 +70,7 @@ const Navbar = () => {
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/projects"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl lg:text-2xl"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>
 							Projects
 						</NavLink>
@@ -79,7 +79,7 @@ const Navbar = () => {
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/contact"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl lg:text-2xl"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>
 							Contact
 						</NavLink>

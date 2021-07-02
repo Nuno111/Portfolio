@@ -25,7 +25,7 @@ module.exports = {
 				},
 			},
 			fontFamily: {
-				title: ["Titillium\\ Web", "sans-serif"],
+				main: ["Titillium\\ Web", "sans-serif"],
 			},
 			height: {
 				"5v": "5vh",
