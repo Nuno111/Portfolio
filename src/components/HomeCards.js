@@ -32,7 +32,7 @@ const HomeCards = () => {
 	);
 
 	return (
-		<div className="flex flex-1 flex-col">
+		<div className="grid gap-4 grid-cols-1 lg:gap-6 lg:grid-cols-3">
 			<Card
 				title="Responsive"
 				content="To achieve SPAs responsiveness I use CSS Flexbox, CSS Grid, Responsively app, Chrome dev tools and Tailwind responsive properties."
@@ -44,9 +44,10 @@ const HomeCards = () => {
 				icon={performant}
 			/>
 			<Card
-				title="Clean & Readable"
+				title="Clean & "
 				content="To ensure ease of SPAs maintenance I use a combination of modern best practices coupled with the breakdown of complex logic into smaller individual blocks, usually moving logic into a new Component."
 				icon={cleancode}
+				secondWord="Readable"
 			/>
 		</div>
 	);
