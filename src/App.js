@@ -4,12 +4,13 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
 		<div className="text-dark dark:text-light font-main dark:bg-darkBgPrimary bg-lightBgPrimary">
 			<Navbar />
-			<Route path="/">
+			<Route exact path="/">
 				<Home />
 			</Route>
 			<Route path="/about">
@@ -21,6 +22,7 @@ function App() {
 			<Route path="/contact">
 				<Contact />
 			</Route>
+			<Footer />
 		</div>
 	);
 }

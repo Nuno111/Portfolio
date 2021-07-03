@@ -32,7 +32,7 @@ const Navbar = () => {
 			border-lightTxtPrimary bg-lightBgSecondary
 			border-b-2 flex items-center min-h-10v dark:bg-darkBgSecondary dark:border-darkTxtPrimary"
 		>
-			<div className="container flex items-center justify-between">
+			<div className="container grid grid-cols-3 items-center justify-center">
 				<NavLink activeClassName="" to="/">
 					<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-xl md:text-3xl">
 						Nuno Carro
@@ -45,18 +45,17 @@ const Navbar = () => {
 						darkMode={darkMode}
 					/>
 				</div>
-				<ul className="flex hidden sm:flex">
-					<li className="px-2 sm:text-lg">
+				<ul className="flex hidden gap-8 sm:flex">
+					<li className="sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
-							exact
 							to="/"
 							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>
 							Home
 						</NavLink>
 					</li>
-					<li className="px-2 sm:text-lg">
+					<li className="sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/about"
@@ -65,7 +64,7 @@ const Navbar = () => {
 							About
 						</NavLink>
 					</li>
-					<li className="px-2 sm:text-lg">
+					<li className="sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/projects"
@@ -74,7 +73,7 @@ const Navbar = () => {
 							Projects
 						</NavLink>
 					</li>
-					<li className="px-2 sm:text-lg">
+					<li className="sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							to="/contact"

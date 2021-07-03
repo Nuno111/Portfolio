@@ -37,7 +37,7 @@ const HomeCards = () => {
 			<h3 className="md:text-2l text-center text-2xl sm:text-3xl md:text-4xl">
 				How I build Single Page Applications (SPAs)
 			</h3>
-			<div className="grid gap-16 grid-cols-1 xl:grid-cols-3">
+			<ul className="grid gap-16 grid-cols-1 xl:grid-cols-3">
 				<Card
 					title="Responsive"
 					content="To achieve SPAs responsiveness I use Mobile First Approach alongside technologies like CSS Flexbox, CSS Grid, Responsively app, Chrome dev tools and Tailwind responsive properties."
@@ -50,11 +50,11 @@ const HomeCards = () => {
 				/>
 				<Card
 					title="Clean & "
-					content="To ensure ease of SPAs maintenance I use a combination of modern best practices coupled with the breakdown of complex logic into smaller individual blocks, usually moving logic into a new Component."
+					content="To ensure ease of SPAs maintenance I use a combination of modern best practices coupled with the breakdown of complex logic into smaller individual blocks."
 					icon={cleancode}
 					secondWord="Readable"
 				/>
-			</div>
+			</ul>
 		</Fragment>
 	);
 };
