@@ -35,7 +35,7 @@ const HomeCards = () => {
 		<div className="grid gap-4 grid-cols-1 lg:gap-6 lg:grid-cols-3">
 			<Card
 				title="Responsive"
-				content="To achieve SPAs responsiveness I use CSS Flexbox, CSS Grid, Responsively app, Chrome dev tools and Tailwind responsive properties."
+				content="To achieve SPAs responsiveness I use Mobile First Approach alongside technologies like CSS Flexbox, CSS Grid, Responsively app, Chrome dev tools and Tailwind responsive properties."
 				icon={responsive}
 			/>
 			<Card
