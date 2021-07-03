@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import DesktopThemeToggler from "./DesktopThemeToggler";
 import BurgerMenu from "./BurgerMenu";
 import ThemeToggler from "./ThemeToggler";
 
