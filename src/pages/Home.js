@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import { Fragment } from "react";
 import LandingSvg from "../assets/landing.svg";
 import HomeCards from "../components/HomeCards";
-import Technologies from "../components/Technologies";
+import TechStack from "../components/TechStack";
 
 const Home = () => {
 	return (
@@ -25,7 +25,7 @@ const Home = () => {
 			</main>
 			<section className="container flex flex-col gap-16 items-center">
 				<HomeCards />
-				<Technologies />
+				<TechStack />
 			</section>
 		</Fragment>
 	);
