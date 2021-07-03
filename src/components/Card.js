@@ -11,7 +11,7 @@ const Card = ({ title, content, icon, secondWord }) => {
 	) : undefined;
 
 	return (
-		<div class="flex flex-col gap-6 items-center my-6 py-6 dark:bg-darkBgSecondary rounded-lg shadow-2xl">
+		<div class="flex flex-col gap-6 items-center p-6 dark:bg-darkBgSecondary rounded-lg shadow-2xl">
 			{icon}
 			<h3 class="text-gray-700 dark:text-white text-2xl sm:text-xl">
 				<span className="dark:text-darkTxtPrimary text-lightTxtPrimary">

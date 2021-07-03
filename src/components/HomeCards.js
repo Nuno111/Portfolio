@@ -1,4 +1,5 @@
 import Card from "./Card";
+import { Fragment } from "react";
 
 const HomeCards = () => {
 	const performant = (
@@ -32,24 +33,29 @@ const HomeCards = () => {
 	);
 
 	return (
-		<div className="grid gap-4 grid-cols-1 lg:gap-6 lg:grid-cols-3">
-			<Card
-				title="Responsive"
-				content="To achieve SPAs responsiveness I use Mobile First Approach alongside technologies like CSS Flexbox, CSS Grid, Responsively app, Chrome dev tools and Tailwind responsive properties."
-				icon={responsive}
-			/>
-			<Card
-				title="Performant"
-				content="To accomplish SPAs performance I use a different tool-set of React Hooks for each project based on its complexities and necessities. Custom hooks being my favorite."
-				icon={performant}
-			/>
-			<Card
-				title="Clean & "
-				content="To ensure ease of SPAs maintenance I use a combination of modern best practices coupled with the breakdown of complex logic into smaller individual blocks, usually moving logic into a new Component."
-				icon={cleancode}
-				secondWord="Readable"
-			/>
-		</div>
+		<Fragment>
+			<h3 className="md:text-2l text-center text-2xl sm:text-3xl md:text-4xl">
+				How I build Single Page Applications (SPAs)
+			</h3>
+			<div className="grid gap-16 grid-cols-1 xl:grid-cols-3">
+				<Card
+					title="Responsive"
+					content="To achieve SPAs responsiveness I use Mobile First Approach alongside technologies like CSS Flexbox, CSS Grid, Responsively app, Chrome dev tools and Tailwind responsive properties."
+					icon={responsive}
+				/>
+				<Card
+					title="Performant"
+					content="To accomplish SPAs performance I use a different tool-set of React Hooks for each project based on its complexities and necessities. Custom hooks being my favorite."
+					icon={performant}
+				/>
+				<Card
+					title="Clean & "
+					content="To ensure ease of SPAs maintenance I use a combination of modern best practices coupled with the breakdown of complex logic into smaller individual blocks, usually moving logic into a new Component."
+					icon={cleancode}
+					secondWord="Readable"
+				/>
+			</div>
+		</Fragment>
 	);
 };
 

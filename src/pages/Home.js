@@ -1,7 +1,8 @@
 import Button from "../components/Button";
 import { Fragment } from "react";
-import LandingSvg from "../images/landing.svg";
+import LandingSvg from "../assets/landing.svg";
 import HomeCards from "../components/HomeCards";
+import Technologies from "../components/Technologies";
 
 const Home = () => {
 	return (
@@ -22,12 +23,9 @@ const Home = () => {
 				</h1>
 				<Button text="About Me" />
 			</main>
-			<section className="container flex flex-col items-center">
-				<h3 className="md:text-2l flex-1 text-center text-2xl sm:text-3xl md:text-4xl mb-6">
-					How I build Single Page Applications
-					(SPAs)
-				</h3>
+			<section className="container flex flex-col gap-16 items-center">
 				<HomeCards />
+				<Technologies />
 			</section>
 		</Fragment>
 	);
