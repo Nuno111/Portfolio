@@ -11,7 +11,7 @@ const Card = ({ title, content, icon, secondWord }) => {
 	) : undefined;
 
 	return (
-		<li className="flex flex-col gap-6 items-center p-6 dark:bg-darkBgSecondary rounded-lg shadow-2xl">
+		<li className="transform hover:scale-110 duration-300 ease-linear flex flex-col gap-6 items-center p-6 dark:bg-darkBgSecondary rounded-lg shadow-2xl">
 			{icon}
 			<h3 className="text-gray-700 dark:text-white text-2xl sm:text-xl">
 				<span className="dark:text-darkTxtPrimary text-lightTxtPrimary">
