@@ -7,9 +7,8 @@ import { ReactComponent as LinkedinSvg } from "../assets/linkedin.svg";
 const Footer = () => {
 	return (
 		<footer
-			className="dark:border-darkTxtPrimary flex flex-col gap-2
-			lg:grid lg:gap-8 lg:grid-cols-3 items-center  justify-center mt-20 
-			border-t-2 border-solid border-lightTxtPrimary "
+			className="flex gap-2
+			lg:grid flex-col items-center justify-center mt-20 dark:bg-darkBgSecondary border-t-2 border-solid dark:border-darkTxtPrimary border-lightTxtPrimary lg:gap-8 lg:grid-cols-3"
 		>
 			<ul className="flex flex-col gap-2 items-center my-6">
 				<li>

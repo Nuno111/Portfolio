@@ -30,10 +30,11 @@ const Navbar = () => {
 		<nav
 			className="border-solid
 			border-lightTxtPrimary bg-lightBgSecondary
-			border-b-2 flex items-center flex-col justify-center dark:bg-darkBgSecondary
-			dark:border-darkTxtPrimary py-2 lg:py-6"
+			border-b-2 dark:bg-darkBgSecondary
+			dark:border-darkTxtPrimary flex flex-col items-center justify-center py-2 lg:py-6"
 		>
-			<div className="container flex justify-between lg:grid lg:grid-cols-3 items-center justify-center">
+			{/* Change border from navbar to shadow box? need to test and compare*/}
+			<div className="container flex items-center justify-between justify-center lg:grid lg:grid-cols-3">
 				<NavLink activeClassName="" to="/">
 					<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-xl md:text-3xl">
 						Nuno Carro
@@ -46,7 +47,7 @@ const Navbar = () => {
 						darkMode={darkMode}
 					/>
 				</div>
-				<ul className="flex hidden gap-8 lg:flex items-center justify-end">
+				<ul className="flex hidden gap-8 items-center justify-end lg:flex">
 					<li className="sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"

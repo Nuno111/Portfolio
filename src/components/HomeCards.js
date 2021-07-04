@@ -34,7 +34,7 @@ const HomeCards = () => {
 
 	return (
 		<Fragment>
-			<h3 className="md:text-2l text-center text-2xl sm:text-3xl md:text-4xl">
+			<h3 className="pb-12 lg:pb-28 md:text-2l text-center text-2xl sm:text-3xl md:text-4xl">
 				My criteria for Single Page Applications
 				(SPAs)
 			</h3>

@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import LandingSvg from "../assets/landing.svg";
 import HomeCards from "../components/HomeCards";
 import TechStack from "../components/TechStack";
+import SampleProject from "../components/SampleProject";
 
 const Home = () => {
 	return (
@@ -11,6 +12,7 @@ const Home = () => {
 				<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-5xl">
 					Nuno Carro
 				</h2>
+				{/* This needs to be changed to an svg component */}
 				<img
 					src={LandingSvg}
 					alt="Illustration of person and monitor screen"
@@ -23,9 +25,10 @@ const Home = () => {
 				</h1>
 				<Button text="About Me" />
 			</main>
-			<section className="container flex flex-col gap-16 items-center">
+			<section className="container">
 				<HomeCards />
 				<TechStack />
+				<SampleProject />
 			</section>
 		</Fragment>
 	);
