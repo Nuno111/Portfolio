@@ -10,15 +10,14 @@ const BurgerMenu = ({
 	return (
 		<Transition
 			show={burgerOpen}
-			enter="transition-opacity duration-500"
+			enter="transition-opacity duration-300"
 			enterFrom="opacity-0"
 			enterTo="opacity-100"
-			leave="transition-opacity duration-500"
+			leave="transition-opacity duration-300"
 			leaveFrom="opacity-100"
 			leaveTo="opacity-0"
 			className="dark:bg-darkBgSecondary
-			bg-lightBgSecondary absolute top-20 w-full border-b-2 border-solid
-			dark:border-darkTxtPrimary border-lightTxtPrimary lg:hidden"
+			bg-lightBgSecondary w-full lg:hidden"
 		>
 			<ul className="flex flex-col items-center justify-center">
 				<li className="flex-1 py-2">

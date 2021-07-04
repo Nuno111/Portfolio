@@ -35,7 +35,8 @@ const HomeCards = () => {
 	return (
 		<Fragment>
 			<h3 className="md:text-2l text-center text-2xl sm:text-3xl md:text-4xl">
-				How I build Single Page Applications (SPAs)
+				My criteria for Single Page Applications
+				(SPAs)
 			</h3>
 			<ul className="grid gap-16 grid-cols-1 xl:grid-cols-3">
 				<Card

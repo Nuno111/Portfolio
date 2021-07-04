@@ -7,14 +7,14 @@ import TechStack from "../components/TechStack";
 const Home = () => {
 	return (
 		<Fragment>
-			<main className="container flex flex-col gap-4 items-center justify-center py-6 min-h-90v md:gap-12">
+			<main className="container flex flex-col gap-4 items-center justify-center py-6 min-h-100v md:gap-12">
 				<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-5xl">
 					Nuno Carro
 				</h2>
 				<img
 					src={LandingSvg}
 					alt="Illustration of person and monitor screen"
-					className="align-middle my-10 w-3/4 h-auto lg:my-0 lg:w-1/2"
+					className="align-middle my-10 w-3/4 h-auto xl:my-0 xl:w-1/2"
 				/>
 				<h1 className="text-center text-2xl lg:text-4xl">
 					Dynamic Front-End web developer. I work

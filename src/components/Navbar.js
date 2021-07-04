@@ -30,8 +30,8 @@ const Navbar = () => {
 		<nav
 			className="border-solid
 			border-lightTxtPrimary bg-lightBgSecondary
-			border-b-2 flex items-center min-h-10v dark:bg-darkBgSecondary
-			dark:border-darkTxtPrimary"
+			border-b-2 flex items-center flex-col justify-center dark:bg-darkBgSecondary
+			dark:border-darkTxtPrimary py-2 lg:py-6"
 		>
 			<div className="container flex justify-between lg:grid lg:grid-cols-3 items-center justify-center">
 				<NavLink activeClassName="" to="/">
