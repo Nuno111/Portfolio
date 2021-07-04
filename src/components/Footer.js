@@ -7,10 +7,11 @@ import { ReactComponent as LinkedinSvg } from "../assets/linkedin.svg";
 const Footer = () => {
 	return (
 		<footer
-			className="dark:border-darkTxtPrimary
-			flex flex-col gap-8 mt-20 border-t-2 border-solid border-lightTxtPrimary md:flex-row"
+			className="dark:border-darkTxtPrimary flex flex-col gap-2
+			lg:grid lg:gap-8 lg:grid-cols-3 items-center  justify-center mt-20 
+			border-t-2 border-solid border-lightTxtPrimary "
 		>
-			<ul className="flex flex-1 flex-col gap-2 items-center my-6">
+			<ul className="flex flex-col gap-2 items-center my-6">
 				<li>
 					<Link
 						to="/"
@@ -44,32 +45,48 @@ const Footer = () => {
 					</Link>
 				</li>
 			</ul>
-			<ul className="flex flex-1 gap-8 items-center justify-center my-6">
+			<ul className="flex gap-8 items-center justify-center my-6">
 				<li>
-					<a href="https://github.com/Nuno111">
+					<a
+						href="https://github.com/Nuno111"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<GithubSvg className="w-8 h-8 dark:text-darkTxtPrimary fill-current" />
 					</a>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/nuno-gregorio-16b93a119/">
+					<a
+						href="https://www.linkedin.com/in/nuno-gregorio-16b93a119/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<LinkedinSvg className="w-8 h-8 dark:text-darkTxtPrimary fill-current" />
 					</a>
 				</li>
 				<li>
-					<a href="https://www.instagram.com/nuno_carro/">
+					<a
+						href="https://www.instagram.com/nuno_carro/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<InstagramSvg className="w-8 h-8 dark:text-darkTxtPrimary fill-current" />
 					</a>
 				</li>
 				<li>
-					<a href="https://www.facebook.com/nuno.gregorio.5/">
+					<a
+						href="https://www.facebook.com/nuno.gregorio.5/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<FacebookSvg className="w-8 h-8 dark:text-darkTxtPrimary fill-current" />
 					</a>
 				</li>
 			</ul>
-			<div className="flex flex-1 flex-col items-center justify-center my-6 text-xl">
+			<div className="flex flex-col items-center justify-center my-6 text-xl">
 				<p>@ 2021</p>
 				<p>
-					Createdy By{" "}
+					Created By{" "}
 					<span className="dark:text-darkTxtPrimary text-lightTxtPrimary">
 						N
 					</span>

@@ -16,17 +16,17 @@ const TechStack = () => {
 			<h3 className="md:text-2l text-center text-2xl sm:text-3xl md:text-4xl">
 				Tech Stack
 			</h3>
-			<div className="grid gap-10 grid-cols-5 lg:grid-cols-10">
-				<HtmlSvg className="w-20 h-20" />
-				<CssSvg className="w-20 h-20" />
-				<JavascriptSvg className="w-20 h-20" />
-				<ReactSvg className="w-20 h-20" />
-				<TailwindSvg className="w-20 h-20" />
-				<CSvg className="w-20 h-20" />
-				<GithubSvg className="w-20 h-20" />
-				<GitSvg className="w-20 h-20" />
-				<NeovimSvg className="w-20 h-20" />
-				<FigmaSvg className="w-20 h-20" />
+			<div className="grid gap-10 grid-cols-4 sm:grid-cols- 5 lg:grid-cols-10">
+				<HtmlSvg className="w-12 h-12 lg:w-20 lg:h-20" />
+				<CssSvg className=" w-12 h-12 lg:w-20 lg:h-20" />
+				<JavascriptSvg className="w-12 h-12 lg:w-20 lg:h-20" />
+				<ReactSvg className="w-12 h-12 lg:w-20 lg:h-20" />
+				<TailwindSvg className="w-12 h-12 lg:w-20 lg:h-20" />
+				<CSvg className="w-12 h-12 lg:w-20 lg:h-20" />
+				<GithubSvg className="w-12 h-12 lg:w-20 lg:h-20" />
+				<GitSvg className="w-12 h-12 lg:w-20 lg:h-20" />
+				<NeovimSvg className="w-12 h-12 lg:w-20 lg:h-20" />
+				<FigmaSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 			</div>
 		</Fragment>
 	);
