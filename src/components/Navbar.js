@@ -14,9 +14,9 @@ const Navbar = () => {
 		setDarkMode((prevState) => !prevState);
 	};
 
-	useEffect(() => {
-		console.log(burgerOpen);
-	}, [burgerOpen]);
+	const toggleBurger = () => {
+		setBurgerOpen((prevState) => !prevState);
+	};
 
 	useEffect(() => {
 		const root = window.document.documentElement;
@@ -97,6 +97,7 @@ const Navbar = () => {
 				onTogglerClick={toggleDarkMode}
 				darkMode={darkMode}
 				burgerOpen={burgerOpen}
+				toggleBurger={toggleBurger}
 			/>
 		</nav>
 	);

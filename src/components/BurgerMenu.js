@@ -6,6 +6,7 @@ const BurgerMenu = ({
 	onTogglerClick,
 	darkMode,
 	burgerOpen,
+	toggleBurger,
 }) => {
 	return (
 		<Transition
@@ -28,6 +29,7 @@ const BurgerMenu = ({
 						to="/"
 						className="dark:border-darkTxtPrimary
 						border-lightTxtPrimary border-b-2"
+						onClick={toggleBurger}
 					>
 						Home
 					</NavLink>
@@ -39,6 +41,7 @@ const BurgerMenu = ({
 						to="/about"
 						className="dark:border-darkTxtPrimary
 						border-lightTxtPrimary border-b-2"
+						onClick={toggleBurger}
 					>
 						About
 					</NavLink>
@@ -50,6 +53,7 @@ const BurgerMenu = ({
 						to="/projects"
 						className="dark:border-darkTxtPrimary
 						border-lightTxtPrimary border-b-2"
+						onClick={toggleBurger}
 					>
 						Projects
 					</NavLink>
@@ -61,6 +65,7 @@ const BurgerMenu = ({
 						to="/contact"
 						className="dark:border-darkTxtPrimary
 						border-lightTxtPrimary border-b-2"
+						onClick={toggleBurger}
 					>
 						Contact
 					</NavLink>
