@@ -11,7 +11,11 @@ const Card = ({ title, content, icon, secondWord }) => {
 	) : undefined;
 
 	return (
-		<li className="transform hover:scale-110 duration-300 ease-linear flex flex-col gap-6 items-center p-6 dark:bg-darkBgSecondary rounded-lg shadow-2xl">
+		<li
+			className="flex
+			flex-col dark:bg-darkBgSecondary
+			rounded-lg gap-6 items-center p-6 shadow-2xl transform hover:scale-110 duration-300 ease-linear"
+		>
 			{icon}
 			<h3 className="text-gray-700 dark:text-white text-2xl sm:text-xl">
 				<span className="dark:text-darkTxtPrimary text-lightTxtPrimary">
@@ -20,7 +24,10 @@ const Card = ({ title, content, icon, secondWord }) => {
 				{title.substring(1)}
 				{capitalizeSecondWord}
 			</h3>
-			<p className="text-md flex-1 px-2 text-center dark:text-gray-300 text-gray-500 text-lg leading-loose">
+			<p
+				className="text-md dark:text-gray-300
+				text-gray-500 flex-1 px-2 text-center text-lg leading-loose"
+			>
 				{content}
 			</p>
 		</li>
