@@ -3,6 +3,7 @@ import Button from "./Button";
 import { ReactComponent as GithubSvg } from "../assets/github.svg";
 import { ReactComponent as LiveSvg } from "../assets/live.svg";
 
+/* Has been properly refactored */
 const ProjectCard = ({
 	title,
 	img,
@@ -11,11 +12,12 @@ const ProjectCard = ({
 	githubLink,
 	liveLink,
 }) => {
+	/* Tailwindcss purge requires us not to use template literals in className*/
 	const projectPath = `/projects/${title}`;
 
 	/* Will only render github and live svg icons if they have been passed down as props*/
 	const externalLinks = (
-		<div className="flex gap-4 ">
+		<div className="flex gap-4">
 			{githubLink && (
 				<a
 					target="_blank"
@@ -40,9 +42,9 @@ const ProjectCard = ({
 	);
 
 	return (
-		<li className="px-10 py-4 dark:bg-darkBgSecondary rounded-lg">
-			<figure className="relative flex items-center justify-center flex-col gap-6">
-					<figcaption className=" text-3xl ">
+		<li className="px-10 py-4 dark:bg-darkBgSecondary bg-lightBgSecondary rounded-lg">
+			<figure className="flex items-center justify-center flex-col gap-6">
+					<figcaption className=" text-3xl">
 						{title}
 					</figcaption>
 				<Link to={projectPath}>
@@ -54,7 +56,7 @@ const ProjectCard = ({
 				</Link>
 				<p>{description}</p>
 					{externalLinks}
-				<Link to={projectPath} className='place-self-center justify-self-center'>
+				<Link to={projectPath}>
 					<Button text="Read more" />
 				</Link>
 			</figure>
