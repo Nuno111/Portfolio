@@ -38,8 +38,8 @@ const HomeCards = () => {
 				className="md:text-2l pb-12 text-center text-2xl
 				sm:text-3xl md:text-4xl lg:pb-28"
 			>
-				My criteria for Single Page Applications
-				(SPAs)
+				Methodologies I use for Single Page
+				Applications (SPAs)
 			</h3>
 			<ul className="grid gap-16 grid-cols-1 xl:grid-cols-3">
 				<Card
