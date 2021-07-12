@@ -64,10 +64,7 @@ const SampleProject = () => {
 					className="flex-center flex justify-center lg:col-start-2"
 					to="/projects"
 				>
-					<Button
-						text="Other projects"
-						size="medium"
-					/>
+					<Button text="Other projects" />
 				</Link>
 				<a
 					target="_blank"

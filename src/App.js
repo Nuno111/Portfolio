@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Cub3D from "./pages/Cub3D";
 
 function App() {
 	return (
@@ -17,11 +18,14 @@ function App() {
 			<Route path="/about">
 				<About />
 			</Route>
-			<Route path="/projects">
+			<Route exact path="/projects">
 				<Projects />
 			</Route>
 			<Route path="/contact">
 				<Contact />
+			</Route>
+			<Route path="/projects/cub3D">
+				<Cub3D />
 			</Route>
 			<Footer />
 		</div>

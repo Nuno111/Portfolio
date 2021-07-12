@@ -35,7 +35,7 @@ const HomeCards = () => {
 	return (
 		<Fragment>
 			<h3
-				className="md:text-2l pb-12 text-center text-2xl
+				className="pb-12 text-center text-2xl
 				sm:text-3xl md:text-4xl lg:pb-28"
 			>
 				Methodologies I use for Single Page

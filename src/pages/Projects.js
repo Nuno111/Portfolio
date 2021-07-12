@@ -7,7 +7,19 @@ const Projects = () => {
 			<h2 className="py-8 dark:text-darkTxtPrimary text-lightTxtPrimary text-5xl">
 				Projects
 			</h2>
-			<ul className="flex">
+			<ul className="grid gap-8 grid-cols-1 lg:grid-cols-3">
+				<ProjectCard
+					title="cub3D"
+					img={cub3D}
+					alt="3D shooter game"
+					description="The Goal of this project was to create a simpler version of Wolfenstein 3D 1992."
+				/>
+				<ProjectCard
+					title="cub3D"
+					img={cub3D}
+					alt="3D shooter game"
+					description="The Goal of this project was to create a simpler version of Wolfenstein 3D 1992."
+				/>
 				<ProjectCard
 					title="cub3D"
 					img={cub3D}
