@@ -17,60 +17,42 @@ const ProjectTemplate = ({
 	img2,
 }) => {
 	return (
-		<article className="container py-6 lg:text-2xl">
+		<article className="container py-6 lg:text-2xl xl:text-3xl">
 			<h2 className="py-12 text-center dark:text-darkTxtPrimary text-lightTxtPrimary text-5xl">
 				{title}
 			</h2>
-			<div className="flex flex-col gap-10 lg:gap-28">
-				<div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
-					<div className="lg:my-auto">
-						<h5 className="py-4 text-2xl lg:text-4xl">
-							<span>
-								<DescriptionSvg className="inline mr-4 w-10 h-10 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
-							</span>
-							Description
-						</h5>
-						<p className="py-4">
-							{description}
-						</p>
-					</div>
-					{img}
-				</div>
-				<div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
-					<div className="lg:my-auto">
-						<h5 className="py-4 text-2xl lg:text-4xl">
-							<span>
-								<ObjectiveSvg className="inline mr-4 w-10 h-10 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
-							</span>
-							Objective
-						</h5>
-						<p className="py-4">{objective}</p>
-					</div>
-					{img1}
-				</div>
-				<div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
-					<div className="lg:my-auto">
-						<h5 className="py-4 text-2xl lg:text-4xl">
-							<span>
-								<ChallengeSvg className="inline mr-4 w-10 h-10 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
-							</span>
-							Challenges
-						</h5>
-						<p className="py-4">{challenges}</p>
-					</div>
-					{img1}
-				</div>
-				<div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
-					<div className="lg:my-auto">
-						<h5 className="py-4 text-2xl lg:text-4xl">
-							<span>
-								<ConclusionSvg className="inline mr-4 w-10 h-10 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
-							</span>
-							Conclusion
-						</h5>
-						<p className="py-4">{conclusion}</p>
-					</div>
-				</div>
+			<div className="flex flex-col gap-10 lg:gap-20">
+				<h5 className="text-2xl lg:text-4xl">
+					<span>
+						<DescriptionSvg className="inline mr-4 w-10 h-10 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+					</span>
+					Description
+				</h5>
+				<p className="">{description}</p>
+				{img}
+				<h5 className="text-2xl lg:text-4xl">
+					<span>
+						<ObjectiveSvg className="inline mr-4 w-10 h-10 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+					</span>
+					Objective
+				</h5>
+				<p className="">{objective}</p>
+				{img1}
+				<h5 className="text-2xl lg:text-4xl">
+					<span>
+						<ChallengeSvg className="inline mr-4 w-10 h-10 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+					</span>
+					Challenges
+				</h5>
+				<p className="">{challenges}</p>
+				{img2}
+				<h5 className="text-2xl lg:text-4xl">
+					<span>
+						<ConclusionSvg className="inline mr-4 w-10 h-10 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+					</span>
+					Conclusion
+				</h5>
+				<p className="">{conclusion}</p>
 				<Link
 					className="flex-center flex justify-center lg:col-start-2"
 					to="/projects"

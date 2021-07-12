@@ -35,7 +35,7 @@ const Navbar = () => {
 		>
 			{/* Change border from navbar to shadow box? need to test and compare*/}
 			<div className="container flex items-center justify-between justify-center lg:grid lg:grid-cols-3">
-				<NavLink activeClassName="" to="/">
+				<NavLink to="/">
 					<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-xl md:text-3xl">
 						Nuno Carro
 					</h2>
@@ -51,6 +51,7 @@ const Navbar = () => {
 					<li className="sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+							exact
 							to="/"
 							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>
@@ -60,6 +61,7 @@ const Navbar = () => {
 					<li className="sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+							exact
 							to="/about"
 							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>
@@ -69,6 +71,7 @@ const Navbar = () => {
 					<li className="sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+							exact
 							to="/projects"
 							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>
@@ -78,6 +81,7 @@ const Navbar = () => {
 					<li className="sm:text-lg">
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+							exact
 							to="/contact"
 							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>

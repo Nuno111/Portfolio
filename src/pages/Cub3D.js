@@ -6,7 +6,7 @@ const Cub3D = () => {
 		<img
 			src={ProjectImg}
 			alt="3d first person shooter game"
-			className="rounded-lg"
+			className="rounded-lg xl:place-self-center xl:w-3/4 xl:h-3/4"
 		/>
 	);
 	return (
@@ -37,7 +37,6 @@ const Cub3D = () => {
 					magnam quaerat. Ex eaque repellendus
 					laborum ad eum Porro sed fugit debitis."
 			img={img}
-			img1={img}
 			img2={img}
 		/>
 	);
