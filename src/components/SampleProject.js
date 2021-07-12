@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SampleProject = () => {
 	return (
 		<Fragment>
-			<h3 className="py-12 2xl:py-28 text-center text-2xl sm:text-3xl md:text-2xl md:text-4xl">
+			<h3 className="py-12 text-center text-2xl md:text-3xl md:text-4xl lg:py-28">
 				Sample Project - Colour Them All
 			</h3>
 			<div className="2xl:grid 2xl:gap-12 2xl:grid-cols-2">
