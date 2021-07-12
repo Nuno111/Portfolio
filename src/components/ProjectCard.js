@@ -42,20 +42,16 @@ const ProjectCard = ({
 	);
 
 	return (
-		<li className="px-10 py-4 dark:bg-darkBgSecondary bg-lightBgSecondary rounded-lg">
-			<figure className="flex items-center justify-center flex-col gap-6">
-					<figcaption className=" text-3xl">
-						{title}
-					</figcaption>
+		<li className="px-10 py-4 dark:bg-darkBgSecondary bg-lightBgSecondary rounded-xl">
+			<figure className="flex flex-col gap-6 items-center justify-center">
+				<figcaption className="text-3xl">
+					{title}
+				</figcaption>
 				<Link to={projectPath}>
-					<img
-						src={img}
-						alt={alt}
-						className="rounded-lg"
-					/>
+					<img src={img} alt={alt} />
 				</Link>
 				<p>{description}</p>
-					{externalLinks}
+				{externalLinks}
 				<Link to={projectPath}>
 					<Button text="Read more" />
 				</Link>
