@@ -1,7 +1,7 @@
 import ProjectCard from "../components/ProjectCard";
 import cub3D from "../assets/cub3d.jpg";
-import automatedCaloriesTracker from "../assets/automatedCaloriesTracker.jpg";
-import printf from "../assets/printf.jpg";
+import automatedCaloriesTracker from "../assets/automatedCaloriesTrackerMac.png";
+import printf from "../assets/ftPrintf.png";
 
 const Projects = () => {
 	return (
@@ -22,7 +22,7 @@ const Projects = () => {
 					title="Automated Calories Tracker"
 					img={automatedCaloriesTracker}
 					alt="Macronutriens table on a google spreadsheet"
-					description="Imports data from MyFitnessPal onto Google Spreadsheet"
+					description="Imports macronutrients data from MyFitnessPal onto Google Spreadsheet"
 					githubLink="https://github.com/Nuno111/Automated-calories-tracker"
 					projectPath="/projects/AutomatedCaloriesTracker"
 				/>

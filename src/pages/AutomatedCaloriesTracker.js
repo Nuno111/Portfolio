@@ -1,10 +1,8 @@
 import ProjectTemplate from "../components/ProjectTemplate";
-import ProjectImg from "../assets/caloriesTracker.jpg";
 
 const CaloriesTracker = () => {
 	const img = (
 		<img
-			src={ProjectImg}
 			alt="Macronutriens table on a google spreadsheet"
 			className="rounded-lg xl:place-self-center xl:w-3/4 xl:h-3/4"
 		/>

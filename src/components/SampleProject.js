@@ -1,4 +1,4 @@
-import sampleProject from "../assets/sampleproject.jpg";
+import sampleProject from "../assets/colourThemAll.png";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const SampleProject = () => {
 						<img
 							src={sampleProject}
 							alt="Web game to click and colour circles"
-							className="absolute w-full h-full rounded-lg shadow-2xl object-cover"
+							className="absolute w-full h-full rounded-lg object-cover"
 						/>
 					</a>
 				</div>

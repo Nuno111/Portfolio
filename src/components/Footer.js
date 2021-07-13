@@ -36,15 +36,15 @@ const Footer = () => {
 						Projects
 					</Link>
 				</li>
-				<HashLink
-					smooth
-					to="/#contact"
-					className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
-				>
-					Contact
-				</HashLink>
-
-				<li></li>
+				<li>
+					<HashLink
+						smooth
+						to="/#contact"
+						className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+					>
+						Contact
+					</HashLink>
+				</li>
 			</ul>
 			<ul className="flex gap-8 items-center justify-center my-6">
 				<li>
