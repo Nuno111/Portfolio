@@ -21,7 +21,7 @@ const Home = () => {
 				/>
 				<h1 className="text-center text-2xl lg:text-4xl">
 					Dynamic Front-End web developer. I work
-					with React and Tailwindcss to create
+					with React and TailwindCSS to create
 					modern single-page web applications.
 				</h1>
 				<Button text="About Me" />

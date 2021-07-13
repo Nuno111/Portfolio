@@ -12,30 +12,23 @@ const Cub3D = () => {
 	return (
 		<ProjectTemplate
 			title="cub3D"
-			description="Lorem neque optio placeat blanditiis
-					animi? Expedita corrupti magni suscipit
-					necessitatibus laboriosam consequuntur
-					Facere possimus error ipsum maxime
-					magnam quaerat. Ex eaque repellendus
-					laborum ad eum Porro sed fugit debitis."
-			objective="Lorem neque optio placeat blanditiis
-					animi? Expedita corrupti magni suscipit
-					necessitatibus laboriosam consequuntur
-					Facere possimus error ipsum maxime
-					magnam quaerat. Ex eaque repellendus
-					laborum ad eum Porro sed fugit debitis."
-			challenges="Lorem neque optio placeat blanditiis
-					animi? Expedita corrupti magni suscipit
-					necessitatibus laboriosam consequuntur
-					Facere possimus error ipsum maxime
-					magnam quaerat. Ex eaque repellendus
-					laborum ad eum Porro sed fugit debitis."
-			conclusion="Lorem neque optio placeat blanditiis
-					animi? Expedita corrupti magni suscipit
-					necessitatibus laboriosam consequuntur
-					Facere possimus error ipsum maxime
-					magnam quaerat. Ex eaque repellendus
-					laborum ad eum Porro sed fugit debitis."
+			description="This project is inspired by the world-famous Wolfenstein
+			3D game, which was the first FPS ever."
+			objective="Code a realistic 3D graphical representation of a maze
+			from a first-person prespective. This project is writtten in C and
+			explores the ray-casting technique."
+			challenges="The parsing of the file was quite easy until the map
+			parsing, which had to be surrounded by walls, I had to use a complex
+			logic by surrounding the map with extra values to avoid seg fault 
+			when checking map borders. Another
+			challenge for me was to create the textured walls, I was able to implement
+			untextured walls without looking up any prior implementation but in
+			the end I had to follow a step-by-step guide to draw textured walls."
+			conclusion="This project allowed me to see how games are built at their core,
+			since I had to create my own game-engine to draw the game with a very
+			basic graphics library and the raycasting technique. Not enough to actually
+			evaluate if game dev is my cup of tea but if I had to based on this
+			experience alone I would say it's not."
 			img={img}
 			img2={img}
 		/>

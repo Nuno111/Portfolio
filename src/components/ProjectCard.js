@@ -50,7 +50,9 @@ const ProjectCard = ({
 				<Link to={projectPath}>
 					<img src={img} alt={alt} />
 				</Link>
-				<p>{description}</p>
+				<p className="text-xl lg:text-2xl">
+					{description}
+				</p>
 				{externalLinks}
 				<Link to={projectPath}>
 					<Button text="Read more" />

@@ -12,9 +12,8 @@ const Projects = () => {
 					title="cub3D"
 					img={cub3D}
 					alt="3D shooter game"
-					description="The Goal of this project was to create a simpler version of Wolfenstein 3D 1992."
+					description="Simpler version of Wolfenstein 3D 1992 coded in c."
 					githubLink="https://github.com/Nuno111/42Lisboa-level4-cub3D"
-					liveLink="https://github.com/Nuno111/42Lisboa-level4-cub3D"
 				/>
 				<ProjectCard
 					title="cub3D"

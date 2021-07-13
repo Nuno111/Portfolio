@@ -22,7 +22,7 @@ const ProjectTemplate = ({
 				{title}
 			</h2>
 			<div className="flex flex-col gap-10 lg:gap-20">
-				<h5 className="text-2xl lg:text-4xl">
+				<h5 className="text-3xl lg:text-4xl">
 					<span>
 						<DescriptionSvg className="inline mr-4 w-10 h-10 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
 					</span>
