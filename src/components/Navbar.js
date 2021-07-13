@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import BurgerMenu from "./BurgerMenu";
@@ -79,14 +80,13 @@ const Navbar = () => {
 						</NavLink>
 					</li>
 					<li className="sm:text-lg">
-						<NavLink
-							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
-							exact
-							to="/contact"
+						<HashLink
+							smooth
+							to="/#contact"
 							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
 						>
 							Contact
-						</NavLink>
+						</HashLink>
 					</li>
 				</ul>
 				<div className="dark:text-darkTxtPrimary text-lightTxtPrimary lg:hidden">

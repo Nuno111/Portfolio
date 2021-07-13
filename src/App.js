@@ -2,7 +2,6 @@ import { Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cub3D from "./pages/Cub3D";
@@ -20,9 +19,6 @@ function App() {
 			</Route>
 			<Route exact path="/projects">
 				<Projects />
-			</Route>
-			<Route path="/contact">
-				<Contact />
 			</Route>
 			<Route path="/projects/cub3D">
 				<Cub3D />

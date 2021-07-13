@@ -1,11 +1,10 @@
-import { Fragment } from "react";
 import sampleProject from "../assets/sampleproject.jpg";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
 const SampleProject = () => {
 	return (
-		<Fragment>
+		<section className="container">
 			<h3 className="py-12 text-center text-2xl md:text-3xl md:text-4xl lg:py-28">
 				Sample Project - Colour Them All
 			</h3>
@@ -19,7 +18,7 @@ const SampleProject = () => {
 						<img
 							src={sampleProject}
 							alt="Web game to click and colour circles"
-							className="absolute w-full h-full rounded-lg shadow-xl object-cover"
+							className="absolute w-full h-full rounded-lg shadow-2xl object-cover"
 						/>
 					</a>
 				</div>
@@ -78,7 +77,7 @@ const SampleProject = () => {
 					/>
 				</a>
 			</div>
-		</Fragment>
+		</section>
 	);
 };
 

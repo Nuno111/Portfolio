@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { ReactComponent as InstagramSvg } from "../assets/instagram.svg";
 import { ReactComponent as FacebookSvg } from "../assets/facebook.svg";
 import { ReactComponent as GithubSvg } from "../assets/github.svg";
@@ -8,7 +9,7 @@ const Footer = () => {
 	return (
 		<footer
 			className="flex gap-2
-			lg:grid flex-col items-center justify-center mt-20 dark:bg-darkBgSecondary border-t-2 border-solid dark:border-darkTxtPrimary border-lightTxtPrimary lg:gap-8 lg:grid-cols-3"
+			lg:grid flex-col items-center justify-center mt-10 dark:bg-darkBgSecondary border-t-2 border-solid dark:border-darkTxtPrimary border-lightTxtPrimary lg:gap-8 lg:grid-cols-3 lg:mt-20"
 		>
 			<ul className="flex flex-col gap-2 items-center my-6">
 				<li>
@@ -35,14 +36,15 @@ const Footer = () => {
 						Projects
 					</Link>
 				</li>
-				<li>
-					<Link
-						to="/contact"
-						className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
-					>
-						Contact
-					</Link>
-				</li>
+				<HashLink
+					smooth
+					to="/#contact"
+					className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
+				>
+					Contact
+				</HashLink>
+
+				<li></li>
 			</ul>
 			<ul className="flex gap-8 items-center justify-center my-6">
 				<li>

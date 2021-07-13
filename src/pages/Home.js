@@ -4,6 +4,7 @@ import LandingSvg from "../assets/landing.svg";
 import HomeCards from "../components/HomeCards";
 import TechStack from "../components/TechStack";
 import SampleProject from "../components/SampleProject";
+import Contact from "../components/Contact";
 
 const Home = () => {
 	return (
@@ -25,11 +26,10 @@ const Home = () => {
 				</h1>
 				<Button text="About Me" />
 			</main>
-			<section className="container">
-				<HomeCards />
-				<TechStack />
-				<SampleProject />
-			</section>
+			<HomeCards />
+			<TechStack />
+			<SampleProject />
+			<Contact />
 		</Fragment>
 	);
 };

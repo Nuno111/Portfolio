@@ -1,5 +1,4 @@
 import Card from "./Card";
-import { Fragment } from "react";
 
 const HomeCards = () => {
 	const performant = (
@@ -33,7 +32,7 @@ const HomeCards = () => {
 	);
 
 	return (
-		<Fragment>
+		<section className="container">
 			<h3
 				className="pb-12 text-center text-2xl
 				sm:text-3xl md:text-4xl lg:pb-28"
@@ -59,7 +58,7 @@ const HomeCards = () => {
 					secondWord="Readable"
 				/>
 			</ul>
-		</Fragment>
+		</section>
 	);
 };
 
