@@ -17,7 +17,7 @@ const ProjectCard = ({
 
 	/* Will only render github and live svg icons if they have been passed down as props*/
 	const externalLinks = (
-		<div className="flex gap-4">
+		<div className="flex gap-4 self-center">
 			{githubLink && (
 				<a
 					target="_blank"
@@ -43,21 +43,30 @@ const ProjectCard = ({
 
 	return (
 		<li className="px-10 py-4 dark:bg-darkBgSecondary bg-lightBgSecondary rounded-xl">
-			<figure className="flex flex-col gap-6 items-center justify-center">
-				<figcaption className="text-3xl">
+			<div className="flex flex-col gap-6 justify-center">
+				<h4 className="self-center text-3xl">
 					{title}
-				</figcaption>
-				<Link to={projectPath}>
-					<img src={img} alt={alt} />
-				</Link>
-				<p className="text-xl lg:text-2xl">
+				</h4>
+				<div className="relative pb-2/3">
+					<Link to={projectPath}>
+						<img
+							src={img}
+							alt={alt}
+							className="absolute w-full h-full object-cover"
+						/>
+					</Link>
+				</div>
+				<p className="self-center text-xl lg:text-2xl">
 					{description}
 				</p>
 				{externalLinks}
-				<Link to={projectPath}>
+				<Link
+					to={projectPath}
+					className="self-center"
+				>
 					<Button text="Read more" />
 				</Link>
-			</figure>
+			</div>
 		</li>
 	);
 };

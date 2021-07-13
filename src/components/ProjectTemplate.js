@@ -11,6 +11,7 @@ const ProjectTemplate = ({
 	description,
 	objective,
 	challenges,
+	challenges1,
 	conclusion,
 	img,
 	img1,
@@ -45,6 +46,9 @@ const ProjectTemplate = ({
 					Challenges
 				</h5>
 				<p className="">{challenges}</p>
+				{challenges1 && (
+					<p className="">{challenges1}</p>
+				)}
 				{img2}
 				<h5 className="text-2xl lg:text-4xl">
 					<span>

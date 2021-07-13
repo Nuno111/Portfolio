@@ -1,5 +1,7 @@
 import ProjectCard from "../components/ProjectCard";
 import cub3D from "../assets/cub3d.jpg";
+import automatedCaloriesTracker from "../assets/automatedCaloriesTracker.jpg";
+import printf from "../assets/printf.jpg";
 
 const Projects = () => {
 	return (
@@ -7,7 +9,7 @@ const Projects = () => {
 			<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-5xl">
 				Projects
 			</h2>
-			<ul className="grid gap-8 grid-cols-1 lg:grid-cols-3">
+			<ul className="grid gap-8 grid-cols-1 lg:grid-cols-2">
 				<ProjectCard
 					title="cub3D"
 					img={cub3D}
@@ -16,14 +18,15 @@ const Projects = () => {
 					githubLink="https://github.com/Nuno111/42Lisboa-level4-cub3D"
 				/>
 				<ProjectCard
-					title="cub3D"
-					img={cub3D}
-					alt="3D shooter game"
-					description="The Goal of this project was to create a simpler version of Wolfenstein 3D 1992."
+					title="Automated Calories Tracker"
+					img={automatedCaloriesTracker}
+					alt="Macronutriens table on a google spreadsheet"
+					description="Imports data from MyFitnessPal onto Google Spreadsheet"
+					githubLink="https://github.com/Nuno111/Automated-calories-tracker"
 				/>
 				<ProjectCard
-					title="cub3D"
-					img={cub3D}
+					title="Printf"
+					img={printf}
 					alt="3D shooter game"
 					description="The Goal of this project was to create a simpler version of Wolfenstein 3D 1992."
 				/>

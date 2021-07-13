@@ -1,17 +1,17 @@
 import ProjectTemplate from "../components/ProjectTemplate";
-import ProjectImg from "../assets/sampleproject.jpg";
+import ProjectImg from "../assets/caloriesTracker.jpg";
 
-const Cub3D = () => {
+const CaloriesTracker = () => {
 	const img = (
 		<img
 			src={ProjectImg}
-			alt="3d first person shooter game"
+			alt="Macronutriens table on a google spreadsheet"
 			className="rounded-lg xl:place-self-center xl:w-3/4 xl:h-3/4"
 		/>
 	);
 	return (
 		<ProjectTemplate
-			title="cub3D"
+			title="Automated Calories Tracker"
 			description="This project is inspired by the world-famous Wolfenstein
 			3D game, which was the first FPS ever."
 			objective="Code a realistic 3D graphical representation of a maze
@@ -37,4 +37,4 @@ const Cub3D = () => {
 	);
 };
 
-export default Cub3D;
+export default CaloriesTracker;
