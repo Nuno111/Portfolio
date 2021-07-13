@@ -1,7 +1,7 @@
 import ProjectTemplate from "../components/ProjectTemplate";
-import ProjectImg from "../assets/sampleproject.jpg";
+import ProjectImg from "../assets/printf.jpg";
 
-const Cub3D = () => {
+const Ft_Printf = () => {
 	const img = (
 		<img
 			src={ProjectImg}
@@ -11,7 +11,7 @@ const Cub3D = () => {
 	);
 	return (
 		<ProjectTemplate
-			title="cub3D"
+			title="ft_printf"
 			description="This project is inspired by the world-famous Wolfenstein
 			3D game, which was the first FPS ever."
 			objective="Code a realistic 3D graphical representation of a maze
@@ -37,4 +37,4 @@ const Cub3D = () => {
 	);
 };
 
-export default Cub3D;
+export default Ft_Printf;

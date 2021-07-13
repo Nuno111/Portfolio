@@ -16,43 +16,43 @@ const TechStack = () => {
 				Tech Stack
 			</h3>
 			<ul className="grid gap-10 grid-cols-4 sm:grid-cols-5 xl:grid-cols-10">
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<HtmlSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>HTML</p>
 				</li>
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<CssSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>CSS</p>
 				</li>
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<JavascriptSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>JavaScript</p>
 				</li>
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<ReactSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>React</p>
 				</li>
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<TailwindSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>TailwindCSS</p>
 				</li>
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<CSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>C</p>
 				</li>
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<GithubSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>Github</p>
 				</li>
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<GitSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>Git</p>
 				</li>
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<NeovimSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>Neovim</p>
 				</li>
-				<li className="flex flex-col gap-4 items-center justify-center">
+				<li className="flex flex-col gap-4 items-center justify-center transform hover:scale-110 duration-300 ease-linear">
 					<FigmaSvg className="w-12 h-12 lg:w-20 lg:h-20" />
 					<p>Figma</p>
 				</li>

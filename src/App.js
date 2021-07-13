@@ -5,6 +5,8 @@ import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cub3D from "./pages/Cub3D";
+import FtPrintf from "./pages/FtPrintf";
+import AutomatedCaloriesTracker from "./pages/AutomatedCaloriesTracker";
 
 function App() {
 	return (
@@ -22,6 +24,12 @@ function App() {
 			</Route>
 			<Route path="/projects/cub3D">
 				<Cub3D />
+			</Route>
+			<Route path="/projects/FtPrintf">
+				<FtPrintf />
+			</Route>
+			<Route path="/projects/AutomatedCaloriesTracker">
+				<AutomatedCaloriesTracker />
 			</Route>
 			<Footer />
 		</div>

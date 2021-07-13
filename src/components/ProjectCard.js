@@ -11,10 +11,8 @@ const ProjectCard = ({
 	description,
 	githubLink,
 	liveLink,
+	projectPath,
 }) => {
-	/* Tailwindcss purge requires us not to use template literals in className*/
-	const projectPath = `/projects/${title}`;
-
 	/* Will only render github and live svg icons if they have been passed down as props*/
 	const externalLinks = (
 		<div className="flex gap-4 self-center">

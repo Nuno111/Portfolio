@@ -16,6 +16,7 @@ const Projects = () => {
 					alt="3D shooter game"
 					description="Simpler version of Wolfenstein 3D 1992 coded in c."
 					githubLink="https://github.com/Nuno111/42Lisboa-level4-cub3D"
+					projectPath="/projects/cub3D"
 				/>
 				<ProjectCard
 					title="Automated Calories Tracker"
@@ -23,12 +24,14 @@ const Projects = () => {
 					alt="Macronutriens table on a google spreadsheet"
 					description="Imports data from MyFitnessPal onto Google Spreadsheet"
 					githubLink="https://github.com/Nuno111/Automated-calories-tracker"
+					projectPath="/projects/AutomatedCaloriesTracker"
 				/>
 				<ProjectCard
-					title="Printf"
+					title="ft_printf"
 					img={printf}
-					alt="3D shooter game"
-					description="The Goal of this project was to create a simpler version of Wolfenstein 3D 1992."
+					alt="code representing printf function"
+					description="Simpler version of the famous printf function."
+					projectPath="/projects/FtPrintf"
 				/>
 			</ul>
 		</section>
