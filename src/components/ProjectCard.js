@@ -42,10 +42,10 @@ const ProjectCard = ({
 	return (
 		<li className="px-10 py-4 dark:bg-darkBgSecondary bg-lightBgSecondary rounded-xl">
 			<div className="flex flex-col gap-6 justify-center">
-				<h4 className="self-center text-3xl">
+				<h4 className="lg:text-4l self-center text-center text-2xl font-bold md:text-3xl">
 					{title}
 				</h4>
-				<div className="relative pb-2/3">
+				<div className="transform hover:scale-110  duration-500 ease-in-out relative pb-2/3">
 					<Link to={projectPath}>
 						<img
 							src={img}
@@ -54,10 +54,9 @@ const ProjectCard = ({
 						/>
 					</Link>
 				</div>
-				<p className="self-center text-xl lg:text-2xl">
+				<p className="self-center text-center text-xl lg:text-2xl">
 					{description}
 				</p>
-				{externalLinks}
 				<Link
 					to={projectPath}
 					className="self-center"

@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import sampleProject from "../assets/colourThemAll.png";
 import Button from "../components/Button";
-import { Link } from "react-router-dom";
 
 const SampleProject = () => {
 	return (
@@ -9,19 +9,18 @@ const SampleProject = () => {
 				Sample Project - Colour Them All
 			</h3>
 			<div className="2xl:grid 2xl:gap-12 2xl:grid-cols-2">
-				<div className="relative pb-2/3">
-					<a
-						target="_blank"
-						rel="noreferrer"
-						href="https://upbeat-hopper-d62a44.netlify.app/"
-					>
-						<img
-							src={sampleProject}
-							alt="Web game to click and colour circles"
-							className="absolute w-full h-full rounded-lg object-cover"
-						/>
-					</a>
-				</div>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					href="https://upbeat-hopper-d62a44.netlify.app/"
+					className="relative pb-2/3"
+				>
+					<img
+						src={sampleProject}
+						alt="Web game to click and colour circles"
+						className="absolute w-full h-full rounded-lg object-cover"
+					/>
+				</a>
 				<div className="flex flex-col gap-8 justify-between py-6 lg:text-2xl">
 					<p>
 						<span className="font-bold">

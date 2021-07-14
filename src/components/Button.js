@@ -1,10 +1,10 @@
 const Button = ({ text }) => {
 	return (
 		<button
-			className="font-bold dark:hover:text-darkTxtPrimary m-6 px-8 border-darkTxtPrimary
+			className="dark:hover:text-darkTxtPrimary m-6 px-8 border-darkTxtPrimary
 			dark:text-light text-lightTxtPrimary rounded-full
-			hover:text-lightTxtPrimary whitespace-nowrap text-xl font-bold bg-dark py-3
-			dark:bg-darkBgPrimary border-2 border-solid transform hover:scale-110 duration-300 ease-linear"
+			hover:text-lightTxtPrimary whitespace-nowrap text-xl font-bold font-bold bg-dark py-3
+			dark:bg-darkBgPrimary border-2 border-solid transform hover:scale-110 transition-transform duration-300 ease-linear"
 			type="button"
 		>
 			{text}
