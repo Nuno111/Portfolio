@@ -29,7 +29,7 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className="border-solid
+			className="font-bold border-solid
 			border-lightTxtPrimary bg-lightBgSecondary
 			border-b-2 dark:bg-darkBgSecondary
 			dark:border-darkTxtPrimary flex flex-col items-center justify-center py-2 lg:py-6"
@@ -48,42 +48,43 @@ const Navbar = () => {
 						darkMode={darkMode}
 					/>
 				</div>
-				<ul className="flex hidden gap-8 items-center justify-end lg:flex">
-					<li className="sm:text-lg">
+				<ul className="flex md:text-xl hidden gap-8 items-center justify-end lg:flex">
+					<li>
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary 
+							"
 						>
 							Home
 						</NavLink>
 					</li>
-					<li className="sm:text-lg">
+					<li>
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/about"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary "
 						>
 							About
 						</NavLink>
 					</li>
-					<li className="sm:text-lg">
+					<li>
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/projects"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary "
 						>
 							Projects
 						</NavLink>
 					</li>
-					<li className="sm:text-lg">
+					<li>
 						<HashLink
 							smooth
 							to="/#contact"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary md:text-xl"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary "
 						>
 							Contact
 						</HashLink>

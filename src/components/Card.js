@@ -17,7 +17,7 @@ const Card = ({ title, content, icon, secondWord }) => {
 			rounded-lg gap-6 items-center p-6 shadow-2xl transform hover:scale-110 duration-300 ease-linear"
 		>
 			{icon}
-			<h3 className="text-gray-700 dark:text-white text-2xl sm:text-xl">
+			<h3 className="text-gray-700 dark:text-white text-2xl font-bold ">
 				<span className="dark:text-darkTxtPrimary text-lightTxtPrimary">
 					{title[0]}
 				</span>
@@ -25,8 +25,8 @@ const Card = ({ title, content, icon, secondWord }) => {
 				{capitalizeSecondWord}
 			</h3>
 			<p
-				className="text-md dark:text-gray-300
-				text-gray-500 flex-1 px-2 text-center text-lg leading-loose"
+				className="dark:text-gray-300
+				text-gray-500 flex-1 px-2 text-center leading-loose"
 			>
 				{content}
 			</p>

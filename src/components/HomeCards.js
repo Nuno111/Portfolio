@@ -34,7 +34,7 @@ const HomeCards = () => {
 	return (
 		<section className="container">
 			<h3
-				className="pb-12 text-center text-2xl
+				className="font-bold pb-12 text-center text-2xl
 				sm:text-3xl md:text-4xl lg:pb-28"
 			>
 				Methodologies I use for Single Page
