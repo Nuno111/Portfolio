@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Image from "./Image";
 import Button from "./Button";
 import { ReactComponent as GithubSvg } from "../assets/github.svg";
 import { ReactComponent as LiveSvg } from "../assets/live.svg";
@@ -45,15 +46,11 @@ const ProjectCard = ({
 				<h4 className="lg:text-4l self-center text-center text-2xl font-bold md:text-3xl">
 					{title}
 				</h4>
-				<div className="transform hover:scale-110  duration-500 ease-in-out relative pb-2/3">
-					<Link to={projectPath}>
-						<img
-							src={img}
-							alt={alt}
-							className="absolute w-full h-full object-cover"
-						/>
-					</Link>
-				</div>
+				<Image
+					src={img}
+					alt={alt}
+					linkPath={projectPath}
+				/>
 				<p className="self-center text-center text-xl lg:text-2xl">
 					{description}
 				</p>
