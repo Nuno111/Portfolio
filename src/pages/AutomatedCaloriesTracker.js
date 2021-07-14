@@ -1,14 +1,15 @@
+import { Fragment } from "react";
 import ProjectTemplate from "../components/ProjectTemplate";
+import Image from "../components/Image";
 import nutrients from "../assets/nutrients.jpg";
 import fitnesspalSpreadsheet from "../assets/fitnesspalSpreadsheet.jpg";
-import { Fragment } from "react";
 
 const CaloriesTracker = () => {
 	const overview = (
 		<Fragment>
 			<p>
 				Automated Calories Tracker is a script I
-				wrote in python which uses an unofficial
+				wrote in Python which uses an unofficial
 				MyFitnessPal API to fetch macronutrients
 				data from an user and exports it into a
 				google spreadsheet. I co-created this
@@ -25,7 +26,7 @@ const CaloriesTracker = () => {
 				spreadsheet.
 			</p>
 			<p>In our spreadsheet this works as follows:</p>
-			<ul class="flex flex-col gap-4 px-8 list-disc">
+			<ul className="flex flex-col gap-4 px-8 list-disc">
 				<li>
 					Run the script with the username and the
 					range of data required
@@ -44,20 +45,16 @@ const CaloriesTracker = () => {
 				2021/01/29
 			</code>
 			<div className="grid gap-8 grid-cols-1 px-4 py-4 lg:gap-12 lg:grid-cols-2">
-				<div className="relative pb-3/4">
-					<img
-						src={fitnesspalSpreadsheet}
-						alt="Macronutriens table on a google spreadsheet"
-						className="absolute w-full h-full rounded-lg object-cover"
-					/>
-				</div>
-				<div className="relative pb-3/4">
-					<img
-						src={nutrients}
-						alt="Macronutriens table on a google spreadsheet"
-						className="absolute w-full h-full rounded-lg object-cover"
-					/>
-				</div>
+				<Image
+					src={fitnesspalSpreadsheet}
+					alt="Macronutriens table on a google spreadsheet"
+					rounded={true}
+				/>
+				<Image
+					src={nutrients}
+					alt="Macronutriens table on a google spreadsheet"
+					rounded={true}
+				/>
 			</div>
 		</Fragment>
 	);

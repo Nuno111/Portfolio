@@ -1,7 +1,23 @@
 import { Link } from "react-router-dom";
 
-const Image = ({ src, alt, linkPath, externalLink }) => {
-	const image =
+const Image = ({
+	src,
+	alt,
+	linkPath,
+	externalLink,
+	rounded,
+}) => {
+	const borderRounded = rounded ? "rounded-lg" : "";
+
+	const img = (
+		<img
+			src={src}
+			alt={alt}
+			className={`${borderRounded} absolute w-full h-full object-cover`}
+		/>
+	);
+
+	const imageComponent =
 		linkPath && externalLink ? (
 			<a
 				target="_blank"
@@ -9,34 +25,22 @@ const Image = ({ src, alt, linkPath, externalLink }) => {
 				href={linkPath}
 				className="relative pb-3/4 transform hover:scale-110 duration-500 ease-in-out"
 			>
-				<img
-					src={src}
-					alt={alt}
-					className="absolute w-full h-full rounded-lg object-cover"
-				/>
+				{img}
 			</a>
 		) : linkPath ? (
 			<Link
 				to={linkPath}
 				className="relative pb-3/4 transform hover:scale-110 duration-500 ease-in-out"
 			>
-				<img
-					src={src}
-					alt={alt}
-					className="absolute w-full h-full object-cover"
-				/>
+				{img}
 			</Link>
 		) : (
 			<div className="relative pb-3/4 transform hover:scale-110 duration-500 ease-in-out">
-				<img
-					src={src}
-					alt={alt}
-					className="absolute w-full h-full object-cover"
-				/>
+				{img}
 			</div>
 		);
 
-	return image;
+	return imageComponent;
 };
 
 export default Image;
