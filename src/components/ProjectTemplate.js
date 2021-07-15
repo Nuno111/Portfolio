@@ -41,7 +41,7 @@ const ProjectTemplate = ({
 					</span>
 					Challenges
 				</h4>
-				<ul className="flex flex-col gap-6 md:text-xl xl:text-2xl">
+				<ul className="flex flex-col gap-6 md:text-xl lg:gap-12 xl:text-2xl">
 					{challenges}
 				</ul>
 				<Link
