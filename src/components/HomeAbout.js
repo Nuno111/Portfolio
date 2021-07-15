@@ -38,11 +38,11 @@ const HomeAbout = () => {
 				/>
 				<HomeAboutCard
 					svg={why}
-					title="Why You're Here"
+					title="Why This Portfolio Exists"
 					content1="Whether you are a fellow student, developer or recruiter
-					you're probably curious about me, hopefully, this website
-					can convince you I am a good guy and if you're up for a chat about
-					anything just hit me up."
+					you're probably curious about me, hopefully, with this website I
+					can convince you I am a good guy and an excellent asset to any team. If 
+					you're up for a chat just hit me up."
 					path="/contact"
 					linkTxt="Contact"
 				/>
