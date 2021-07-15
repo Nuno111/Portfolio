@@ -31,7 +31,7 @@ const HomeAbout = () => {
 					title="What I Do"
 					content1="I focus on creating SPAs as a front-end web developer,
 					but also enjoy exploring other fields such as game development,
-					automation of repetitive tasks and working with systems"
+					automation of repetitive tasks and working with systems."
 					path="/projects"
 					linkTxt="Projects"
 					inverted={true}

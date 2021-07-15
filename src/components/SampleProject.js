@@ -9,7 +9,7 @@ const SampleProject = () => {
 			<h3 className="pt-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-28">
 				Sample Project - Colour Them All
 			</h3>
-			<div className="grid 2xl:gap-12 grid-cols-1 2xl:grid-cols-2">
+			<div className="grid grid-cols-1 xl:gap-12 xl:grid-cols-2">
 				<Image
 					src={sampleProject}
 					alt="Website game to colour circles"
