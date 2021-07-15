@@ -10,7 +10,7 @@ import AutomatedCaloriesTracker from "./pages/AutomatedCaloriesTracker";
 
 function App() {
 	return (
-		<div className="md:text-lg text-dark dark:text-light font-main dark:bg-darkBgPrimary bg-lightBgPrimary">
+		<div className="text-lg text-dark dark:text-light font-main dark:bg-darkBgPrimary bg-lightBgPrimary">
 			{/* Robots to text needs to be looked into before production*/}
 			<Navbar />
 			<Route exact path="/">

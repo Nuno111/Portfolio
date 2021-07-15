@@ -5,35 +5,33 @@ import { ReactComponent as Why } from "../assets/why.svg";
 
 const HomeAbout = () => {
 	const who = (
-		<Who className="w-20 h-20 lg:w-28 lg:h-28 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+		<Who className="w-20 h-20 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-28 lg:h-28" />
 	);
 	const what = (
-		<What className="w-20 h-20 lg:w-28 lg:h-28 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+		<What className="w-20 h-20 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-28 lg:h-28" />
 	);
 	const why = (
-		<Why className="w-20 h-20 lg:w-28 lg:h-28 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+		<Why className="w-20 h-20 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-28 lg:h-28" />
 	);
 
 	return (
 		<section className="container">
-			<h3 className="pb-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-28">
-				Welcome to my portfolio
-			</h3>
-			<ul className="flex flex-col gap-6 divide-gray-500 divide-y">
+			<ul className="flex flex-col divide-gray-500 divide-y">
 				<HomeAboutCard
 					svg={who}
 					title="Who Am I"
-					content1="Something goes here hereh erh reh erh re erh hh
-				hrehrehrehrehrhehrehrehrehre"
+					content1="I consider myself a friendly and enthusiastic person,
+					I am easy to talk to and very curious about other people's passions.
+					I am currently living in Lisbon and studying at 42 Lisbon programming school."
 					path="/about"
 					linkTxt="About"
 				/>
 				<HomeAboutCard
 					svg={what}
 					title="What I Do"
-					content1="Something goes here hereh erh reh erh re erh hh
-				hrehreherhrehrehrehhrehr  fdsaf ds fasd fsda fsdafsdae
-				hrehrehrehrehrhehrehrehrehre"
+					content1="I focus on creating SPAs as a front-end web developer,
+					but also enjoy exploring other fields such as game development,
+					automation of repetitive tasks and working with systems"
 					path="/projects"
 					linkTxt="Projects"
 					inverted={true}
@@ -41,10 +39,10 @@ const HomeAbout = () => {
 				<HomeAboutCard
 					svg={why}
 					title="Why You're Here"
-					content1="Weather you are a fellow student, developer or a recruiter
-					you're probably curious about myself, hopefully this website
-					is able to convince you I am a good guy and if you're up for a chat about
-					anything really just hit me up."
+					content1="Whether you are a fellow student, developer or recruiter
+					you're probably curious about me, hopefully, this website
+					can convince you I am a good guy and if you're up for a chat about
+					anything just hit me up."
 					path="/contact"
 					linkTxt="Contact"
 				/>

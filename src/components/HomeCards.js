@@ -25,7 +25,7 @@ const HomeCards = () => {
 			<ul className="grid gap-16 grid-cols-1 xl:grid-cols-3">
 				<HomeCard
 					title="Responsive"
-					content="To achieve SPAs responsiveness I use Mobile First Approach design alongside technologies like CSS flexbox/grid, Chrome dev tools and Tailwind responsive properties."
+					content="To achieve SPAs responsiveness I use Mobile-First Approach design alongside technologies like CSS flexbox/grid, Chrome dev tools and Tailwind responsive properties."
 					icon={responsive}
 				/>
 				<HomeCard

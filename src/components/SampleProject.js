@@ -21,11 +21,11 @@ const SampleProject = () => {
 						<span className="font-bold">
 							Colour Them All{" "}
 						</span>
-						is a projected I created in order to
-						understand Javascript canvas, it
-						started out as a simple attempt to
-						create an animated circle and
-						evolved into a full browser game.
+						is a project I created to understand
+						Javascript canvas, it started as a
+						simple attempt to create an animated
+						circle and evolved into a full
+						browser game.
 					</p>
 					<p>
 						The objective of the game is to
@@ -36,18 +36,18 @@ const SampleProject = () => {
 					<p>
 						The biggest challenge for me was how
 						to organize my code, since I wasn't
-						expecting to turn this into
+						expecting to turn this into an
 						experiment into an actual project
 						with so many functionalities like
 						changing colour themes and
 						difficulty change, levels, etc.
 					</p>
 					<p>
-						In the end I decided a full refactor
-						wasn't needed but I made sure to
-						protect the variables by wrapping
-						the content in an IIFE and adding
-						some structure so it's not a
+						In the end, I decided a full
+						refactor wasn't needed but I made
+						sure to protect the variables by
+						wrapping the content in an IIFE and
+						adding some structure so it's not a
 						spaghetti mess.
 					</p>
 				</div>

@@ -20,22 +20,21 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="container flex flex-col items-center justify-center "
+			className="container flex flex-col items-center justify-center"
 		>
 			{/*https://rossellafer.github.io/fcc-portfolio/#portfolio has  greadt idea on contact page*/}
 			{/*Gradiant buttons!*/}
-			<h3 className="py-12 font-bold text-center text-2xl md:text-3xl md:text-4xl lg:py-20">
+			<h3 className="py-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-20">
 				Get In Touch
 			</h3>
 			<p className="text-xl sm:text-2xl lg:text-3xl">
-				Lorem rem officia fuga sequi voluptatum
-				Officiis maxime quaerat similique minima
-				tenetur aspernatur Quae animi in quasi sint
-				architecto quod.
+				I'd love to hear you from, wether you want
+				to discuss new opportunities, talk about 42
+				school projects or just want to have a chat.
 			</p>
 			<ul
 				className="justify-center
-				flex flex-col sm:flex-row gap-20 py-20 items-center"
+				flex flex-col gap-20 items-center py-20 sm:flex-row"
 			>
 				<ContactCard
 					href="mailto:nuno_c11@hotmail.com"
