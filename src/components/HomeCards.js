@@ -5,23 +5,20 @@ import { ReactComponent as CleancodeSvg } from "../assets/cleancode.svg";
 
 const HomeCards = () => {
 	const performant = (
-		<PerformantSvg className="w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current"></PerformantSvg>
+		<PerformantSvg className="w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
 	);
 
 	const responsive = (
-		<ResponsiveSvg className="w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current"></ResponsiveSvg>
+		<ResponsiveSvg className="w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
 	);
 
 	const cleancode = (
-		<CleancodeSvg className="w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current"></CleancodeSvg>
+		<CleancodeSvg className="w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
 	);
 
 	return (
 		<section className="container">
-			<h3
-				className="pb-12 text-center text-2xl
-				sm:text-3xl font-bold md:text-4xl lg:pb-28"
-			>
+			<h3 className="py-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-28">
 				Methodologies I use for Single Page
 				Applications (SPAs)
 			</h3>

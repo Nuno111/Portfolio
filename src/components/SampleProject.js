@@ -6,17 +6,17 @@ import Image from "./Image";
 const SampleProject = () => {
 	return (
 		<section className="container">
-			<h3 className="py-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-28">
+			<h3 className="pt-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-28">
 				Sample Project - Colour Them All
 			</h3>
-			<div className="2xl:grid 2xl:gap-12 2xl:grid-cols-2">
+			<div className="grid 2xl:gap-12 grid-cols-1 2xl:grid-cols-2">
 				<Image
 					src={sampleProject}
 					alt="Website game to colour circles"
 					linkPath="https://upbeat-hopper-d62a44.netlify.app/"
 					externalLink={true}
 				/>
-				<div className="flex flex-col gap-8 justify-between py-6 lg:text-2xl">
+				<div className="flex flex-col gap-8 justify-between leading-loose lg:text-2xl">
 					<p>
 						<span className="font-bold">
 							Colour Them All{" "}
