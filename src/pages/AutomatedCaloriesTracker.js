@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import ProjectTemplate from "../components/ProjectTemplate";
+import ChallengeTemplate from "../components/ChallengeTemplate";
 import Image from "../components/Image";
 import nutrients from "../assets/nutrients.jpg";
 import fitnesspalSpreadsheet from "../assets/fitnesspalSpreadsheet.jpg";
@@ -40,7 +41,7 @@ const CaloriesTracker = () => {
 					another sheet to calculate averages
 				</li>
 			</ul>
-			<code className="bold p-4 dark:bg-darkBgSecondary rounded-lg">
+			<code className="bold m-auto p-4 dark:bg-darkBgSecondary rounded-lg lg:w-1/2">
 				python myfitnesspal.py nuno_c11 2021/01/01
 				2021/01/29
 			</code>
@@ -87,37 +88,28 @@ const CaloriesTracker = () => {
 
 	const challenges = (
 		<Fragment>
-			<p>
-				First challenge I had with this project was
-				to understand how to work around errors,
-				mainly input errors and missing data erros
-				from the API.
-			</p>
-			<p>
-				In order to solve this I restricted the
-				input passed to the script to be exactly in
-				in the format I wanted, I didnt work around
-				various inputs as it would add alot more
-				work.
-			</p>
-			<p>
-				Another challenge I had was the possibility
-				of creating a SPA with a login page in order
-				for this script to be used by anyone outside
-				of a local environment.
-			</p>
-			<p>
-				This challenge is still to be conquered when
-				I have more time available to work on this
-				project as in order for this script to be
-				used outside a local environment I would
-				have to learn the back-end side of web
-				development, most likely nodeJS but since
-				this works with sensitive data I will have
-				to put lots of hours learning the back-end
-				in order to implement a safe login page and
-				protected google auth tokens.
-			</p>
+			<ChallengeTemplate
+				title="Being friend with errors"
+				content="Figuring out how to work with errors from the API was
+				cumbersome. I had to do plenty of tests in order to figure out 
+				which inputs would work and restricted user input to a very specific format."
+				success={true}
+			/>
+			<ChallengeTemplate
+				title="Dealing with Google auth system"
+				content="It wasn't very hard but definitly a challenge,
+				being the first time I dealt with this I had to follow a short online tutorial
+				that guided me how to set this up. Safe to say I understood the concept but would
+				require more work with this to fully understand how it works."
+				success={true}
+			/>
+			<ChallengeTemplate
+				title="Go live by creating a SPA"
+				content="Putting the script online with a Single Page Appllication 
+				that would allow a user to have an account and run the script through a form.
+				This requires some back-end knowledge, to safely handle sensitive data such 
+				has user login/password and google auth token, which I have yet to learn."
+			/>
 		</Fragment>
 	);
 
