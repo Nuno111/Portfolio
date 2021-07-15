@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-const Card = ({ title, content, icon, secondWord }) => {
+const HomeCard = ({ title, content, icon, secondWord }) => {
 	const capitalizeSecondWord = secondWord ? (
 		<Fragment>
 			<span className="dark:text-darkTxtPrimary text-lightTxtPrimary">
@@ -34,4 +34,4 @@ const Card = ({ title, content, icon, secondWord }) => {
 	);
 };
 
-export default Card;
+export default HomeCard;
