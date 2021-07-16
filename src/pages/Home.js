@@ -10,11 +10,11 @@ import HomeAbout from "../components/HomeAbout";
 const Home = () => {
 	return (
 		<Fragment>
-			<main className="container flex flex-col gap-4 items-center justify-center py-6 min-h-100v font-bold md:gap-12">
+			<main className="container flex flex-col gap-4 items-center justify-between py-6 h-90v font-bold md:gap-16">
 				<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-4xl md:text-6xl">
 					Nuno Carro
 				</h2>
-				<HeroSvg className="align-middle my-10 w-3/4 h-auto xl:my-0 xl:w-1/2" />
+				<HeroSvg className="align-middle w-3/4 h-auto xl:my-0 xl:w-1/3" />
 				<h1 className="text-center text-2xl md:text-3xl lg:text-4xl">
 					<span className="block pb-2">
 						Front-End web developer.

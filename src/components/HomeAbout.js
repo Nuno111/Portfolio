@@ -16,13 +16,13 @@ const HomeAbout = () => {
 
 	return (
 		<section className="container">
-			<ul className="flex flex-col divide-gray-500 divide-y">
+			<ul className="flex flex-col pt-4 divide-gray-500 divide-y">
 				<HomeAboutCard
 					svg={who}
 					title="Who Am I"
 					content1="I consider myself a friendly and enthusiastic person,
 					I am easy to talk to and very curious about other people's passions.
-					I am currently living in Lisbon and studying at 42 Lisbon programming school."
+					Currently living in Lisbon and studying at 42 Lisbon programming school."
 					path="/about"
 					linkTxt="About"
 				/>
