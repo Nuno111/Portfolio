@@ -119,6 +119,7 @@ const CaloriesTracker = () => {
 			overview={overview}
 			approach={approach}
 			challenges={challenges}
+			githubPath="https://github.com/Nuno111/Automated-calories-tracker"
 		/>
 	);
 };

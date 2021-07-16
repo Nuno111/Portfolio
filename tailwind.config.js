@@ -10,13 +10,11 @@ module.exports = {
 				light: "#ffffff",
 				dark: "#000000",
 				darkTxtPrimary: "#BB86FC",
-				darkTxtSecondary: "#333333",
 				darkBgPrimary: "#282c35",
 				darkBgSecondary: "#161b22",
 				lightBgPrimary: "#f9fafc",
 				lightBgSecondary: "#ffffff",
 				lightTxtPrimary: "#7309F7",
-				lightTxtSecondary: "#444444",
 			},
 			container: {
 				center: true,

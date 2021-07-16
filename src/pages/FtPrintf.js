@@ -121,6 +121,7 @@ const Ft_Printf = () => {
 			overview={overview}
 			approach={approach}
 			challenges={challenges}
+			githubLink="https://github.com/Nuno111/42Lisboa-level1-ft_printf"
 		/>
 	);
 };

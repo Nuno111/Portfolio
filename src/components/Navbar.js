@@ -5,6 +5,7 @@ import { Squash as Hamburger } from "hamburger-react";
 import BurgerMenu from "./BurgerMenu";
 import ThemeToggler from "./ThemeToggler";
 import logo from "../assets/logo.png";
+import logoLight from "../assets/logolight.png";
 
 const Navbar = () => {
 	const [burgerOpen, setBurgerOpen] = useState(false);
@@ -31,15 +32,15 @@ const Navbar = () => {
 	return (
 		<nav
 			className="dark:bg-darkBgSecondary
-			py-2 font-bolg flex flex-col items-center justify-center bg-lightBgSecondary shadow-lg lg:py-6"
+			py-2 font-bolg flex flex-col items-center justify-center bg-lightBgSecondary shadow-lg lg:py-4"
 		>
 			{/* Change border from navbar to shadow box? need to test and compare*/}
 			<div className="container flex items-center justify-between justify-center lg:grid lg:grid-cols-3">
 				<NavLink to="/">
 					<img
-						src={logo}
+						src={darkMode ? logo : logoLight}
 						alt="NC"
-						className="2xl:h-26 h-14 lg:h-20"
+						className="h-14 lg:h-16"
 					/>
 				</NavLink>
 				<div className="flex hidden justify-center lg:flex">

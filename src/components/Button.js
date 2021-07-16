@@ -6,7 +6,7 @@ const Button = ({ text }) => {
 		"text-lightTxtPrimary border-lightTxtPrimary";
 
 	const general =
-		"m-6 py-6 px-8 whitespace-nowrap text-xl border-2 border-solid  font-bold rounded-full transform hover:scale-110 transition-transform duration-300 ease-linear";
+		"m-4 py-4 px-8 whitespace-nowrap text-xl border-2 border-solid  font-bold rounded-full transform hover:scale-110 transition-transform duration-300 ease-linear";
 
 	return (
 		<button

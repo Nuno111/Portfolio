@@ -17,6 +17,12 @@ const Footer = () => {
 					<Link
 						to="/"
 						className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+						onClick={() =>
+							window.scrollTo({
+								top: 0,
+								behavior: "smooth",
+							})
+						}
 					>
 						Home
 					</Link>
