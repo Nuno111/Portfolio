@@ -43,8 +43,9 @@ const HomeAbout = () => {
 					you're probably curious about me, hopefully, with this website I
 					can convince you I am a good guy and an excellent asset to any team. If 
 					you're up for a chat just hit me up."
-					path="/contact"
+					path="/#contact"
 					linkTxt="Contact"
+					samePage={true}
 				/>
 			</ul>
 		</section>

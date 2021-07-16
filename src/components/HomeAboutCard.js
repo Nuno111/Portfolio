@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { ReactComponent as ArrowrightSvg } from "../assets/arrowright.svg";
 
 const HomeAboutCard = ({
@@ -7,7 +8,26 @@ const HomeAboutCard = ({
 	content1,
 	path,
 	linkTxt,
+	samePage,
 }) => {
+	const link = samePage ? (
+		<HashLink
+			smooth
+			to={path}
+			className="group text-darkTxtPrimary text-xl font-bold"
+		>
+			{linkTxt}
+			<ArrowrightSvg className="inline w-10 h-10 fill-current group-hover:animate-spin" />
+		</HashLink>
+	) : (
+		<Link
+			to={path}
+			className="group text-darkTxtPrimary text-xl font-bold"
+		>
+			{linkTxt}
+			<ArrowrightSvg className="inline w-10 h-10 fill-current group-hover:animate-spin" />
+		</Link>
+	);
 	return (
 		<li className="grid gap-10 grid-cols-1 items-center justify-items-center py-6 lg:grid-cols-4">
 			{svg}
@@ -18,13 +38,7 @@ const HomeAboutCard = ({
 				<p className="leading-loose lg:text-2xl">
 					{content1}
 				</p>
-				<Link
-					to={path}
-					className="group text-darkTxtPrimary text-xl font-bold"
-				>
-					{linkTxt}
-					<ArrowrightSvg className="inline w-10 h-10 fill-current group-hover:animate-spin" />
-				</Link>
+				{link}
 			</div>
 		</li>
 	);
