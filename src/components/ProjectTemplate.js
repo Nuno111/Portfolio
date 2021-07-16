@@ -13,7 +13,7 @@ const ProjectTemplate = ({
 }) => {
 	return (
 		<article className="container py-6">
-			<h2 className="py-12 text-center dark:text-darkTxtPrimary text-lightTxtPrimary text-4xl font-bold md:text-6xl">
+			<h2 className="py-12 text-center text-4xl font-bold md:text-6xl">
 				{title}
 			</h2>
 			<div className="flex flex-col gap-10 lg:gap-20">

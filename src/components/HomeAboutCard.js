@@ -14,7 +14,7 @@ const HomeAboutCard = ({
 		<HashLink
 			smooth
 			to={path}
-			className="group text-darkTxtPrimary text-xl font-bold"
+			className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
 		>
 			{linkTxt}
 			<ArrowrightSvg className="inline w-10 h-10 fill-current group-hover:animate-spin" />
@@ -22,7 +22,7 @@ const HomeAboutCard = ({
 	) : (
 		<Link
 			to={path}
-			className="group text-darkTxtPrimary text-xl font-bold"
+			className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
 		>
 			{linkTxt}
 			<ArrowrightSvg className="inline w-10 h-10 fill-current group-hover:animate-spin" />

@@ -1,6 +1,6 @@
 const ContactCard = ({ href, svg, title, content }) => {
 	return (
-		<li className="animate-bounce group flex flex-col gap-4 items-center justify-center">
+		<li className="group flex flex-col gap-4 items-center justify-center animate-bounce">
 			<a
 				href={href}
 				target="_blank"
@@ -12,7 +12,7 @@ const ContactCard = ({ href, svg, title, content }) => {
 					{title}
 				</h4>
 			</a>
-			<p className="sm:text-xl lg:text-2xl border-b-2 border-solid dark:border-darkTxtPrimary">
+			<p className="border-b-2 border-solid dark:border-darkTxtPrimary border-lightTxtPrimary sm:text-xl lg:text-2xl">
 				{content}
 			</p>
 		</li>

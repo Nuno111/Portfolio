@@ -41,7 +41,7 @@ const ProjectCard = ({
 	);
 
 	return (
-		<li className="px-10 py-4 dark:bg-darkBgSecondary bg-lightBgSecondary rounded-xl">
+		<li className="px-10 py-4 dark:bg-darkBgSecondary bg-lightBgSecondary rounded-xl shadow-2xl">
 			<div className="flex flex-col gap-6 justify-center">
 				<h4 className="lg:text-4l self-center text-center text-2xl font-bold md:text-3xl">
 					{title}

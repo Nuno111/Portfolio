@@ -8,8 +8,9 @@ import { ReactComponent as LinkedinSvg } from "../assets/linkedin.svg";
 const Footer = () => {
 	return (
 		<footer
-			className="font-bold flex gap-2
-			lg:grid flex-col items-center justify-center mt-10 dark:bg-darkBgSecondary border-t-2 border-solid dark:border-darkTxtPrimary border-lightTxtPrimary lg:gap-8 lg:grid-cols-3 lg:mt-20"
+			className="flex gap-2
+			lg:grid flex-col items-center justify-center mt-10 font-bold
+			dark:bg-darkBgSecondary bg-lightBgSecondary border-t-2 border-solid dark:border-darkTxtPrimary border-lightTxtPrimary lg:gap-8 lg:grid-cols-3 lg:mt-20"
 		>
 			<ul className="flex flex-col gap-2 items-center my-6">
 				<li>
@@ -53,7 +54,7 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<GithubSvg className="w-8 h-8 dark:text-darkTxtPrimary fill-current" />
+						<GithubSvg className="w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
 					</a>
 				</li>
 				<li>
@@ -62,7 +63,7 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<LinkedinSvg className="w-8 h-8 dark:text-darkTxtPrimary fill-current" />
+						<LinkedinSvg className="w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
 					</a>
 				</li>
 				<li>
@@ -71,7 +72,7 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<InstagramSvg className="w-8 h-8 dark:text-darkTxtPrimary fill-current" />
+						<InstagramSvg className="w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
 					</a>
 				</li>
 				<li>
@@ -80,7 +81,7 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<FacebookSvg className="w-8 h-8 dark:text-darkTxtPrimary fill-current" />
+						<FacebookSvg className="w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
 					</a>
 				</li>
 			</ul>

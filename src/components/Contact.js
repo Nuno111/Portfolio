@@ -6,14 +6,14 @@ const Contact = () => {
 	const emailSvg = (
 		<EmailSvg
 			className="dark:group-hover:text-darkTxtPrimary w-20 h-20
-			grou-hover:text-lightTxtPrimary fill-current"
+			group-hover:text-lightTxtPrimary fill-current"
 		/>
 	);
 
 	const phoneSvg = (
 		<PhoneSvg
 			className="dark:group-hover:text-darkTxtPrimary w-20 h-20
-			grou-hover:text-lightTxtPrimary fill-current"
+			group-hover:text-lightTxtPrimary fill-current"
 		/>
 	);
 

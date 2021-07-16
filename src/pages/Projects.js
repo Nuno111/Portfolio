@@ -6,10 +6,10 @@ import printf from "../assets/ftPrintf.png";
 const Projects = () => {
 	return (
 		<section className="container flex flex-col gap-8 items-center justify-center py-12 md:gap-12">
-			<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-4xl font-bold md:text-6xl">
+			<h2 className="text-4xl font-bold md:text-6xl">
 				Projects
 			</h2>
-			<ul className="grid gap-8 grid-cols-1 lg:grid-cols-2">
+			<ul className="grid gap-8 grid-cols-1 lg:gap-16 lg:grid-cols-2">
 				<ProjectCard
 					title="cub3D"
 					img={cub3D}

@@ -41,7 +41,7 @@ const CaloriesTracker = () => {
 					another sheet to calculate averages
 				</li>
 			</ul>
-			<code className="bold m-auto p-4 dark:bg-darkBgSecondary rounded-lg lg:w-1/2">
+			<code className="bold m-auto p-4 dark:bg-darkBgSecondary bg-gray-200 rounded-lg shadow-lg lg:w-1/2">
 				python myfitnesspal.py nuno_c11 2021/01/01
 				2021/01/29
 			</code>
