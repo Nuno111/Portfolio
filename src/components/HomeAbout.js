@@ -15,7 +15,7 @@ const HomeAbout = () => {
 	);
 
 	return (
-		<section className="container">
+		<section id="about" className="container">
 			<ul className="flex flex-col pt-4 divide-gray-500 divide-y">
 				<HomeAboutCard
 					svg={who}
@@ -34,7 +34,6 @@ const HomeAbout = () => {
 					automation of repetitive tasks and working with systems."
 					path="/projects"
 					linkTxt="Projects"
-					inverted={true}
 				/>
 				<HomeAboutCard
 					svg={why}

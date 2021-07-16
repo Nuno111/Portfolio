@@ -1,11 +1,12 @@
-import Button from "../components/Button";
 import { ReactComponent as HeroSvg } from "../assets/hero.svg";
+import { ReactComponent as ArrowdownSvg } from "../assets/arrowdown.svg";
 import HomeCards from "../components/HomeCards";
 import TechStack from "../components/TechStack";
 import SampleProject from "../components/SampleProject";
 import Contact from "../components/Contact";
 import HomeAbout from "../components/HomeAbout";
 import { Transition } from "@headlessui/react";
+import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
 	return (
@@ -46,7 +47,9 @@ const Home = () => {
 					enterFrom="translate-y-96 opacity-0 ease-in-out"
 					enterTo="opacity-100 translate-x-0 ease-in-out"
 				>
-					<Button text="About Me" />
+					<HashLink smooth to="/#about">
+						<ArrowdownSvg className="inline w-16 h-16 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+					</HashLink>
 				</Transition.Child>
 			</main>
 			<HomeAbout />

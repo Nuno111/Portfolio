@@ -37,10 +37,10 @@ const SampleProject = () => {
 						The biggest challenge for me was how
 						to organize my code, since I wasn't
 						expecting to turn this into an
-						experiment into an actual project
-						with so many functionalities like
-						changing colour themes and
-						difficulty change, levels, etc.
+						actual project with so many
+						functionalities like changing colour
+						themes, difficulty settings,
+						increasing levels, etc.
 					</p>
 					<p>
 						In the end, I decided a full
