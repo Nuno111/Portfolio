@@ -49,12 +49,12 @@ const CaloriesTracker = () => {
 				<Image
 					src={fitnesspalSpreadsheet}
 					alt="Macronutriens table on a google spreadsheet"
-					rounded={true}
+					dynamicClasses="rounded-lg"
 				/>
 				<Image
 					src={nutrients}
 					alt="Macronutriens table on a google spreadsheet"
-					rounded={true}
+					dynamicClasses="rounded-lg"
 				/>
 			</div>
 		</Fragment>

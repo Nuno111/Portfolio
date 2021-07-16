@@ -5,15 +5,17 @@ const Image = ({
 	alt,
 	linkPath,
 	externalLink,
-	rounded,
+	dynamicClasses,
 }) => {
-	const borderRounded = rounded ? "rounded-lg" : "";
+	const extraClasses = dynamicClasses
+		? dynamicClasses
+		: "";
 
 	const img = (
 		<img
 			src={src}
 			alt={alt}
-			className={`${borderRounded} absolute w-full h-full object-cover`}
+			className={`${extraClasses} absolute w-full h-full object-cover`}
 		/>
 	);
 
