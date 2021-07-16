@@ -11,7 +11,7 @@ const Home = () => {
 	return (
 		<Fragment>
 			<main className="container flex flex-col gap-4 items-center justify-between py-6 h-90v font-bold md:gap-16">
-				<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-4xl md:text-6xl">
+				<h2 className="text-4xl md:text-6xl">
 					Nuno Carro
 				</h2>
 				<HeroSvg className="align-middle w-3/4 h-auto xl:my-0 xl:w-1/3" />

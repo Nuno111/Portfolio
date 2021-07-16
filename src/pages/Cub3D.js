@@ -1,14 +1,8 @@
 import ProjectTemplate from "../components/ProjectTemplate";
-import ProjectImg from "../assets/sampleproject.jpg";
+import gameplay from "../assets/cub3dgameplay.jpg";
+import gameplay2 from "../assets/cub3dgameplay.jpg";
 
 const Cub3D = () => {
-	const img = (
-		<img
-			src={ProjectImg}
-			alt="3d first person shooter game"
-			className="rounded-lg xl:place-self-center xl:w-3/4 xl:h-3/4"
-		/>
-	);
 	return (
 		<ProjectTemplate
 			title="cub3D"
@@ -31,8 +25,6 @@ const Cub3D = () => {
 			basic graphics library and the raycasting technique. Not enough to actually
 			evaluate if game dev is my cup of tea but if I had to based on this
 			experience alone I would say it's not."
-			img={img}
-			img2={img}
 		/>
 	);
 };

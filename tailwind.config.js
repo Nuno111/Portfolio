@@ -13,9 +13,9 @@ module.exports = {
 				darkTxtSecondary: "#333333",
 				darkBgPrimary: "#282c35",
 				darkBgSecondary: "#161b22",
-				lightBgPrimary: "#543543",
-				lightBgSecondary: "#DBEAFE",
-				lightTxtPrimary: "#595433",
+				lightBgPrimary: "#f9fafc",
+				lightBgSecondary: "#ffffff",
+				lightTxtPrimary: "#7309F7",
 				lightTxtSecondary: "#444444",
 			},
 			container: {

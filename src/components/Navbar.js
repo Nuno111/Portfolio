@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import BurgerMenu from "./BurgerMenu";
 import ThemeToggler from "./ThemeToggler";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
 	const [burgerOpen, setBurgerOpen] = useState(false);
@@ -29,17 +30,17 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className="font-bold border-solid
-			border-lightTxtPrimary bg-lightBgSecondary
-			border-b-2 dark:bg-darkBgSecondary
-			dark:border-darkTxtPrimary flex flex-col items-center justify-center py-2 lg:py-6"
+			className="dark:bg-darkBgSecondary
+			py-2 font-bolg flex flex-col items-center justify-center bg-lightBgSecondary shadow-lg lg:py-6"
 		>
 			{/* Change border from navbar to shadow box? need to test and compare*/}
 			<div className="container flex items-center justify-between justify-center lg:grid lg:grid-cols-3">
 				<NavLink to="/">
-					<h2 className="dark:text-darkTxtPrimary text-lightTxtPrimary text-xl md:text-3xl">
-						Nuno Carro
-					</h2>
+					<img
+						src={logo}
+						alt="NC"
+						className="2xl:h-26 h-14 lg:h-20"
+					/>
 				</NavLink>
 				<div className="flex hidden justify-center lg:flex">
 					<ThemeToggler
@@ -48,14 +49,13 @@ const Navbar = () => {
 						darkMode={darkMode}
 					/>
 				</div>
-				<ul className="flex md:text-xl hidden gap-8 items-center justify-end lg:flex">
+				<ul className="flex hidden gap-8 items-center justify-end md:text-2xl lg:flex">
 					<li>
 						<NavLink
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary 
-							"
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
 						>
 							Home
 						</NavLink>
@@ -65,7 +65,7 @@ const Navbar = () => {
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/about"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary "
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
 						>
 							About
 						</NavLink>
@@ -75,7 +75,7 @@ const Navbar = () => {
 							activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
 							exact
 							to="/projects"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary "
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
 						>
 							Projects
 						</NavLink>
@@ -84,7 +84,7 @@ const Navbar = () => {
 						<HashLink
 							smooth
 							to="/#contact"
-							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary "
+							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
 						>
 							Contact
 						</HashLink>
