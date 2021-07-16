@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 import printf_requirements from "../assets/printf_requirements.jpg";
+import printftests from "../assets/printftests.jpg";
+import printftests2 from "../assets/printftests2.jpg";
 import ProjectTemplate from "../components/ProjectTemplate";
 import Image from "../components/Image";
 import ChallengeTemplate from "../components/ChallengeTemplate";
@@ -63,6 +65,18 @@ const Ft_Printf = () => {
 				outs of printf, before rethinking my logic
 				again.
 			</p>
+			<div className="grid gap-8 grid-cols-1 px-4 py-4 lg:gap-12 lg:grid-cols-2">
+				<Image
+					src={printftests}
+					alt="Command line interface with code written for tests"
+					dynamicClasses="rounded-lg"
+				/>
+				<Image
+					src={printftests2}
+					alt="Command line interface with code written for tests"
+					dynamicClasses="rounded-lg"
+				/>
+			</div>
 		</Fragment>
 	);
 

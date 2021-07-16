@@ -15,7 +15,7 @@ const Image = ({
 		<img
 			src={src}
 			alt={alt}
-			className={`${extraClasses} absolute w-full h-full object-cover`}
+			className={`${extraClasses} transform hover:scale-110 duration-500 ease-in-out absolute w-full h-full object-cover`}
 		/>
 	);
 
@@ -25,21 +25,16 @@ const Image = ({
 				target="_blank"
 				rel="noreferrer"
 				href={linkPath}
-				className="relative pb-3/4 transform hover:scale-110 duration-500 ease-in-out"
+				className="relative pb-3/4"
 			>
 				{img}
 			</a>
 		) : linkPath ? (
-			<Link
-				to={linkPath}
-				className="relative pb-3/4 transform hover:scale-110 duration-500 ease-in-out"
-			>
+			<Link to={linkPath} className="relative pb-3/4">
 				{img}
 			</Link>
 		) : (
-			<div className="relative pb-3/4 transform hover:scale-110 duration-500 ease-in-out">
-				{img}
-			</div>
+			<div className="relative pb-3/4">{img}</div>
 		);
 
 	return imageComponent;

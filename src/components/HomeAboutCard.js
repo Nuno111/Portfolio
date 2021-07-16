@@ -7,7 +7,6 @@ const HomeAboutCard = ({
 	content1,
 	path,
 	linkTxt,
-	inverted,
 }) => {
 	return (
 		<li className="grid gap-10 grid-cols-1 items-center justify-items-center py-6 lg:grid-cols-4">
