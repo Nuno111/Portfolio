@@ -39,18 +39,6 @@ const BurgerMenu = ({
 					<NavLink
 						activeClassName="text-lightTxtPrimary
 						dark:text-darkTxtPrimary"
-						to="/about"
-						className="dark:border-darkTxtPrimary
-						border-lightTxtPrimary border-b-2"
-						onClick={toggleBurger}
-					>
-						About
-					</NavLink>
-				</li>
-				<li className="flex-1 py-2">
-					<NavLink
-						activeClassName="text-lightTxtPrimary
-						dark:text-darkTxtPrimary"
 						to="/projects"
 						className="dark:border-darkTxtPrimary
 						border-lightTxtPrimary border-b-2"
@@ -62,7 +50,7 @@ const BurgerMenu = ({
 				<li className="flex-1 py-2">
 					<HashLink
 						smooth
-						to="/contact"
+						to="/#contact"
 						className="dark:border-darkTxtPrimary
 						border-lightTxtPrimary border-b-2"
 						onClick={toggleBurger}
@@ -70,7 +58,10 @@ const BurgerMenu = ({
 						Contact
 					</HashLink>
 				</li>
-				<li className="flex flex-1 py-2">
+				<li
+					className="flex flex-1 py-2"
+					onClick={toggleBurger}
+				>
 					<ThemeToggler
 						onTogglerClick={onTogglerClick}
 						darkMode={darkMode}
