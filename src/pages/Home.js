@@ -17,9 +17,9 @@ const Home = () => {
 					enterFrom="-translate-y-40 opacity-0 ease-in-out"
 					enterTo="opacity-100 translate-y-0 ease-in-out"
 				>
-					<h2 className="text-4xl md:text-6xl">
+					<p className="text-4xl md:text-6xl">
 						Nuno Carro
-					</h2>
+					</p>
 				</Transition.Child>
 				<Transition.Child
 					enter="transform transition-all duration-1000 ease-in-out"
