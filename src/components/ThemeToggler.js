@@ -6,7 +6,6 @@ const ThemeToggler = ({ onTogglerClick, darkMode }) => {
 		>
 			{darkMode && (
 				<svg
-					xmlns="http://www.w3.org/2000/svg"
 					className="w-10 h-10 text-darkTxtPrimary fill-current"
 					viewBox="0 0 24 24"
 				>
@@ -21,7 +20,6 @@ const ThemeToggler = ({ onTogglerClick, darkMode }) => {
 			)}
 			{!darkMode && (
 				<svg
-					xmlns="http://www.w3.org/2000/svg"
 					className="w-10 h-10 text-lightTxtPrimary fill-current"
 					fill="none"
 					viewBox="0 0 24 24"

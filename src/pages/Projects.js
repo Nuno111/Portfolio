@@ -61,7 +61,6 @@ const Projects = () => {
 					target="_blank"
 					rel="noreferrer"
 					href="https://github.com/Nuno111"
-					className="relative pb-3/4"
 				>
 					<Button text="Github" />
 				</a>
