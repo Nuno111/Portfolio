@@ -1,12 +1,24 @@
 import { Route } from "react-router-dom";
-import About from "./pages/About";
+import React, { Suspense } from "react";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Cub3D from "./pages/Cub3D";
-import FtPrintf from "./pages/FtPrintf";
-import AutomatedCaloriesTracker from "./pages/AutomatedCaloriesTracker";
+import LoadingPage from "./components/LoadingPage"
+
+const Projects = React.lazy(() =>
+	import("./pages/Projects")
+);
+
+const About = React.lazy(() => import("./pages/About"));
+
+const Cub3D = React.lazy(() => import("./pages/Cub3D"));
+
+const AutomatedCaloriesTracker = React.lazy(() =>
+	import("./pages/AutomatedCaloriesTracker")
+);
+const FtPrintf = React.lazy(() =>
+	import("./pages/FtPrintf")
+);
 
 function App() {
 	return (
@@ -16,21 +28,27 @@ function App() {
 			<Route exact path="/">
 				<Home />
 			</Route>
-			<Route path="/about">
-				<About />
-			</Route>
-			<Route exact path="/projects">
-				<Projects />
-			</Route>
-			<Route path="/projects/cub3D">
-				<Cub3D />
-			</Route>
-			<Route path="/projects/FtPrintf">
-				<FtPrintf />
-			</Route>
-			<Route path="/projects/AutomatedCaloriesTracker">
-				<AutomatedCaloriesTracker />
-			</Route>
+			<Suspense
+				fallback={
+					<LoadingPage/>
+				}
+			>
+				<Route path="/about">
+					<About />
+				</Route>
+				<Route exact path="/projects">
+					<Projects />
+				</Route>
+				<Route path="/projects/cub3D">
+					<Cub3D />
+				</Route>
+				<Route path="/projects/FtPrintf">
+					<FtPrintf />
+				</Route>
+				<Route path="/projects/AutomatedCaloriesTracker">
+					<AutomatedCaloriesTracker />
+				</Route>
+			</Suspense>
 			<Footer />
 		</div>
 	);
