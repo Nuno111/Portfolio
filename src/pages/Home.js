@@ -48,7 +48,7 @@ const Home = () => {
 					enterTo="opacity-100 translate-x-0 ease-in-out"
 				>
 					<HashLink smooth to="/#about">
-						<ArrowdownSvg className="inline w-16 h-16 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+						<ArrowdownSvg className="inline w-16 h-16 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current transform hover:scale-125 duration-500" />
 					</HashLink>
 				</Transition.Child>
 			</main>

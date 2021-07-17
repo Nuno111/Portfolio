@@ -21,7 +21,7 @@ const ProjectTemplate = ({
 					target="_blank"
 					rel="noreferrer"
 					href={githubPath}
-					className="flex items-center justify-center w-full"
+					className="flex items-center justify-center mx-auto"
 				>
 					<GithubSvg className="dark:hover:text-darkTxtPrimary w-8 h-8 hover:text-lightTxtPrimary fill-current lg:w-16 lg:h-16" />
 				</a>
@@ -74,8 +74,8 @@ const ProjectTemplate = ({
 					{challenges}
 				</ul>
 				<Link
-					className="flex-center flex justify-center lg:col-start-2"
 					to="/projects"
+					className="flex-center flex justify-center lg:col-start-2"
 				>
 					<Button text="Back to projects" />
 				</Link>

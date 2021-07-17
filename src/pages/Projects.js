@@ -1,5 +1,6 @@
 import ProjectCard from "../components/ProjectCard";
-import cub3D from "../assets/cub3d.jpg";
+import Button from "../components/Button";
+import cub3D from "../assets/cub3d.png";
 import automatedCaloriesTracker from "../assets/automatedCaloriesTrackerMac.png";
 import printf from "../assets/ftPrintf.png";
 import { Transition } from "@headlessui/react";
@@ -10,7 +11,7 @@ const Projects = () => {
 			<Transition
 				appear={true}
 				show={true}
-				className="flex flex-col gap-8 items-center justify-center py-12 md:gap-12"
+				className="flex flex-col gap-12 items-center justify-center py-12 md:gap-16"
 			>
 				<Transition.Child
 					enter="transform transition-all duration-1000 ease-in-out"
@@ -51,6 +52,19 @@ const Projects = () => {
 						/>
 					</ul>
 				</Transition.Child>
+				<p className="text-2xl md:text-4xl">
+					For a full list of all my projects
+					checkout my Github account on the link
+					below.
+				</p>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					href="https://github.com/Nuno111"
+					className="relative pb-3/4"
+				>
+					<Button text="Github" />
+				</a>
 			</Transition>
 		</section>
 	);

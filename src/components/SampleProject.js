@@ -34,10 +34,12 @@ const SampleProject = () => {
 						reset circle colours.
 					</p>
 					<p>
-						The biggest challenge for me was how
-						to organize my code, since I wasn't
-						expecting to turn this into an
-						actual project with so many
+						The biggest challenge I had was with
+						code organization and thought about
+						doing a full refactor once finished.
+						This was mainly due to the fact that
+						I wasn't expecting to turn this into
+						an actual project with so many
 						functionalities like changing colour
 						themes, difficulty settings,
 						increasing levels, etc.

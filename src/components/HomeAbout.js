@@ -21,7 +21,7 @@ const HomeAbout = () => {
 					svg={who}
 					title="Who Am I"
 					content1="I consider myself a friendly and enthusiastic person,
-					I am easy to talk to and very curious about other people's passions.
+					easy to talk to and extremely curious about other people's passions.
 					Currently living in Lisbon and studying at 42 Lisbon programming school."
 					path="/about"
 					linkTxt="About"
@@ -29,7 +29,7 @@ const HomeAbout = () => {
 				<HomeAboutCard
 					svg={what}
 					title="What I Do"
-					content1="I focus on creating SPAs as a front-end web developer,
+					content1="My main focus is creating SPAs as a front-end web developer,
 					but also enjoy exploring other fields such as game development,
 					automation of repetitive tasks and working with systems."
 					path="/projects"
@@ -41,7 +41,7 @@ const HomeAbout = () => {
 					content1="Whether you are a fellow student, developer or recruiter
 					you're probably curious about me, hopefully, with this website I
 					can convince you I am a good guy and an excellent asset to any team. If 
-					you're up for a chat just hit me up."
+					you're up for a chat you can reach me via email or phone."
 					path="/#contact"
 					linkTxt="Contact"
 					samePage={true}

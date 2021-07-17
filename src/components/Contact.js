@@ -29,8 +29,9 @@ const Contact = () => {
 			</h3>
 			<p className="text-xl sm:text-2xl lg:text-3xl">
 				I'd love to hear you from, whether you want
-				to discuss new opportunities, talk about 42
-				school projects or just want to have a chat.
+				to discuss new opportunities, talk about my
+				projects, give some feedback or just want to
+				have a chat.
 			</p>
 			<ul
 				className="justify-center
