@@ -1,3 +1,4 @@
 figure out image contrast/greyscale/etc in darkmode
-svgs?png?jpg?
-resize image for production
+manifest?
+robots?
+tests?
