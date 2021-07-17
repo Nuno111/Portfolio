@@ -3,6 +3,7 @@ const ThemeToggler = ({ onTogglerClick, darkMode }) => {
 		<button
 			onClick={onTogglerClick}
 			className="transform hover:scale-150 duration-500"
+			aria-label="Switch between dark/light theme"
 		>
 			{darkMode && (
 				<svg

@@ -9,12 +9,14 @@ const HomeAboutCard = ({
 	path,
 	linkTxt,
 	samePage,
+	ariaLabel,
 }) => {
 	const link = samePage ? (
 		<HashLink
 			smooth
 			to={path}
 			className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
+			aria-label={ariaLabel}
 		>
 			{linkTxt}
 			<ArrowrightSvg className="inline w-10 h-10 fill-current group-hover:animate-spin" />
@@ -23,6 +25,7 @@ const HomeAboutCard = ({
 		<Link
 			to={path}
 			className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
+			aria-label={ariaLabel}
 		>
 			{linkTxt}
 			<ArrowrightSvg className="inline w-10 h-10 fill-current group-hover:animate-spin" />

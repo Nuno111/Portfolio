@@ -47,7 +47,7 @@ const Home = () => {
 					enterFrom="translate-y-96 opacity-0 ease-in-out"
 					enterTo="opacity-100 translate-x-0 ease-in-out"
 				>
-					<HashLink smooth to="/#about">
+					<HashLink smooth to="/#about" aria-label="Scroll down to about section">
 						<ArrowdownSvg className="inline w-16 h-16 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current transform hover:scale-125 duration-500" />
 					</HashLink>
 				</Transition.Child>

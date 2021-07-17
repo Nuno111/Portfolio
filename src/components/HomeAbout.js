@@ -25,6 +25,7 @@ const HomeAbout = () => {
 					Currently living in Lisbon and studying at 42 Lisbon programming school."
 					path="/about"
 					linkTxt="About"
+					ariaLabel="About section"
 				/>
 				<HomeAboutCard
 					svg={what}
@@ -34,6 +35,7 @@ const HomeAbout = () => {
 					automation of repetitive tasks and working with systems."
 					path="/projects"
 					linkTxt="Projects"
+					ariaLabel="Projects section"
 				/>
 				<HomeAboutCard
 					svg={why}
@@ -45,6 +47,7 @@ const HomeAbout = () => {
 					path="/#contact"
 					linkTxt="Contact"
 					samePage={true}
+					ariaLabel="Contact section"
 				/>
 			</ul>
 		</section>
