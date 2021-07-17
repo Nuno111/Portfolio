@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import printf_requirements from "../assets/printf_requirements.jpg";
-import printftests from "../assets/printftests.jpg";
-import printftests2 from "../assets/printftests2.jpg";
+import ftPrintfRequirements from "../assets/ftPrintfRequirements.jpg";
+import ftPrintfUnitTest from "../assets/ftPrintfUnitTest.jpg";
+import ftPrintfUnitTests from "../assets/ftPrintfUnitTests.jpg";
 import ProjectTemplate from "../components/ProjectTemplate";
 import Image from "../components/Image";
 import ChallengeTemplate from "../components/ChallengeTemplate";
@@ -35,7 +35,7 @@ const Ft_Printf = () => {
 				</p>
 			</div>
 			<Image
-				src={printf_requirements}
+				src={ftPrintfRequirements}
 				alt="Requirements for project"
 				rounded={true}
 			/>
@@ -67,12 +67,12 @@ const Ft_Printf = () => {
 			</p>
 			<div className="grid gap-8 grid-cols-1 px-4 py-4 lg:gap-12 lg:grid-cols-2">
 				<Image
-					src={printftests}
+					src={ftPrintfUnitTest}
 					alt="Command line interface with code written for tests"
 					dynamicClasses="rounded-lg"
 				/>
 				<Image
-					src={printftests2}
+					src={ftPrintfUnitTests}
 					alt="Command line interface with code written for tests"
 					dynamicClasses="rounded-lg"
 				/>

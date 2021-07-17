@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import ProjectTemplate from "../components/ProjectTemplate";
 import ChallengeTemplate from "../components/ChallengeTemplate";
 import Image from "../components/Image";
-import gameplay from "../assets/cub3dgameplay.jpg";
-import gameplay1 from "../assets/cub3dgameplay1.jpg";
+import cub3dGameplay from "../assets/cub3dGameplay.jpg";
+import cub3dMaze from "../assets/cub3dMaze.jpg";
 
 const Cub3D = () => {
 	const overview = (
@@ -29,12 +29,12 @@ const Cub3D = () => {
 			</p>
 			<div className="grid gap-8 grid-cols-1 px-4 py-4 lg:gap-12 lg:grid-cols-2">
 				<Image
-					src={gameplay}
+					src={cub3dGameplay}
 					alt="View of a maze in first person prespective game"
 					dynamicClasses="rounded-lg"
 				/>
 				<Image
-					src={gameplay1}
+					src={cub3dMaze}
 					alt="View of a maze in first person prespective game"
 					dynamicClasses="rounded-lg"
 				/>

@@ -1,8 +1,8 @@
 import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
 import cub3D from "../assets/cub3d.png";
-import automatedCaloriesTracker from "../assets/automatedCaloriesTrackerMac.png";
-import printf from "../assets/ftPrintf.png";
+import automatedCaloriesTracker from "../assets/automatedCaloriesTracker.png";
+import ftPrintf from "../assets/ftPrintf.png";
 import { Transition } from "@headlessui/react";
 
 const Projects = () => {
@@ -45,7 +45,7 @@ const Projects = () => {
 						/>
 						<ProjectCard
 							title="ft_printf"
-							img={printf}
+							img={ftPrintf}
 							alt="code representing printf function"
 							description="Simpler version of the famous printf function."
 							projectPath="/projects/FtPrintf"

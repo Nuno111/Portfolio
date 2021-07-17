@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import ProjectTemplate from "../components/ProjectTemplate";
 import ChallengeTemplate from "../components/ChallengeTemplate";
 import Image from "../components/Image";
-import nutrients from "../assets/nutrients.jpg";
-import fitnesspalSpreadsheet from "../assets/fitnesspalSpreadsheet.jpg";
+import aCTNutrientsSheet from "../assets/automatedCaloriesTrackerNutrientsSheet.jpg";
+import aCTSpreadsheet from "../assets/automatedCaloriesTrackerSpreadsheet.jpg";
 
 const CaloriesTracker = () => {
 	const overview = (
@@ -47,12 +47,12 @@ const CaloriesTracker = () => {
 			</code>
 			<div className="grid gap-8 grid-cols-1 px-4 py-4 lg:gap-12 lg:grid-cols-2">
 				<Image
-					src={fitnesspalSpreadsheet}
+					src={aCTSpreadsheet}
 					alt="Macronutriens table on a google spreadsheet"
 					dynamicClasses="rounded-lg"
 				/>
 				<Image
-					src={nutrients}
+					src={aCTNutrientsSheet}
 					alt="Macronutriens table on a google spreadsheet"
 					dynamicClasses="rounded-lg"
 				/>
