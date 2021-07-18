@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route, useLocation } from "react-router-dom";
 import React, { Suspense, useEffect } from "react";
 import ReactGA from "react-ga";
 import Home from "./pages/Home";
@@ -22,11 +22,16 @@ const FtPrintf = React.lazy(() =>
 );
 
 function App() {
+	let location = useLocation();
 	useEffect(() => {
-		ReactGA.initialize("G-04C6ZGGNZQ");
+		if (!window.GA_INITIALIZED) {
+			ReactGA.initialize("G-0LFJN524TM");
+			window.GA_INITIALIZED = true;
+		}
+		ReactGA.set({ page: location.pathname });
 
 		ReactGA.pageview(window.location.pathname);
-	}, []);
+	}, [location]);
 
 	return (
 		<div className="text-dark dark:text-light font-main text-lg dark:bg-darkBgPrimary bg-lightBgPrimary">
