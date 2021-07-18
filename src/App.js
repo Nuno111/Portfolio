@@ -1,9 +1,10 @@
 import { Route } from "react-router-dom";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
+import ReactGa from "react-ga";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import LoadingPage from "./components/LoadingPage"
+import LoadingPage from "./components/LoadingPage";
 
 const Projects = React.lazy(() =>
 	import("./pages/Projects")
@@ -21,6 +22,15 @@ const FtPrintf = React.lazy(() =>
 );
 
 function App() {
+	useEffect(() => {
+		ReactGa.initialize("G-04C6ZGGNZQ");
+
+		ReactGa.pageview(
+			window.location.pathname +
+				window.location.search
+		);
+	}, []);
+
 	return (
 		<div className="text-dark dark:text-light font-main text-lg dark:bg-darkBgPrimary bg-lightBgPrimary">
 			{/* Robots to text needs to be looked into before production*/}
@@ -28,11 +38,7 @@ function App() {
 			<Route exact path="/">
 				<Home />
 			</Route>
-			<Suspense
-				fallback={
-					<LoadingPage/>
-				}
-			>
+			<Suspense fallback={<LoadingPage />}>
 				<Route path="/about">
 					<About />
 				</Route>
