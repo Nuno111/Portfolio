@@ -16,7 +16,7 @@ const Navbar = () => {
 		event.preventDefault();
 
 		setDarkMode((prevState) => !prevState);
-		helpers.trackEvent("Button, Theme toggled");
+		helpers.trackEvent("Button", "Theme toggled");
 	};
 
 	const toggleBurger = () => {
