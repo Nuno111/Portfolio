@@ -22,6 +22,7 @@ const FtPrintf = React.lazy(() =>
 );
 
 function App() {
+	/* Init for google analytics */
 	let location = useLocation();
 	useEffect(() => {
 		if (!window.GA_INITIALIZED) {
@@ -31,7 +32,6 @@ function App() {
 		ReactGA.set({ page: location.pathname });
 
 		ReactGA.pageview(window.location.pathname);
-		console.log(location, window.location.pathname);
 	}, [location]);
 
 	return (

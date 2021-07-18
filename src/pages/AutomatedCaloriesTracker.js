@@ -13,20 +13,19 @@ const CaloriesTracker = () => {
 				wrote in Python which uses an unofficial
 				MyFitnessPal API to fetch macronutrients
 				data from a user and exports it into a
-				google spreadsheet. I co-created this
-				spreadsheet with my girlfriend and
-				implemented some formulas to fully automate
-				the work each client had to do.
+				google spreadsheet.
 			</p>
 			<p>
-				I wrote this script for my girlfriend who is
-				an Online Personal Trainer in order to
-				improve her online services by removing the
-				boring work each client had to do when
-				manually inputting their data into the
-				spreadsheet.
+				I wrote this script for an Online Personal
+				Trainer in order to improve her online
+				services by removing the boring work each
+				client had to do when manually inputting
+				their data into the spreadsheet.
 			</p>
-			<p>In our spreadsheet this works as follows:</p>
+			<p>
+				This spreadsheet was co-created by me and
+				works as follows:
+			</p>
 			<ul className="flex flex-col gap-4 px-8 list-disc">
 				<li>
 					Run the script with the username and the
