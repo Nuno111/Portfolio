@@ -25,12 +25,13 @@ function App() {
 	let location = useLocation();
 	useEffect(() => {
 		if (!window.GA_INITIALIZED) {
-			ReactGA.initialize("G-0LFJN524TM");
+			ReactGA.initialize("UA-202596498-1");
 			window.GA_INITIALIZED = true;
 		}
 		ReactGA.set({ page: location.pathname });
 
 		ReactGA.pageview(window.location.pathname);
+		console.log(location, window.location.pathname);
 	}, [location]);
 
 	return (
