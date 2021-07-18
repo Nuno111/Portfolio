@@ -41,6 +41,8 @@ const Navbar = () => {
 						src={darkMode ? logo : logoLight}
 						alt="NC"
 						className="w-16 h-16"
+						width="128"
+						height="128"
 					/>
 				</NavLink>
 				<div className="flex hidden justify-center lg:flex">
