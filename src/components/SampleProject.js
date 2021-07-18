@@ -56,10 +56,10 @@ const SampleProject = () => {
 			</div>
 			<div
 				className="lg:py-8
-				lg:grid-cols-4 grid grid-rows-2 items-center justify-center py-2 lg:grid-rows-none"
+				items-center flex flex-col justify-center py-2 md:flex-row"
 			>
 				<Link
-					className="flex-center flex justify-center lg:col-start-2"
+					className="flex-center flex justify-center"
 					to="/projects"
 				>
 					<Button text="Other projects" />
@@ -68,7 +68,7 @@ const SampleProject = () => {
 					target="_blank"
 					rel="noreferrer"
 					href="https://upbeat-hopper-d62a44.netlify.app/"
-					className="flex-center flex justify-center lg:col-start-3"
+					className="flex-center flex justify-center"
 				>
 					<Button
 						text="Play it live"

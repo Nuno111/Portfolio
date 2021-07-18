@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { ReactComponent as ArrowrightSvg } from "../assets/arrowright.svg";
+import helpers from "../utils/helpers";
 
 const HomeAboutCard = ({
 	svg,
@@ -11,12 +12,21 @@ const HomeAboutCard = ({
 	samePage,
 	ariaLabel,
 }) => {
+	const onClick = () => {
+		helpers.trackEvent(
+			"Link",
+			linkTxt,
+			"From HomeAbout"
+		);
+	};
+
 	const link = samePage ? (
 		<HashLink
 			smooth
 			to={path}
 			className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
 			aria-label={ariaLabel}
+			onClick={onClick}
 		>
 			{linkTxt}
 			<ArrowrightSvg className="inline w-10 h-10 fill-current group-hover:animate-spin" />
@@ -26,6 +36,7 @@ const HomeAboutCard = ({
 			to={path}
 			className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
 			aria-label={ariaLabel}
+			onClick={onClick}
 		>
 			{linkTxt}
 			<ArrowrightSvg className="inline w-10 h-10 fill-current group-hover:animate-spin" />

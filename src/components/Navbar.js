@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
+import helpers from "../utils/helpers";
 import BurgerMenu from "./BurgerMenu";
 import ThemeToggler from "./ThemeToggler";
 import logo from "../assets/logo.png";
 import logoLight from "../assets/logolight.png";
-import ReactGA from "react-ga";
 
 const Navbar = () => {
 	const [burgerOpen, setBurgerOpen] = useState(false);
@@ -16,10 +16,7 @@ const Navbar = () => {
 		event.preventDefault();
 
 		setDarkMode((prevState) => !prevState);
-		ReactGA.event({
-			category: "Button",
-			action: "Theme has been toggled",
-		});
+		helpers.trackEvent("Button, Theme toggled");
 	};
 
 	const toggleBurger = () => {
