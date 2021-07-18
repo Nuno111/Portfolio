@@ -6,7 +6,7 @@ import BurgerMenu from "./BurgerMenu";
 import ThemeToggler from "./ThemeToggler";
 import logo from "../assets/logo.png";
 import logoLight from "../assets/logolight.png";
-import ReactGa from "react-ga";
+import ReactGA from "react-ga";
 
 const Navbar = () => {
 	const [burgerOpen, setBurgerOpen] = useState(false);
@@ -16,8 +16,8 @@ const Navbar = () => {
 		event.preventDefault();
 
 		setDarkMode((prevState) => !prevState);
-		ReactGa.event({
-			category: "Toggler",
+		ReactGA.event({
+			category: "Button",
 			action: "Theme has been toggled",
 		});
 	};

@@ -1,6 +1,6 @@
 import { Route } from "react-router-dom";
 import React, { Suspense, useEffect } from "react";
-import ReactGa from "react-ga";
+import ReactGA from "react-ga";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -23,12 +23,9 @@ const FtPrintf = React.lazy(() =>
 
 function App() {
 	useEffect(() => {
-		ReactGa.initialize("G-04C6ZGGNZQ");
+		ReactGA.initialize("G-04C6ZGGNZQ");
 
-		ReactGa.pageview(
-			window.location.pathname +
-				window.location.search
-		);
+		ReactGA.pageview(window.location.pathname);
 	}, []);
 
 	return (
