@@ -99,7 +99,6 @@ const Cub3D = () => {
 				with this project  than I had anticipated I felt the need to move on and 
 				continue with the other 42 projects exploring different concepts 
 				in different areas."
-				success={true}
 			/>
 		</Fragment>
 	);
