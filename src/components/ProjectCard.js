@@ -29,7 +29,7 @@ const ProjectCard = ({
 					to={projectPath}
 					className="self-center"
 				>
-					<Button text="Read more" />
+					<Button text="View Project" />
 				</Link>
 			</div>
 		</li>

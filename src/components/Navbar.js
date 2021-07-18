@@ -40,7 +40,7 @@ const Navbar = () => {
 					<img
 						src={darkMode ? logo : logoLight}
 						alt="NC"
-						className="h-14 lg:h-16"
+						className="w-16 h-16"
 					/>
 				</NavLink>
 				<div className="flex hidden justify-center lg:flex">
@@ -86,6 +86,7 @@ const Navbar = () => {
 						size={30}
 						toggled={burgerOpen}
 						toggle={setBurgerOpen}
+						label="Show navigation menu"
 					/>
 				</div>
 			</div>

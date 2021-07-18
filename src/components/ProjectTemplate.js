@@ -46,30 +46,30 @@ const ProjectTemplate = ({
 			</h2>
 			{externalLinks}
 			<div className="flex flex-col gap-10 lg:gap-20">
-				<h4 className="text-2xl font-bold md:text-3xl lg:text-4xl">
+				<h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
 					<span>
 						<OverviewSvg className="inline mr-4 w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-16 lg:h-16" />
 					</span>
 					Overview
-				</h4>
+				</h3>
 				<div className="flex flex-col gap-6 md:text-xl lg:gap-12 xl:text-2xl">
 					{overview}
 				</div>
-				<h4 className="text-2xl font-bold md:text-3xl lg:text-4xl">
+				<h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
 					<span>
 						<ApproachSvg className="inline mr-4 w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-16 lg:h-16" />
 					</span>
 					Approach
-				</h4>
+				</h3>
 				<div className="flex flex-col gap-6 md:text-xl xl:text-2xl">
 					{approach}
 				</div>
-				<h4 className="text-2xl font-bold md:text-3xl lg:text-4xl">
+				<h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
 					<span>
 						<ChallengeSvg className="inline mr-4 w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-16 lg:h-16" />
 					</span>
 					Challenges
-				</h4>
+				</h3>
 				<ul className="flex flex-col gap-6 md:text-xl lg:gap-12 xl:text-2xl">
 					{challenges}
 				</ul>
