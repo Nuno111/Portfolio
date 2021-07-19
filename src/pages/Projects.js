@@ -18,9 +18,7 @@ const Projects = () => {
 					enterFrom="-translate-y-40 opacity-0 ease-in-out"
 					enterTo="opacity-100 translate-y-0 ease-in-out"
 				>
-					<h2 className="text-4xl font-bold md:text-5xl">
-						Projects
-					</h2>
+					<h2 className="text-4xl font-bold md:text-5xl">Projects</h2>
 				</Transition.Child>
 				<Transition.Child
 					enter="transform transition-all duration-1000 ease-in-out"
@@ -40,7 +38,7 @@ const Projects = () => {
 							title="Automated Calories Tracker"
 							img={automatedCaloriesTracker}
 							alt="Macronutriens table on a google spreadsheet"
-							description="Imports macronutrients data from MyFitnessPal onto Google Spreadsheet"
+							description="Exports macronutrients data from MyFitnessPal onto Google Spreadsheet"
 							projectPath="/projects/AutomatedCaloriesTracker"
 						/>
 						<ProjectCard
@@ -53,9 +51,8 @@ const Projects = () => {
 					</ul>
 				</Transition.Child>
 				<p className="text-2xl md:text-4xl">
-					For a full list of all my projects
-					checkout my Github account on the link
-					below.
+					For a full list of all my projects checkout my Github
+					account on the link below.
 				</p>
 				<a
 					target="_blank"
