@@ -45,7 +45,7 @@ const SampleProject = () => {
 					</p>
 				</div>
 			</div>
-			<div className="flex flex-col items-center justify-center pt-8 md:flex-row">
+			<div className="flex flex-col items-center justify-center pt-8 md:flex-row lg:gap-16">
 				<Link
 					className="flex-center flex justify-center"
 					to="/projects"
