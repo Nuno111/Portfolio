@@ -2,3 +2,7 @@ figure out image contrast/greyscale/etc in darkmode
 manifest?
 robots?
 tests?
+A minimum of 18px font size
+Line spacing of 1.6
+#333 for color or thereabouts
+Limit your lines to a width of 700px
