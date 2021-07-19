@@ -2,6 +2,7 @@ import ThemeToggler from "./ThemeToggler";
 import { NavLink } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 import { HashLink } from "react-router-hash-link";
+import helpers from "../utils/helpers";
 
 const BurgerMenu = ({
 	onTogglerClick,
@@ -30,7 +31,14 @@ const BurgerMenu = ({
 						to="/"
 						className="dark:border-darkTxtPrimary
 						border-lightTxtPrimary border-b-2"
-						onClick={toggleBurger}
+						onClick={() => {
+							toggleBurger();
+							helpers.trackEvent(
+								"Link",
+								"Home",
+								"From Burger"
+							);
+						}}
 					>
 						Home
 					</NavLink>
@@ -42,7 +50,14 @@ const BurgerMenu = ({
 						to="/projects"
 						className="dark:border-darkTxtPrimary
 						border-lightTxtPrimary border-b-2"
-						onClick={toggleBurger}
+						onClick={() => {
+							toggleBurger();
+							helpers.trackEvent(
+								"Link",
+								"Projects",
+								"From Burger"
+							);
+						}}
 					>
 						Projects
 					</NavLink>
@@ -53,7 +68,14 @@ const BurgerMenu = ({
 						to="/#contact"
 						className="dark:border-darkTxtPrimary
 						border-lightTxtPrimary border-b-2"
-						onClick={toggleBurger}
+						onClick={() => {
+							toggleBurger();
+							helpers.trackEvent(
+								"Link",
+								"Contact",
+								"From Burger"
+							);
+						}}
 					>
 						Contact
 					</HashLink>

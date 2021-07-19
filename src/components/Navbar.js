@@ -36,9 +36,17 @@ const Navbar = () => {
 			className="dark:bg-darkBgSecondary
 			py-2 font-bolg flex flex-col items-center justify-center bg-lightBgSecondary shadow-lg lg:py-4"
 		>
-			{/* Change border from navbar to shadow box? need to test and compare*/}
 			<div className="container flex items-center justify-between justify-center lg:grid lg:grid-cols-3">
-				<NavLink to="/">
+				<NavLink
+					to="/"
+					onClick={() =>
+						helpers.trackEvent(
+							"Link",
+							"Home",
+							"From Logo"
+						)
+					}
+				>
 					<img
 						src={darkMode ? logo : logoLight}
 						alt="NC"
@@ -61,6 +69,13 @@ const Navbar = () => {
 							exact
 							to="/"
 							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+							onClick={() =>
+								helpers.trackEvent(
+									"Link",
+									"Home",
+									"From Navbar"
+								)
+							}
 						>
 							Home
 						</NavLink>
@@ -71,6 +86,13 @@ const Navbar = () => {
 							exact
 							to="/projects"
 							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+							onClick={() =>
+								helpers.trackEvent(
+									"Link",
+									"Projects",
+									"From Navbar"
+								)
+							}
 						>
 							Projects
 						</NavLink>
@@ -80,6 +102,13 @@ const Navbar = () => {
 							smooth
 							to="/#contact"
 							className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+							onClick={() =>
+								helpers.trackEvent(
+									"Link",
+									"Contact",
+									"From Navbar"
+								)
+							}
 						>
 							Contact
 						</HashLink>

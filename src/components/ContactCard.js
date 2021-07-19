@@ -1,3 +1,5 @@
+import helpers from "../utils/helpers";
+
 const ContactCard = ({ href, svg, title, content }) => {
 	return (
 		<li className="group flex flex-col gap-4 items-center justify-center animate-bounce">
@@ -6,6 +8,13 @@ const ContactCard = ({ href, svg, title, content }) => {
 				target="_blank"
 				rel="noreferrer"
 				className="flex flex-col gap-4 items-center justify-center"
+				onClick={() =>
+					helpers.trackEvent(
+						"Link",
+						title,
+						"From Contact"
+					)
+				}
 			>
 				{svg}
 				<h4 className="text-xl sm:text-2xl lg:text-3xl">

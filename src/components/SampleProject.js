@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import sampleProject from "../assets/colourThemAll.png";
 import Button from "../components/Button";
 import Image from "./Image";
+import helpers from "../utils/helpers";
 
 const SampleProject = () => {
 	return (
@@ -61,6 +62,13 @@ const SampleProject = () => {
 				<Link
 					className="flex-center flex justify-center"
 					to="/projects"
+					onClick={() =>
+						helpers.trackEvent(
+							"Link",
+							"Projects",
+							"From SampleProject"
+						)
+					}
 				>
 					<Button text="Other projects" />
 				</Link>
@@ -69,6 +77,13 @@ const SampleProject = () => {
 					rel="noreferrer"
 					href="https://upbeat-hopper-d62a44.netlify.app/"
 					className="flex-center flex justify-center"
+					onClick={() =>
+						helpers.trackEvent(
+							"Link",
+							"Colour Them All",
+							"From SampleProjects"
+						)
+					}
 				>
 					<Button
 						text="Play it live"

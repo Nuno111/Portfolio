@@ -4,6 +4,7 @@ import { ReactComponent as InstagramSvg } from "../assets/instagram.svg";
 import { ReactComponent as FacebookSvg } from "../assets/facebook.svg";
 import { ReactComponent as GithubSvg } from "../assets/github.svg";
 import { ReactComponent as LinkedinSvg } from "../assets/linkedin.svg";
+import helpers from "../utils/helpers";
 
 const Footer = () => {
 	return (
@@ -17,12 +18,17 @@ const Footer = () => {
 					<Link
 						to="/"
 						className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
-						onClick={() =>
+						onClick={() => {
 							window.scrollTo({
 								top: 0,
 								behavior: "smooth",
-							})
-						}
+							});
+							helpers.trackEvent(
+								"Link",
+								"Home",
+								"From Footer"
+							);
+						}}
 					>
 						Home
 					</Link>
@@ -31,6 +37,13 @@ const Footer = () => {
 					<Link
 						to="/projects"
 						className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+						onClick={() =>
+							helpers.trackEvent(
+								"Link",
+								"projects",
+								"From Footer"
+							)
+						}
 					>
 						Projects
 					</Link>
@@ -40,6 +53,13 @@ const Footer = () => {
 						smooth
 						to="/#contact"
 						className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+						onClick={() =>
+							helpers.trackEvent(
+								"Link",
+								"Contact",
+								"From Footer"
+							)
+						}
 					>
 						Contact
 					</HashLink>
