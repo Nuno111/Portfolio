@@ -19,7 +19,7 @@ const HomeCards = () => {
 	return (
 		<section className="container">
 			<h3 className="py-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-28">
-				Methodologies I use for Single Page
+				Methodologies I use for Single-Page
 				Applications (SPAs)
 			</h3>
 			<ul className="grid gap-16 grid-cols-1 xl:grid-cols-3">
@@ -30,7 +30,7 @@ const HomeCards = () => {
 				/>
 				<HomeCard
 					title="Performant"
-					content="To accomplish SPAs performance I use a different tool-set of React Hooks for each project based on its complexities and optimize all files for production."
+					content="To accomplish SPAs performance I use a different tool-set of React Hooks for each project based on its complexities and optimize all sources for production."
 					icon={performant}
 				/>
 				<HomeCard

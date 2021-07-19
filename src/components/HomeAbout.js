@@ -31,7 +31,7 @@ const HomeAbout = () => {
 					svg={what}
 					title="What I Do"
 					content1="My main focus is creating SPAs as a front-end web developer,
-					but also enjoy exploring other fields such as game development,
+					but I also enjoy exploring other fields such as game development,
 					automation of repetitive tasks and working with systems."
 					path="/projects"
 					linkTxt="Projects"
