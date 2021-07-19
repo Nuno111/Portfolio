@@ -56,8 +56,8 @@ const SampleProject = () => {
 				</div>
 			</div>
 			<div
-				className="lg:py-8
-				items-center flex flex-col justify-center py-2 md:flex-row"
+				className="
+				items-center flex flex-col justify-center pt-8 md:flex-row"
 			>
 				<Link
 					className="flex-center flex justify-center"
