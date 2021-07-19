@@ -11,7 +11,7 @@ const Projects = () => {
 			<Transition
 				appear={true}
 				show={true}
-				className="flex flex-col gap-12 items-center justify-center py-12 md:gap-16"
+				className="flex flex-col gap-12 items-center justify-center pt-12 md:gap-16"
 			>
 				<Transition.Child
 					enter="transform transition-all duration-1000 ease-in-out"
