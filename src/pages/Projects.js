@@ -50,7 +50,7 @@ const Projects = () => {
 						/>
 					</ul>
 				</Transition.Child>
-				<p className="text-2xl md:text-4xl">
+				<p className="text-xl xl:text-3xl">
 					For a full list of all my projects checkout my Github
 					account on the link below.
 				</p>

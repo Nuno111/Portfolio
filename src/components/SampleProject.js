@@ -7,7 +7,7 @@ import helpers from "../utils/helpers";
 const SampleProject = () => {
 	return (
 		<section className="container">
-			<h3 className="pt-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:pt-28">
+			<h3 className="pt-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-28">
 				Sample Project - Colour Them All
 			</h3>
 			<div className="grid grid-cols-1 xl:gap-12 xl:grid-cols-2">
