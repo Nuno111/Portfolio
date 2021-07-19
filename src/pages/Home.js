@@ -1,6 +1,6 @@
 import { ReactComponent as HeroSvg } from "../assets/hero.svg";
 import { ReactComponent as ArrowdownSvg } from "../assets/arrowdown.svg";
-import HomeCards from "../components/HomeCards";
+import Methodologies from "../components/Methodologies";
 import TechStack from "../components/TechStack";
 import SampleProject from "../components/SampleProject";
 import Contact from "../components/Contact";
@@ -55,7 +55,7 @@ const Home = () => {
 				</Transition.Child>
 			</main>
 			<HomeAbout />
-			<HomeCards />
+			<Methodologies />
 			<TechStack />
 			<SampleProject />
 			<Contact />
