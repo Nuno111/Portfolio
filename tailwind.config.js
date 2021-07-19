@@ -1,6 +1,6 @@
 module.exports = {
 	purge: {
-		enabled: false,
+		enabled: process.env.NODE_ENV === "production",
 		content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
 	},
 	darkMode: "class", // or 'media' or 'class'
@@ -21,9 +21,6 @@ module.exports = {
 				padding: {
 					DEFAULT: "1rem",
 				},
-			},
-			fontFamily: {
-				main: ["Titillium\\ Web", "sans-serif"],
 			},
 			height: {
 				"5v": "5vh",
