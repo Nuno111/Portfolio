@@ -24,10 +24,10 @@ const Contact = () => {
 		>
 			{/*https://rossellafer.github.io/fcc-portfolio/#portfolio has  greadt idea on contact page*/}
 			{/*Gradiant buttons!*/}
-			<h3 className="py-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-20">
+			<h3 className="py-12 text-center text-2xl font-bold md:text-3xl lg:text-4xl lg:py-20">
 				Get In Touch
 			</h3>
-			<p className="text-xl sm:text-2xl lg:text-3xl">
+			<p className="text-xl md:text-2xl lg:text-3xl">
 				I'd love to hear you from, whether you want
 				to discuss new opportunities, talk about my
 				projects, give some feedback or just want to

@@ -18,9 +18,8 @@ const HomeCards = () => {
 
 	return (
 		<section className="container">
-			<h3 className="py-12 text-center text-2xl font-bold md:text-3xl md:text-4xl lg:py-28">
-				Methodologies I use for Single-Page
-				Applications (SPAs)
+			<h3 className="py-12 text-center text-2xl font-bold md:text-3xl lg:text-4xl lg:py-28">
+				Methodologies I use for Single-Page Applications (SPAs)
 			</h3>
 			<ul className="grid gap-16 grid-cols-1 xl:grid-cols-3">
 				<HomeCard

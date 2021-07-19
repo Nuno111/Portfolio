@@ -17,7 +17,7 @@ const HomeCard = ({ title, content, icon, secondWord }) => {
 			rounded-lg gap-6 items-center p-6 shadow-2xl transform hover:scale-110 duration-300 ease-linear"
 		>
 			{icon}
-			<h3 className="text-2xl font-bold lg:text-3xl">
+			<h3 className="text-xl font-bold md:text-2xl lg:text-3xl">
 				<span className="dark:text-darkTxtPrimary text-lightTxtPrimary">
 					{title[0]}
 				</span>

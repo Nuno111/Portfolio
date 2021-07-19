@@ -12,10 +12,7 @@ import { ReactComponent as ReactSvg } from "../assets/react.svg";
 const TechStack = () => {
 	return (
 		<section className="container">
-			<h3
-				className="py-12 text-center text-2xl font-bold
-				md:text-3xl lg:py-28 lg:text-4xl"
-			>
+			<h3 className="py-12 text-center text-2xl md:text-3xl font-bold lg:py-28 lg:text-4xl">
 				Tech Stack
 			</h3>
 			<ul className="grid gap-10 grid-cols-3 text-sm sm:grid-cols-5 lg:text-xl xl:grid-cols-10">
