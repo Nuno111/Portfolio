@@ -27,7 +27,7 @@ const Contact = () => {
 			<h3 className="py-12 text-center text-2xl font-bold md:text-3xl lg:py-20 lg:text-4xl">
 				Get In Touch
 			</h3>
-			<p className="text-xl sm:px-4 md:text-2xl lg:px-8 lg:text-3xl xl:px-14">
+			<p className="text-center text-xl leading-loose sm:px-4 md:text-2xl lg:px-8 lg:text-3xl xl:px-20">
 				I'd love to hear you from, whether you want to discuss new
 				opportunities, talk about my projects, give some feedback or
 				just want to have a chat.
