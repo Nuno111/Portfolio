@@ -13,8 +13,8 @@ const TechStack = () => {
 	return (
 		<section className="container">
 			<h3
-				className="text-2lx py-12 text-center text-2xl font-bold
-				sm:text-3xl md:text-4xl lg:py-28"
+				className="py-12 text-center text-2xl font-bold
+				md:text-3xl lg:py-28 lg:text-4xl"
 			>
 				Tech Stack
 			</h3>
