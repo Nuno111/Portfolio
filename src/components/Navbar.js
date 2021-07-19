@@ -33,7 +33,7 @@ const Navbar = () => {
 		<header>
 			<nav
 				className="dark:bg-darkBgSecondary
-			py-2 font-bolg flex flex-col items-center justify-center bg-lightBgSecondary shadow-lg lg:py-4"
+			py-2 font-bolg flex flex-col items-center justify-center bg-lightBgSecondary shadow-lg"
 			>
 				<div className="container flex items-center justify-between justify-center lg:grid lg:grid-cols-3">
 					<NavLink
@@ -45,7 +45,7 @@ const Navbar = () => {
 						<img
 							src={darkMode ? logo : logoLight}
 							alt="NC"
-							className="w-16 h-16"
+							className="w-12 h-12"
 							width="128"
 							height="128"
 						/>
@@ -57,7 +57,7 @@ const Navbar = () => {
 							darkMode={darkMode}
 						/>
 					</div>
-					<ul className="flex hidden gap-8 items-center justify-end md:text-2xl lg:flex">
+					<ul className="flex hidden gap-8 items-center justify-end md:text-xl lg:flex">
 						<li>
 							<NavLink
 								activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
