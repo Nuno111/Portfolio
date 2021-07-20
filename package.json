@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "clsx": "^1.1.1",
     "hamburger-react": "^2.4.1",
     "prettier": "^2.3.2",
     "prettier-plugin-tailwind": "^2.2.12",
