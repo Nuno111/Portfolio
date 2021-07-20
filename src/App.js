@@ -5,17 +5,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LoadingPage from "./components/LoadingPage";
-
-const Projects = React.lazy(() => import("./pages/Projects"));
-
-const About = React.lazy(() => import("./pages/About"));
-
-const Cub3D = React.lazy(() => import("./pages/Cub3D"));
-
-const AutomatedCaloriesTracker = React.lazy(() =>
-	import("./pages/AutomatedCaloriesTracker")
-);
-const FtPrintf = React.lazy(() => import("./pages/FtPrintf"));
+import Lazy from "./components/Lazy";
 
 function App() {
 	/* Init for google analytics */
@@ -39,19 +29,19 @@ function App() {
 			</Route>
 			<Suspense fallback={<LoadingPage />}>
 				<Route path="/about">
-					<About />
+					<Lazy.About />
 				</Route>
 				<Route exact path="/projects">
-					<Projects />
+					<Lazy.Projects />
 				</Route>
 				<Route path="/projects/cub3D">
-					<Cub3D />
+					<Lazy.Cub3D />
 				</Route>
 				<Route path="/projects/FtPrintf">
-					<FtPrintf />
+					<Lazy.FtPrintf />
 				</Route>
 				<Route path="/projects/AutomatedCaloriesTracker">
-					<AutomatedCaloriesTracker />
+					<Lazy.AutomatedCaloriesTracker />
 				</Route>
 			</Suspense>
 			<Footer />

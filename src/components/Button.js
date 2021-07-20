@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-const Button = ({ text }) => {
+const Button = ({ text, extraClasses }) => {
 	return (
 		<button
 			className={clsx(
@@ -9,7 +9,8 @@ const Button = ({ text }) => {
 				"text-lightTxtPrimary border-lightTxtPrimary",
 				"m-4 px-4 py-2 whitespace-nowrap text-xl lg:px-8 lg:py-4",
 				"font-bold border-2 border-solid rounded-full ",
-				"transform hover:scale-110 transition-transform duration-300 ease-linear"
+				"transform hover:scale-110 transition-transform duration-300 ease-linear",
+				extraClasses
 			)}
 			type="button"
 		>
