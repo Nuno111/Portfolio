@@ -1,4 +1,4 @@
-const Button = ({ text, extraClasses }) => {
+const Button = ({ text }) => {
   return (
     <button
       className={`
@@ -7,9 +7,7 @@ const Button = ({ text, extraClasses }) => {
         text-lightTxtPrimary border-lightTxtPrimary
         m-4 px-4 py-2 whitespace-nowrap text-xl lg:px-8 lg:py-4
         font-bold border-2 border-solid rounded-full
-        transform hover:scale-110 transition-transform duration-300 ease-linear
-        ${extraClasses}
-      `}
+        transform hover:scale-110 transition-transform duration-300 ease-linear`}
       type="button"
     >
       {text}
