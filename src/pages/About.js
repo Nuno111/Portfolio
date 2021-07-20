@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="container flex flex-col gap-10 items-center justify-center h-90v">
+    <section
+      className={`container flex flex-col gap-10 
+      items-center justify-center h-90v`}
+    >
       <h1 className="txtPrimary text-4xl">
         Under construction, please come back later =)
       </h1>

@@ -4,7 +4,18 @@ import { Transition } from "@headlessui/react";
 import { HashLink } from "react-router-hash-link";
 import helpers from "../utils/helpers";
 
-const BurgerMenu = ({ onTogglerClick, darkMode, burgerOpen, toggleBurger }) => {
+const BurgerMenu = ({
+  onTogglerClick,
+  darkMode,
+  burgerOpen,
+  toggleBurger,
+}) => {
+  const linkClass =
+    "dark:border-darkTxtPrimary border-lightTxtPrimary border-b-2";
+
+  const linkActiveClass =
+    "text-lightTxtPrimary dark:text-darkTxtPrimary";
+
   return (
     <Transition
       show={burgerOpen}
@@ -20,15 +31,17 @@ const BurgerMenu = ({ onTogglerClick, darkMode, burgerOpen, toggleBurger }) => {
       <ul className="flex flex-col items-center justify-center">
         <li className="flex-1 py-2">
           <NavLink
-            activeClassName="text-lightTxtPrimary
-						dark:text-darkTxtPrimary"
+            activeClassName={linkActiveClass}
             exact
             to="/"
-            className="dark:border-darkTxtPrimary
-						border-lightTxtPrimary border-b-2"
+            className={linkClass}
             onClick={() => {
               toggleBurger();
-              helpers.trackEvent("Link", "Home", "From Burger");
+              helpers.trackEvent(
+                "Link",
+                "Home",
+                "From Burger"
+              );
             }}
           >
             Home
@@ -36,14 +49,16 @@ const BurgerMenu = ({ onTogglerClick, darkMode, burgerOpen, toggleBurger }) => {
         </li>
         <li className="flex-1 py-2">
           <NavLink
-            activeClassName="text-lightTxtPrimary
-						dark:text-darkTxtPrimary"
+            activeClassName={linkActiveClass}
             to="/projects"
-            className="dark:border-darkTxtPrimary
-						border-lightTxtPrimary border-b-2"
+            className={linkClass}
             onClick={() => {
               toggleBurger();
-              helpers.trackEvent("Link", "Projects", "From Burger");
+              helpers.trackEvent(
+                "Link",
+                "Projects",
+                "From Burger"
+              );
             }}
           >
             Projects
@@ -53,18 +68,27 @@ const BurgerMenu = ({ onTogglerClick, darkMode, burgerOpen, toggleBurger }) => {
           <HashLink
             smooth
             to="/#contact"
-            className="dark:border-darkTxtPrimary
-						border-lightTxtPrimary border-b-2"
+            className={linkClass}
             onClick={() => {
               toggleBurger();
-              helpers.trackEvent("Link", "Contact", "From Burger");
+              helpers.trackEvent(
+                "Link",
+                "Contact",
+                "From Burger"
+              );
             }}
           >
             Contact
           </HashLink>
         </li>
-        <li className="flex flex-1 py-2" onClick={toggleBurger}>
-          <ThemeToggler onTogglerClick={onTogglerClick} darkMode={darkMode} />
+        <li
+          className="flex flex-1 py-2"
+          onClick={toggleBurger}
+        >
+          <ThemeToggler
+            onTogglerClick={onTogglerClick}
+            darkMode={darkMode}
+          />
         </li>
       </ul>
     </Transition>

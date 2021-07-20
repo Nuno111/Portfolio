@@ -2,10 +2,13 @@ import { ReactComponent as SuccessSvg } from "../assets/success.svg";
 import { ReactComponent as WaitingSvg } from "../assets/waiting.svg";
 
 const ChallengeTemplate = ({ title, content, success }) => {
+  const svgClass = `inline mr-4 w-8 h-8 dark:text-darkTxtPrimary 
+    text-lightTxtPrimary fill-current lg:w-10 lg:h-10`;
+
   const svg = success ? (
-    <SuccessSvg className="inline mr-4 w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-10 lg:h-10" />
+    <SuccessSvg className={svgClass} />
   ) : (
-    <WaitingSvg className="inline mr-4 w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-10 lg:h-10" />
+    <WaitingSvg className={svgClass} />
   );
 
   return (

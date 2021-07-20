@@ -1,6 +1,11 @@
 import { Fragment } from "react";
 
-const MethodologiesCard = ({ title, content, icon, secondWord }) => {
+const MethodologiesCard = ({
+  title,
+  content,
+  icon,
+  secondWord,
+}) => {
   const capitalizeSecondWord = secondWord ? (
     <Fragment>
       <span className="dark:text-darkTxtPrimary text-lightTxtPrimary">
@@ -12,9 +17,9 @@ const MethodologiesCard = ({ title, content, icon, secondWord }) => {
 
   return (
     <li
-      className="flex
-			flex-col dark:bg-darkBgSecondary
-			rounded-lg gap-6 items-center p-6 shadow-2xl transform hover:scale-110 duration-300 ease-linear"
+      className={`flex flex-col dark:bg-darkBgSecondary rounded-lg gap-6
+      items-center p-6 shadow-2xl transform hover:scale-110
+      duration-300 ease-linear`}
     >
       {icon}
       <h3 className="text-xl font-bold md:text-2xl lg:text-3xl">

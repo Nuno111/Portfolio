@@ -7,7 +7,6 @@ import BurgerMenu from "./BurgerMenu";
 import ThemeToggler from "./ThemeToggler";
 import logo from "../assets/logo.png";
 import logoLight from "../assets/logolight.png";
-import clsx from "clsx";
 
 const Navbar = () => {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -27,26 +26,30 @@ const Navbar = () => {
   useEffect(() => {
     const root = window.document.documentElement;
 
-    darkMode ? root.classList.add("dark") : root.classList.remove("dark");
+    darkMode
+      ? root.classList.add("dark")
+      : root.classList.remove("dark");
   }, [darkMode]);
 
   return (
     <header>
       <nav
-        className={clsx(
-          "font-bolg flex flex-col items-center justify-center",
-          "py-2 dark:bg-darkBgSecondary bg-lightBgSecondary shadow-lg"
-        )}
+        className={`font-bolg flex flex-col items-center justify-center py-2
+        dark:bg-darkBgSecondary bg-lightBgSecondary shadow-lg`}
       >
         <div
-          className={clsx(
-            "container justify-between justify-center",
-            "flex items-center lg:grid lg:grid-cols-3"
-          )}
+          className={`container justify-between justify-center flex
+          items-center lg:grid lg:grid-cols-3`}
         >
           <NavLink
             to="/"
-            onClick={() => helpers.trackEvent("Link", "Home", "From Logo")}
+            onClick={() =>
+              helpers.trackEvent(
+                "Link",
+                "Home",
+                "From Logo"
+              )
+            }
           >
             <img
               src={darkMode ? logo : logoLight}
@@ -63,15 +66,23 @@ const Navbar = () => {
               darkMode={darkMode}
             />
           </div>
-          <ul className="flex hidden gap-8 items-center justify-end md:text-xl lg:flex">
+          <ul
+            className={`flex hidden gap-8 items-center justify-end
+            md:text-xl lg:flex`}
+          >
             <li>
               <NavLink
                 activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
                 exact
                 to="/"
-                className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+                className={`dark:hover:text-darkTxtPrimary
+                hover:text-lightTxtPrimary`}
                 onClick={() =>
-                  helpers.trackEvent("Link", "Home", "From Navbar")
+                  helpers.trackEvent(
+                    "Link",
+                    "Home",
+                    "From Navbar"
+                  )
                 }
               >
                 Home
@@ -82,9 +93,14 @@ const Navbar = () => {
                 activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
                 exact
                 to="/projects"
-                className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+                className={`dark:hover:text-darkTxtPrimary 
+                hover:text-lightTxtPrimary`}
                 onClick={() =>
-                  helpers.trackEvent("Link", "Projects", "From Navbar")
+                  helpers.trackEvent(
+                    "Link",
+                    "Projects",
+                    "From Navbar"
+                  )
                 }
               >
                 Projects
@@ -94,9 +110,14 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#contact"
-                className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+                className={`dark:hover:text-darkTxtPrimary
+                hover:text-lightTxtPrimary`}
                 onClick={() =>
-                  helpers.trackEvent("Link", "Contact", "From Navbar")
+                  helpers.trackEvent(
+                    "Link",
+                    "Contact",
+                    "From Navbar"
+                  )
                 }
               >
                 Contact

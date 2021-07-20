@@ -1,13 +1,20 @@
 import { Link } from "react-router-dom";
 
-const Image = ({ src, alt, linkPath, externalLink, dynamicClasses }) => {
+const Image = ({
+  src,
+  alt,
+  linkPath,
+  externalLink,
+  dynamicClasses,
+}) => {
   const extraClasses = dynamicClasses ? dynamicClasses : "";
 
   const img = (
     <img
       src={src}
       alt={alt}
-      className={`${extraClasses} transform hover:scale-110 duration-500 ease-in-out absolute w-full h-full object-cover`}
+      className={`${extraClasses} transform hover:scale-110 duration-500
+      ease-in-out absolute w-full h-full object-cover`}
     />
   );
 

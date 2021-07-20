@@ -14,6 +14,12 @@ const ProjectTemplate = ({
   githubPath,
   livePath,
 }) => {
+  const largeSvg = `inline mr-4 w-12 h-12 dark:text-darkTxtPrimary
+  text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
+
+  const smallSvg = `dark:hover:text-darkTxtPrimary w-8 h-8 
+  hover:text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
+
   const externalLinks = (
     <div className="flex gap-4 mb-6 lg:my-0">
       {githubPath && (
@@ -23,7 +29,7 @@ const ProjectTemplate = ({
           href={githubPath}
           className="flex items-center justify-center mx-auto"
         >
-          <GithubSvg className="dark:hover:text-darkTxtPrimary w-8 h-8 hover:text-lightTxtPrimary fill-current lg:w-16 lg:h-16" />
+          <GithubSvg className={smallSvg} />
         </a>
       )}
       {livePath && (
@@ -33,7 +39,7 @@ const ProjectTemplate = ({
           href={livePath}
           className="flex-center flex justify-center"
         >
-          <LiveSvg className="dark:hover:text-darkTxtPrimary w-8 h-8 hover:text-lightTxtPrimary fill-current" />
+          <LiveSvg className={smallSvg} />
         </a>
       )}
     </div>
@@ -48,7 +54,7 @@ const ProjectTemplate = ({
       <div className="flex flex-col gap-10 lg:gap-20">
         <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
           <span>
-            <OverviewSvg className="inline mr-4 w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-16 lg:h-16" />
+            <OverviewSvg className={largeSvg} />
           </span>
           Overview
         </h3>
@@ -57,7 +63,7 @@ const ProjectTemplate = ({
         </div>
         <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
           <span>
-            <ApproachSvg className="inline mr-4 w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-16 lg:h-16" />
+            <ApproachSvg className={largeSvg} />
           </span>
           Approach
         </h3>
@@ -66,7 +72,7 @@ const ProjectTemplate = ({
         </div>
         <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
           <span>
-            <ChallengeSvg className="inline mr-4 w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-16 lg:h-16" />
+            <ChallengeSvg className={largeSvg} />
           </span>
           Challenges
         </h3>

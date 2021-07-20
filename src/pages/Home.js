@@ -11,7 +11,10 @@ import { HashLink } from "react-router-hash-link";
 const Home = () => {
   return (
     <Transition appear={true} show={true}>
-      <main className="container flex flex-col gap-4 items-center justify-between py-6 h-90v font-bold md:gap-8">
+      <main
+        className={`container flex flex-col gap-4 items-center
+        justify-between py-6 h-90v font-bold md:gap-8`}
+      >
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
           enterFrom="-translate-y-40 opacity-0 ease-in-out"
@@ -33,8 +36,11 @@ const Home = () => {
           enterTo="opacity-100 translate-x-0 ease-in-out"
         >
           <h1 className="text-center text-2xl md:text-3xl lg:text-4xl">
-            <span className="block pb-2">Front-End web developer.</span>I work
-            with React to create modern single-page web applications.
+            <span className="block pb-2">
+              Front-End web developer.
+            </span>
+            I work with React to create modern single-page
+            web applications.
           </h1>
         </Transition.Child>
         <Transition.Child
@@ -47,7 +53,11 @@ const Home = () => {
             to="/#about"
             aria-label="Scroll down to about section"
           >
-            <ArrowdownSvg className="inline w-16 h-16 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current transform hover:scale-125 duration-500" />
+            <ArrowdownSvg
+              className={`inline w-16 h-16
+            dark:text-darkTxtPrimary text-lightTxtPrimary fill-current 
+            transform hover:scale-125 duration-500`}
+            />
           </HashLink>
         </Transition.Child>
       </main>

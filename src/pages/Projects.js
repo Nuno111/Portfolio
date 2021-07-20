@@ -11,14 +11,17 @@ const Projects = () => {
       <Transition
         appear={true}
         show={true}
-        className="flex flex-col gap-12 items-center justify-center pt-12 md:gap-16"
+        className={`flex flex-col gap-12 items-center 
+        justify-center pt-12 md:gap-16`}
       >
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
           enterFrom="-translate-y-40 opacity-0 ease-in-out"
           enterTo="opacity-100 translate-y-0 ease-in-out"
         >
-          <h2 className="text-4xl font-bold md:text-5xl">Projects</h2>
+          <h2 className="text-4xl font-bold md:text-5xl">
+            Projects
+          </h2>
         </Transition.Child>
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
@@ -38,7 +41,7 @@ const Projects = () => {
               title="Automated Calories Tracker"
               img={automatedCaloriesTracker}
               alt="Macronutriens table on a google spreadsheet"
-              description="Exports macronutrients data from MyFitnessPal onto Google Spreadsheet"
+              description="Exports data from MyFitnessPal into a Google Spreadsheet"
               projectPath="/projects/AutomatedCaloriesTracker"
             />
             <ProjectCard
@@ -51,10 +54,14 @@ const Projects = () => {
           </ul>
         </Transition.Child>
         <p className="text-xl xl:text-3xl">
-          For a full list of all my projects checkout my Github account on the
-          link below.
+          For a full list of all my projects checkout my
+          Github account on the link below.
         </p>
-        <a target="_blank" rel="noreferrer" href="https://github.com/Nuno111">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/Nuno111"
+        >
           <Button text="Github" />
         </a>
       </Transition>

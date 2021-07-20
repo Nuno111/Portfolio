@@ -7,11 +7,14 @@ import { ReactComponent as LinkedinSvg } from "../assets/linkedin.svg";
 import helpers from "../utils/helpers";
 
 const Footer = () => {
+  const svgClass =
+    "w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current";
   return (
     <footer
-      className="flex gap-2
-			lg:grid flex-col items-center justify-center mt-10 font-bold
-			dark:bg-darkBgSecondary bg-lightBgSecondary border-t-2 border-solid dark:border-darkTxtPrimary border-lightTxtPrimary lg:gap-8 lg:grid-cols-3 lg:mt-20"
+      className={`flex flex-col gap-2 items-center justify-center mt-10
+        font-bold dark:bg-darkBgSecondary bg-lightBgSecondary border-t-2
+        border-solid dark:border-darkTxtPrimary border-lightTxtPrimary
+        lg:grid lg:gap-8 lg:grid-cols-3 lg:mt-20`}
     >
       <ul className="flex flex-col gap-2 items-center my-6">
         <li>
@@ -23,7 +26,11 @@ const Footer = () => {
                 top: 0,
                 behavior: "smooth",
               });
-              helpers.trackEvent("Link", "Home", "From Footer");
+              helpers.trackEvent(
+                "Link",
+                "Home",
+                "From Footer"
+              );
             }}
           >
             Home
@@ -34,7 +41,11 @@ const Footer = () => {
             to="/projects"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
             onClick={() =>
-              helpers.trackEvent("Link", "projects", "From Footer")
+              helpers.trackEvent(
+                "Link",
+                "projects",
+                "From Footer"
+              )
             }
           >
             Projects
@@ -45,7 +56,13 @@ const Footer = () => {
             smooth
             to="/#contact"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
-            onClick={() => helpers.trackEvent("Link", "Contact", "From Footer")}
+            onClick={() =>
+              helpers.trackEvent(
+                "Link",
+                "Contact",
+                "From Footer"
+              )
+            }
           >
             Contact
           </HashLink>
@@ -53,8 +70,12 @@ const Footer = () => {
       </ul>
       <ul className="flex gap-8 items-center justify-center my-6">
         <li>
-          <a href="https://github.com/Nuno111" target="_blank" rel="noreferrer">
-            <GithubSvg className="w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+          <a
+            href="https://github.com/Nuno111"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GithubSvg className={svgClass} />
           </a>
         </li>
         <li>
@@ -63,7 +84,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <LinkedinSvg className="w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+            <LinkedinSvg className={svgClass} />
           </a>
         </li>
         <li>
@@ -72,7 +93,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <InstagramSvg className="w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+            <InstagramSvg className={svgClass} />
           </a>
         </li>
         <li>
@@ -81,7 +102,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FacebookSvg className="w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current" />
+            <FacebookSvg className={svgClass} />
           </a>
         </li>
       </ul>
