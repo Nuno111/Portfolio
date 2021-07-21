@@ -13,7 +13,7 @@ const Home = () => {
     <Transition appear={true} show={true}>
       <main
         className={`container flex flex-col gap-4 items-center
-        justify-between py-6 h-90v font-bold md:gap-8`}
+        justify-between py-6 hero-height font-bold md:gap-8`}
       >
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"

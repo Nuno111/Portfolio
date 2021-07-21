@@ -50,6 +50,23 @@ const BurgerMenu = ({
         <li className="flex-1 py-2">
           <NavLink
             activeClassName={linkActiveClass}
+            to="/About"
+            className={linkClass}
+            onClick={() => {
+              toggleBurger();
+              helpers.trackEvent(
+                "Link",
+                "About",
+                "From Burger"
+              );
+            }}
+          >
+           About 
+          </NavLink>
+        </li>
+        <li className="flex-1 py-2">
+          <NavLink
+            activeClassName={linkActiveClass}
             to="/projects"
             className={linkClass}
             onClick={() => {

@@ -92,6 +92,24 @@ const Navbar = () => {
               <NavLink
                 activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
                 exact
+                to="/about"
+                className={`dark:hover:text-darkTxtPrimary
+                hover:text-lightTxtPrimary`}
+                onClick={() =>
+                  helpers.trackEvent(
+                    "Link",
+                    "About",
+                    "From Navbar"
+                  )
+                }
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+                exact
                 to="/projects"
                 className={`dark:hover:text-darkTxtPrimary 
                 hover:text-lightTxtPrimary`}

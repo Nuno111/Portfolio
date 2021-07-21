@@ -2,10 +2,6 @@ figure out image contrast/greyscale/etc in darkmode
 manifest?
 robots?
 tests?
-A minimum of 18px font size
-Line spacing of 1.6
-#333 for color or thereabouts
-Limit your lines to a width of 700px
 resize colour them all png and make sure it's full quality
 Create touch icon
 Use a memorable logo as the touch icon so your website will make a good impression as a bookmark on mobile devices.

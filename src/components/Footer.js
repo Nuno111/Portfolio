@@ -38,12 +38,27 @@ const Footer = () => {
         </li>
         <li>
           <Link
+            to="/About"
+            className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+            onClick={() =>
+              helpers.trackEvent(
+                "Link",
+                "About",
+                "From Footer"
+              )
+            }
+          >
+            About 
+          </Link>
+        </li>
+        <li>
+          <Link
             to="/projects"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
             onClick={() =>
               helpers.trackEvent(
                 "Link",
-                "projects",
+                "About",
                 "From Footer"
               )
             }
@@ -64,7 +79,7 @@ const Footer = () => {
               )
             }
           >
-            Contact
+about            Contact
           </HashLink>
         </li>
       </ul>
