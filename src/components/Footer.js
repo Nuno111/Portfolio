@@ -79,7 +79,7 @@ const Footer = () => {
               )
             }
           >
-about            Contact
+            Contact
           </HashLink>
         </li>
       </ul>

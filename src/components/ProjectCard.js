@@ -27,7 +27,7 @@ const ProjectCard = ({
           {description}
         </p>
         <Link to={projectPath} className="self-center">
-          <Button text="View Project" />
+          <Button text="View Project" extraClasses="m-4"/>
         </Link>
       </div>
     </li>

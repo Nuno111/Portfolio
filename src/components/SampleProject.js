@@ -57,7 +57,7 @@ const SampleProject = () => {
       </div>
       <div
         className={`flex flex-col items-center justify-center
-        pt-8 md:flex-row lg:gap-16`}
+        pt-8 lg:pt-20 md:flex-row gap-8 lg:gap-16`}
       >
         <Link
           className="flex-center flex justify-center"

@@ -104,11 +104,8 @@ const Ft_Printf = () => {
         content="As with most projects at 42 you have the mandatory and
 				the bonus parts for each project.
 				For this project I decided the bonus wasn't worth doing, 
-				I understood and solved the problems with many flags and conversions
-				and felt this was enough to learn what I was supposed to with 
-				this project. Doing the bonus part would just make me use the 
-				same helper functions I had already created and adapt the
-				logic for each new conversion or flag."
+        since it just required us to do a few extra flags and conversions by
+        applying more or less the same logic as before."
       />
     </Fragment>
   );
