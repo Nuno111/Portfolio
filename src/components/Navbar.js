@@ -34,11 +34,11 @@ const Navbar = () => {
   return (
     <header>
       <nav
-        className={`font-bolg flex flex-col items-center justify-center py-2
+        className={`px-4 lg:px-10 font-bolg flex flex-col items-betwee justify-between py-2
         dark:bg-darkBgSecondary bg-lightBgSecondary shadow-lg`}
       >
         <div
-          className={`container justify-between justify-center flex
+          className={`justify-between justify-center flex
           items-center lg:grid lg:grid-cols-3`}
         >
           <NavLink
