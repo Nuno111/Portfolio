@@ -1,22 +1,32 @@
-import { HashLink } from "react-router-hash-link";
-import myself from "../assets/myself.jpg"
-import {ReactComponent as ArrowdownSvg} from "../assets/arrowdown.svg"
+import myself from "../assets/myself.jpg";
 import Button from "../components/Button";
 
 const About = () => {
   return (
     <main
       className={`container  
-      hero-height pt-4 md:gap-12 md:pt-0 md:grid md:grid-cols-2`}
+      hero-height pt-4 lg:gap-12 lg:pt-0 lg:grid lg:grid-cols-2`}
     >
-      <div className='h-1/2 md:h-full flex flex-col items-start justify-center gap-6'>
-        <h2 className="text-4xl font-bold md:text-5xl text-center md:text-left">Hi! Glad you're here.</h2>
-        <p className="text-xl xl:text-3xl text-center md:text-left">Please scroll down so you can 
-          read more about myself or download my CV for a quick TLDR.
-       </p>
-        <Button text="Download CV" extraClasses="m-0"/>
+      <div className="flex flex-col gap-6 items-center lg:items-start justify-center min-h-1/2 md:h-full">
+        <h2 className="text-center text-3xl font-bold xl:text-left md:text-5xl">
+          Hi! Glad you're here.
+        </h2>
+        <p className="text-center text-xl md:text-left xl:text-3xl">
+          Please scroll down so you can read more about
+          myself or download my CV for a quick TLDR.
+        </p>
+        <a
+          href="../assets/curriculum.pdf"
+          className="self-center"
+        >
+          <Button text="Download CV" />
+        </a>
       </div>
-      <img className='md:h-3/4 h-1/2 md:p-0 p-6 self-center mx-auto w-full object-cover object-top' src={myself} alt="" />
+      <img
+        className="self-center mx-auto p-6 w-full h-1/2 object-cover object-top md:p-0 md:h-3/4"
+        src={myself}
+        alt=""
+      />
     </main>
   );
 };

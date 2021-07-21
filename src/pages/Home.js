@@ -55,7 +55,7 @@ const Home = () => {
             aria-label="Scroll down to about section"
           >
             <ArrowdownSvg
-              className={`inline w-16 h-16
+              className={`inline w-12 h-12 lg:w-16 lg:h-16
             dark:text-darkTxtPrimary text-lightTxtPrimary fill-current 
             transform hover:scale-125 duration-500`}
             />

@@ -22,7 +22,7 @@ const SampleProject = () => {
         />
         <div
           className={`flex flex-col gap-8 justify-between
-          leading-loose lg:text-2xl`}
+          leading-loose lg:text-xl`}
         >
           <p>
             <span className="font-bold">
