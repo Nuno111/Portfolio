@@ -7,7 +7,7 @@ import { Transition } from "@headlessui/react";
 
 const Projects = () => {
   return (
-    <section className="container">
+    <main className="container">
       <Transition
         appear={true}
         show={true}
@@ -65,7 +65,7 @@ const Projects = () => {
           <Button text="Github" />
         </a>
       </Transition>
-    </section>
+    </main>
   );
 };
 

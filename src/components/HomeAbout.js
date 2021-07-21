@@ -11,7 +11,7 @@ const HomeAbout = () => {
   const why = <Why className={svgClass} />;
 
   return (
-    <section id="about" className="container">
+    <section id="HomeAbout" className="container">
       <ul className="flex flex-col pt-4 divide-gray-500 divide-y">
         <HomeAboutCard
           svg={who}

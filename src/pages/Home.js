@@ -10,15 +10,16 @@ import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
   return (
-    <Transition appear={true} show={true}>
-      <main
+    <Transition as="main" appear={true} show={true}>
+      <section
         className={`container flex flex-col gap-4 items-center
-        justify-between py-6 hero-height font-bold md:gap-8`}
+      justify-between py-6 hero-height font-bold md:gap-8`}
       >
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
           enterFrom="-translate-y-40 opacity-0 ease-in-out"
           enterTo="opacity-100 translate-y-0 ease-in-out"
+          as="section"
         >
           <p className="text-4xl md:text-6xl">Nuno Carro</p>
         </Transition.Child>
@@ -50,7 +51,7 @@ const Home = () => {
         >
           <HashLink
             smooth
-            to="/#about"
+            to="/#HomeAbout"
             aria-label="Scroll down to about section"
           >
             <ArrowdownSvg
@@ -60,7 +61,7 @@ const Home = () => {
             />
           </HashLink>
         </Transition.Child>
-      </main>
+      </section>
       <HomeAbout />
       <Methodologies />
       <TechStack />
