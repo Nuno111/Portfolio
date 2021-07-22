@@ -46,12 +46,12 @@ const ProjectTemplate = ({
   );
 
   return (
-    <article className="container py-6">
+    <main className="container py-6">
       <h2 className="py-6 text-center text-4xl font-bold md:text-6xl lg:py-12">
         {title}
       </h2>
       {externalLinks}
-      <div className="flex flex-col gap-10 lg:gap-20">
+      <article className="flex flex-col gap-10 lg:gap-20">
         <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
           <span>
             <OverviewSvg className={largeSvg} />
@@ -85,8 +85,8 @@ const ProjectTemplate = ({
         >
           <Button text="Back to projects" />
         </Link>
-      </div>
-    </article>
+      </article>
+    </main>
   );
 };
 
