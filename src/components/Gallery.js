@@ -1,5 +1,4 @@
 import beachNightSriLanka from "../assets/beachNightSriLanka.jpg";
-import beachPhilippines from "../assets/beachPhilippines.jpg";
 import hatSriLanka from "../assets/hatSriLanka.jpg";
 import nineArchBridge from "../assets/nineArchBridge.jpg";
 import nineArchBridgeElla from "../assets/nineArchBridgeElla.jpg";

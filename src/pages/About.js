@@ -25,11 +25,12 @@ const About = () => {
         quality of life.
       </p>
       <p>
-        I left Portugal and went to live in the UK for
-        around 5 years in 2015. Before moving to the UK I
+        I left Portugal in 2015 and moved to the UK where i
+        lived for about 5 years. Before moving to the UK I
         was stuck working part-time jobs in the catering
-        industry during the summer months only as there was
-        not enough workload after that.
+        industry during the summer months and unemplyed
+        after that since work is scarse in the Algarve after
+        the summer months.
       </p>
       <figure className="py-4 lg:mx-auto lg:w-3/4">
         <Image src={vilamoura} alt="Vilamoura" />
@@ -98,7 +99,7 @@ const About = () => {
   return (
     <main className="container">
       <section
-        className={`hero-height pt-4 lg:gap-12 lg:pt-0 lg:grid lg:grid-cols-2`}
+        className={`hero-height pt-4 lg:gap-12 lg:pt-0 lg:grid  lg:grid-cols-2`}
       >
         <div className="flex flex-col gap-6 items-center justify-center pb-4 h-1/2 lg:gap-16 lg:items-start lg:h-full">
           <h2 className="text-center text-3xl font-bold md:text-5xl lg:text-left">

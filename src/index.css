@@ -5,5 +5,5 @@
 /* 64px here represents navbar height which has a fixed height of 64 pixels 
  * no matter what is the screen size*/
 .hero-height {
-  height: calc(100vh - 64px)
+  min-height: calc(100vh - 64px);
 }
