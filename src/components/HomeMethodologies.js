@@ -1,7 +1,7 @@
 import HomeMethodologiesCard from "./HomeMethodologiesCard";
 import { ReactComponent as ResponsiveSvg } from "../assets/responsive.svg";
 import { ReactComponent as PerformantSvg } from "../assets/performant.svg";
-import { ReactComponent as CleancodeSvg } from "../assets/cleancode.svg";
+import { ReactComponent as MaintainableSvg } from "../assets/maintainable.svg";
 
 const HomeMethodologies = () => {
   const svgClass =
@@ -11,7 +11,9 @@ const HomeMethodologies = () => {
 
   const responsive = <ResponsiveSvg className={svgClass} />;
 
-  const cleancode = <CleancodeSvg className={svgClass} />;
+  const maintainable = (
+    <MaintainableSvg className={svgClass} />
+  );
 
   return (
     <section className="container">
@@ -38,12 +40,11 @@ const HomeMethodologies = () => {
           icon={performant}
         />
         <HomeMethodologiesCard
-          title="Clean & "
+          title="Maintainable"
           content="To ensure ease of SPAs maintenance I use a combination of 
           modern best practices coupled with the breakdown of complex logic 
           into smaller individual blocks."
-          icon={cleancode}
-          secondWord="Readable"
+          icon={maintainable}
         />
       </ul>
     </section>
