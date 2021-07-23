@@ -1,12 +1,12 @@
 import { ReactComponent as HeroSvg } from "../assets/hero.svg";
 import { ReactComponent as ArrowdownSvg } from "../assets/arrowdown.svg";
+import { Transition } from "@headlessui/react";
+import { HashLink } from "react-router-hash-link";
 import Methodologies from "../components/Methodologies";
 import TechStack from "../components/TechStack";
 import SampleProject from "../components/SampleProject";
 import Contact from "../components/Contact";
 import HomeAbout from "../components/HomeAbout";
-import { Transition } from "@headlessui/react";
-import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
   return (
