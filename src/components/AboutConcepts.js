@@ -61,6 +61,27 @@ const AboutConcepts = () => {
         </span>
         Accessible
       </h6>
+      <p>
+        A public website's content should be accessible to
+        everyone, no matter no matter what their
+        disabilities are.
+      </p>
+      <p>
+        This is something I still need to invest more time
+        into. At the moment the way I tackle this problem is
+        to follow some of the advices that have been
+        established by the web development community to
+        enhance website accesibility.
+      </p>
+      <p>
+        Having discriptive alt texts on images, and properly
+        attaching aria tags to specific button components,as
+        well as a good semantic html are some of the
+        concepts I use accomplish accessible applications.
+        Another tool I like to use to help me idenfity
+        possible accesibility issues is Google lightHouse.
+        This will flag some issues I forgot to address.
+      </p>
     </li>
   );
   const performant = (
@@ -71,6 +92,35 @@ const AboutConcepts = () => {
         </span>
         Performant
       </h6>
+      <p>
+        There's much to say and do to make a website
+        performant.
+      </p>
+      <p>
+        At the moment the way I handle this in React
+        applications is to make sure I am using the right
+        tool for the job.
+      </p>
+      <p>
+        To accomplish this I use React.lazy to render
+        content only when it's necessary, React.memo to
+        avoid some components re-rendering and rethink how
+        state is handled if an application outgrew it's
+        original expectations.
+      </p>
+      <p>
+        Another way I achieve porformance is to evaluate how
+        the application is loaded. Looking at the network
+        tab in chrome dev tools, and looking at what sources
+        are taking the longest to load and then finding ways
+        to improve them.
+      </p>
+      <p>
+        Finally when building for production I make sure to
+        optimize images by reducing their original size to
+        something more performant and purge css files in
+        order to remove all unused classes.
+      </p>
     </li>
   );
 
