@@ -2,9 +2,9 @@ import { Fragment } from "react";
 import ftPrintfRequirements from "../assets/ftPrintfRequirements.jpg";
 import ftPrintfUnitTest from "../assets/ftPrintfUnitTest.jpg";
 import ftPrintfUnitTests from "../assets/ftPrintfUnitTests.jpg";
-import ProjectTemplate from "../components/ProjectTemplate";
-import Image from "../components/Image";
-import ChallengeTemplate from "../components/ChallengeTemplate";
+import ProjectsTemplate from "../components/ProjectsTemplate";
+import Image from "../ui/Image";
+import ProjectsChallenge from "../components/ProjectsChallenge";
 
 const Ft_Printf = () => {
   const overview = (
@@ -79,7 +79,7 @@ const Ft_Printf = () => {
 
   const challenges = (
     <Fragment>
-      <ChallengeTemplate
+      <ProjectsChallenge
         title="Dealing with flags interdependencies"
         content="This was difficult to deal with because I created a re-usable
 				function that dealt with precision only and another with width.
@@ -89,7 +89,7 @@ const Ft_Printf = () => {
         each conversion had its own logic to deal with this interdependency."
         success={true}
       />
-      <ChallengeTemplate
+      <ProjectsChallenge
         title="Negative input and me"
         content="Both width and precision have their own rules to deal 
 				with negative numbers as inputs.
@@ -99,7 +99,7 @@ const Ft_Printf = () => {
 				flag based on this bool variable."
         success={true}
       />
-      <ChallengeTemplate
+      <ProjectsChallenge
         title="Bonus part of the project"
         content="As with most projects at 42 you have the mandatory and
 				the bonus parts for each project.
@@ -111,7 +111,7 @@ const Ft_Printf = () => {
   );
 
   return (
-    <ProjectTemplate
+    <ProjectsTemplate
       title="Ft_printf"
       overview={overview}
       approach={approach}

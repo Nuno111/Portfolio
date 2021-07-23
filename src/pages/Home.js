@@ -2,10 +2,10 @@ import { ReactComponent as HeroSvg } from "../assets/hero.svg";
 import { ReactComponent as ArrowdownSvg } from "../assets/arrowdown.svg";
 import { Transition } from "@headlessui/react";
 import { HashLink } from "react-router-hash-link";
-import Methodologies from "../components/Methodologies";
-import TechStack from "../components/TechStack";
-import SampleProject from "../components/SampleProject";
-import Contact from "../components/Contact";
+import HomeMethodologies from "../components/HomeMethodologies";
+import HomeTechStack from "../components/HomeTechStack";
+import HomeSampleProject from "../components/HomeSampleProject";
+import HomeContact from "../components/HomeContact";
 import HomeAbout from "../components/HomeAbout";
 
 const Home = () => {
@@ -63,10 +63,10 @@ const Home = () => {
         </Transition.Child>
       </section>
       <HomeAbout />
-      <Methodologies />
-      <TechStack />
-      <SampleProject />
-      <Contact />
+      <HomeMethodologies />
+      <HomeTechStack />
+      <HomeSampleProject />
+      <HomeContact />
     </Transition>
   );
 };

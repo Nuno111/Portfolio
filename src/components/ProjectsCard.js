@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Image from "./Image";
-import Button from "./Button";
+import Image from "../ui/Image";
+import Button from "../ui/Button";
 
-const ProjectCard = ({
+const ProjectsCard = ({
   title,
   img,
   alt,
@@ -34,4 +34,4 @@ const ProjectCard = ({
   );
 };
 
-export default ProjectCard;
+export default ProjectsCard;

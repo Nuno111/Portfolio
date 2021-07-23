@@ -1,6 +1,6 @@
 import { ReactComponent as ProfessionalSvg } from "../assets/professional.svg";
 
-const ProfessionalStory = () => {
+const AboutCareerPath = () => {
   const largeSvg = `inline mr-4 w-12 h-12 dark:text-darkTxtPrimary
   text-lightTxtPrimary fill-current lg:w-20 lg:h-16`;
 
@@ -53,4 +53,4 @@ const ProfessionalStory = () => {
   );
 };
 
-export default ProfessionalStory;
+export default AboutCareerPath;

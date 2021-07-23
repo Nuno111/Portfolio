@@ -9,7 +9,7 @@ import { ReactComponent as GitSvg } from "../assets/git.svg";
 import { ReactComponent as HtmlSvg } from "../assets/html.svg";
 import { ReactComponent as ReactSvg } from "../assets/react.svg";
 
-const TechStack = () => {
+const HomeTechStack = () => {
   const svgClass = "w-12 h-12 lg:w-20 lg:h-20";
 
   const liClass = `flex flex-col gap-4 items-center justify-center
@@ -72,4 +72,4 @@ const TechStack = () => {
   );
 };
 
-export default TechStack;
+export default HomeTechStack;

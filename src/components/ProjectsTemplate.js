@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
+import Button from "../ui/Button";
 import { ReactComponent as OverviewSvg } from "../assets/overview.svg";
 import { ReactComponent as ApproachSvg } from "../assets/approach.svg";
 import { ReactComponent as ChallengeSvg } from "../assets/challenge.svg";
 import { ReactComponent as GithubSvg } from "../assets/github.svg";
 import { ReactComponent as LiveSvg } from "../assets/live.svg";
 
-const ProjectTemplate = ({
+const ProjectsTemplate = ({
   title,
   overview,
   approach,
@@ -90,4 +90,4 @@ const ProjectTemplate = ({
   );
 };
 
-export default ProjectTemplate;
+export default ProjectsTemplate;

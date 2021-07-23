@@ -1,9 +1,9 @@
-import Gallery from "../components/Gallery";
-import Image from "../components/Image";
+import AboutGallery from "../components/AboutGallery";
+import Image from "../ui/Image";
 import vilamoura from "../assets/vilamoura.jpg";
 import { ReactComponent as PersonalSvg } from "../assets/personal.svg";
 
-const PersonalStory = () => {
+const AboutPersonalStory = () => {
   const largeSvg = `inline mr-4 w-12 h-12 dark:text-darkTxtPrimary
   text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
 
@@ -76,9 +76,9 @@ const PersonalStory = () => {
         country and meeting the locals, never staying in the
         same place for more than a few days.
       </p>
-      <Gallery />
+      <AboutGallery />
     </section>
   );
 };
 
-export default PersonalStory;
+export default AboutPersonalStory;

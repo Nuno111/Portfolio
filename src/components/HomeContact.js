@@ -1,8 +1,8 @@
 import { ReactComponent as EmailSvg } from "../assets/email.svg";
 import { ReactComponent as PhoneSvg } from "../assets/phone.svg";
-import ContactCard from "../components/ContactCard";
+import HomeContactCard from "../components/HomeContactCard";
 
-const Contact = () => {
+const HomeContact = () => {
   const svgClass = `
     dark:group-hover:text-darkTxtPrimary
     w-20 h-20 group-hover:text-lightTxtPrimary fill-current`;
@@ -34,13 +34,13 @@ const Contact = () => {
         className={`justify-center flex flex-col gap-20
         items-center py-20 sm:flex-row`}
       >
-        <ContactCard
+        <HomeContactCard
           href="mailto:nuno_c11@hotmail.com"
           svg={emailSvg}
           title="Email"
           content="Nuno_c11@hotmail.com"
         />
-        <ContactCard
+        <HomeContactCard
           href="tel:+351912950619"
           svg={phoneSvg}
           title="Mobile"
@@ -51,4 +51,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default HomeContact;

@@ -1,8 +1,8 @@
 import myself from "../assets/myself.jpg";
-import Button from "../components/Button";
-import PersonalStory from "../components/PersonalStory";
-import ProfessionalStory from "../components/ProfessionalStory";
-import Developer from "../components/Developer";
+import Button from "../ui/Button";
+import AboutPersonalStory from "../components/AboutPersonalStory";
+import AboutCareerPath from "../components/AboutCareerPath";
+import AboutDeveloper from "../components/AboutDeveloper";
 
 const About = () => {
   return (
@@ -32,9 +32,9 @@ const About = () => {
         />
       </section>
       <article>
-        <PersonalStory />
-        <ProfessionalStory />
-        <Developer />
+        <AboutPersonalStory />
+        <AboutCareerPath />
+        <AboutDeveloper />
       </article>
     </main>
   );

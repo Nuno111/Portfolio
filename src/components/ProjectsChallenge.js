@@ -1,7 +1,7 @@
 import { ReactComponent as SuccessSvg } from "../assets/success.svg";
 import { ReactComponent as WaitingSvg } from "../assets/waiting.svg";
 
-const ChallengeTemplate = ({ title, content, success }) => {
+const ProjectsChallenge = ({ title, content, success }) => {
   const svgClass = `inline mr-4 w-8 h-8 dark:text-darkTxtPrimary 
     text-lightTxtPrimary fill-current lg:w-10 lg:h-10`;
 
@@ -22,4 +22,4 @@ const ChallengeTemplate = ({ title, content, success }) => {
   );
 };
 
-export default ChallengeTemplate;
+export default ProjectsChallenge;

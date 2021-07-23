@@ -7,7 +7,7 @@ import sunsetPhilippines from "../assets/sunsetPhilippines.jpg";
 import isleOfWight from "../assets/isleOfWight.jpg";
 import jardimBotanicoCoimbra from "../assets/jardimBotanicoCoimbra.jpg";
 
-const Gallery = () => {
+const AboutGallery = () => {
   const imgClass = "w-full lg:w-1/4";
   return (
     <section className="flex flex-wrap gap-4 justify-center">
@@ -47,4 +47,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default AboutGallery;

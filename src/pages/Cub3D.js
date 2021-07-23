@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import ProjectTemplate from "../components/ProjectTemplate";
-import ChallengeTemplate from "../components/ChallengeTemplate";
-import Image from "../components/Image";
+import ProjectsTemplate from "../components/ProjectsTemplate";
+import ProjectsChallenge from "../components/ProjectsChallenge";
+import Image from "../ui/Image";
 import cub3dGameplay from "../assets/cub3dGameplay.jpg";
 import cub3dMaze from "../assets/cub3dMaze.jpg";
 
@@ -67,7 +67,7 @@ const Cub3D = () => {
 
   const challenges = (
     <Fragment>
-      <ChallengeTemplate
+      <ProjectsChallenge
         title="Ensuring map is enclosed by walls"
         content="A configuration file is given to render the game with 
 				the path to sprites, resolution, etc. This file needs to be parsed and
@@ -76,7 +76,7 @@ const Cub3D = () => {
         segmentation faults when checking for map borders."
         success={true}
       />
-      <ChallengeTemplate
+      <ProjectsChallenge
         title="Rendering textured walls"
         content="Rendering textures walls was a difficult process for me, 
 				I hadn't looked up anything on how to render walls yet and tried 
@@ -86,7 +86,7 @@ const Cub3D = () => {
 				to do some research and find a way the logic to make them work."
         success={true}
       />
-      <ChallengeTemplate
+      <ProjectsChallenge
         title="Rendering textured ceiling and floor"
         content="This is one of the bonus parts for this project along 
 				with minimap and many others. At first, I had decided I was going
@@ -98,7 +98,7 @@ const Cub3D = () => {
     </Fragment>
   );
   return (
-    <ProjectTemplate
+    <ProjectsTemplate
       title="cub3D"
       overview={overview}
       approach={approach}

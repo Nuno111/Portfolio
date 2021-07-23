@@ -1,4 +1,4 @@
-const ThemeToggler = ({ onTogglerClick, darkMode }) => {
+const NavbarThemeToggler = ({ onTogglerClick, darkMode }) => {
   return (
     <button
       onClick={onTogglerClick}
@@ -40,4 +40,4 @@ const ThemeToggler = ({ onTogglerClick, darkMode }) => {
   );
 };
 
-export default ThemeToggler;
+export default NavbarThemeToggler;

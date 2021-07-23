@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import ProjectTemplate from "../components/ProjectTemplate";
-import ChallengeTemplate from "../components/ChallengeTemplate";
-import Image from "../components/Image";
+import ProjectsTemplate from "../components/ProjectsTemplate";
+import ProjectsChallenge from "../components/ProjectsChallenge";
+import Image from "../ui/Image";
 import aCTNutrientsSheet from "../assets/automatedCaloriesTrackerNutrientsSheet.jpg";
 import aCTSpreadsheet from "../assets/automatedCaloriesTrackerSpreadsheet.jpg";
 
@@ -85,14 +85,14 @@ const CaloriesTracker = () => {
 
   const challenges = (
     <Fragment>
-      <ChallengeTemplate
+      <ProjectsChallenge
         title="Being friend with errors"
         content="Figuring out how to work with errors from the API was
 				cumbersome. I had to do plenty of tests to figure out 
 				which inputs would work and restricted user input to a very specific format."
         success={true}
       />
-      <ChallengeTemplate
+      <ProjectsChallenge
         title="Dealing with Google auth system"
         content="It wasn't very hard but definitely a challenge,
 				being the first time I dealt with this I had to follow a short online tutorial
@@ -100,7 +100,7 @@ const CaloriesTracker = () => {
 				require more work with this to fully understand how it works."
         success={true}
       />
-      <ChallengeTemplate
+      <ProjectsChallenge
         title="Go live by creating a SPA"
         content="Putting the script online with a Single Page Application 
 				would allow a user to have an account and run the script through a form.
@@ -111,7 +111,7 @@ const CaloriesTracker = () => {
   );
 
   return (
-    <ProjectTemplate
+    <ProjectsTemplate
       title="Automated Calories Tracker"
       overview={overview}
       approach={approach}

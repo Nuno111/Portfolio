@@ -1,10 +1,10 @@
-import ThemeToggler from "./ThemeToggler";
+import NavbarThemeToggler from "./NavbarThemeToggler";
 import { NavLink } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 import { HashLink } from "react-router-hash-link";
 import helpers from "../utils/helpers";
 
-const BurgerMenu = ({
+const NavbarBurgerMenu = ({
   onTogglerClick,
   darkMode,
   burgerOpen,
@@ -102,7 +102,7 @@ const BurgerMenu = ({
           className="flex flex-1 py-2"
           onClick={toggleBurger}
         >
-          <ThemeToggler
+          <NavbarThemeToggler
             onTogglerClick={onTogglerClick}
             darkMode={darkMode}
           />
@@ -112,4 +112,4 @@ const BurgerMenu = ({
   );
 };
 
-export default BurgerMenu;
+export default NavbarBurgerMenu;

@@ -1,7 +1,7 @@
 import { ReactComponent as DeveloperSvg } from "../assets/developer.svg";
 import { ReactComponent as ResponsiveSvg } from "../assets/responsive2.svg";
 
-const Developer = () => {
+const AboutDeveloper = () => {
   const largeSvg = `inline mr-4 w-12 h-12 dark:text-darkTxtPrimary
   text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
 
@@ -70,10 +70,11 @@ const Developer = () => {
           <p>
             Utilities like flex-box and grid layouts help
             immensely to make things adaptable and
-            responsive. TailwindCSS responsive properties to
-            enable some classes only on specific breakpoints
-            is another great asset to make things responsive
-            without over-complicating things.
+            responsive. Another great tool to make
+            applications responsive without
+            over-complicating things is TailwindCSS
+            responsive properties to enable some classes
+            only on specific breakpoints.
           </p>
           <p>
             One change I am really looking forward to is for
@@ -89,4 +90,4 @@ const Developer = () => {
   );
 };
 
-export default Developer;
+export default AboutDeveloper;

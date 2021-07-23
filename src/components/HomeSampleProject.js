@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import sampleProject from "../assets/colourThemAll.png";
-import Button from "../components/Button";
-import Image from "./Image";
+import Button from "../ui/Button";
+import Image from "../ui/Image";
 import helpers from "../utils/helpers";
 
-const SampleProject = () => {
+const HomeSampleProject = () => {
   return (
     <section className="container">
       <h3
@@ -92,4 +92,4 @@ const SampleProject = () => {
   );
 };
 
-export default SampleProject;
+export default HomeSampleProject;

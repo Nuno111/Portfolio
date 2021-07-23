@@ -1,5 +1,5 @@
-import ProjectCard from "../components/ProjectCard";
-import Button from "../components/Button";
+import ProjectsCard from "../components/ProjectsCard";
+import Button from "../ui/Button";
 import cub3D from "../assets/cub3d.png";
 import automatedCaloriesTracker from "../assets/automatedCaloriesTracker.png";
 import ftPrintf from "../assets/ftPrintf.png";
@@ -29,7 +29,7 @@ const Projects = () => {
           enterTo="opacity-100 translate-x-0 ease-in-out"
         >
           <ul className="grid gap-8 grid-cols-1 lg:gap-16 lg:grid-cols-2">
-            <ProjectCard
+            <ProjectsCard
               title="cub3D"
               img={cub3D}
               alt="3D shooter game"
@@ -37,14 +37,14 @@ const Projects = () => {
               githubLink="https://github.com/Nuno111/42Lisboa-level4-cub3D"
               projectPath="/projects/cub3D"
             />
-            <ProjectCard
+            <ProjectsCard
               title="Automated Calories Tracker"
               img={automatedCaloriesTracker}
               alt="Macronutriens table on a google spreadsheet"
               description="Exports data from MyFitnessPal into a Google Spreadsheet"
               projectPath="/projects/AutomatedCaloriesTracker"
             />
-            <ProjectCard
+            <ProjectsCard
               title="ft_printf"
               img={ftPrintf}
               alt="code representing printf function"

@@ -3,8 +3,8 @@ import { HashLink } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import helpers from "../utils/helpers";
-import BurgerMenu from "./BurgerMenu";
-import ThemeToggler from "./ThemeToggler";
+import NavbarBurgerMenu from "./NavbarBurgerMenu";
+import NavbarThemeToggler from "./NavbarThemeToggler";
 import logo from "../assets/logo.png";
 import logoLight from "../assets/logolight.png";
 
@@ -60,7 +60,7 @@ const Navbar = () => {
             />
           </NavLink>
           <div className="flex hidden justify-center lg:flex">
-            <ThemeToggler
+            <NavbarThemeToggler
               className="px-2 sm:px-8"
               onTogglerClick={toggleDarkMode}
               darkMode={darkMode}
@@ -151,7 +151,7 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <BurgerMenu
+        <NavbarBurgerMenu
           onTogglerClick={toggleDarkMode}
           darkMode={darkMode}
           burgerOpen={burgerOpen}

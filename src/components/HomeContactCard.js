@@ -1,6 +1,6 @@
 import helpers from "../utils/helpers";
 
-const ContactCard = ({ href, svg, title, content }) => {
+const HomeContactCard = ({ href, svg, title, content }) => {
   return (
     <li
       className={`group flex flex-col gap-4
@@ -30,4 +30,4 @@ const ContactCard = ({ href, svg, title, content }) => {
   );
 };
 
-export default ContactCard;
+export default HomeContactCard;

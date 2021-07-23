@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-const MethodologiesCard = ({
+const HomeMethodologiesCard = ({
   title,
   content,
   icon,
@@ -39,4 +39,4 @@ const MethodologiesCard = ({
   );
 };
 
-export default MethodologiesCard;
+export default HomeMethodologiesCard;

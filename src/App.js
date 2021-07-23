@@ -3,8 +3,8 @@ import React, { Suspense } from "react";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import LoadingPage from "./components/LoadingPage";
-import Lazy from "./components/Lazy";
+import LoadingPage from "./ui/LoadingPage";
+import Lazy from "./ui/Lazy";
 import useGoogleAnalytics from "./hooks/useGoogleAnalytics";
 
 function App() {

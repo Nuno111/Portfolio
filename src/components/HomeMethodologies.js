@@ -1,9 +1,9 @@
-import MethodologiesCard from "./MethodologiesCard";
+import HomeMethodologiesCard from "./HomeMethodologiesCard";
 import { ReactComponent as ResponsiveSvg } from "../assets/responsive.svg";
 import { ReactComponent as PerformantSvg } from "../assets/performant.svg";
 import { ReactComponent as CleancodeSvg } from "../assets/cleancode.svg";
 
-const Methodologies = () => {
+const HomeMethodologies = () => {
   const svgClass =
     "w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current";
 
@@ -23,21 +23,21 @@ const Methodologies = () => {
         (SPAs)
       </h3>
       <ul className="grid gap-16 grid-cols-1 xl:grid-cols-3">
-        <MethodologiesCard
+        <HomeMethodologiesCard
           title="Responsive"
           content="To achieve SPAs responsiveness I use Mobile-First Approach
           design alongside technologies like CSS flexbox/grid, Chrome dev tools
           and Tailwind responsive properties."
           icon={responsive}
         />
-        <MethodologiesCard
+        <HomeMethodologiesCard
           title="Performant"
           content="To accomplish SPAs performance I use a different tool-set of
           React Hooks for each project based on its complexities and optimize 
           all sources for production."
           icon={performant}
         />
-        <MethodologiesCard
+        <HomeMethodologiesCard
           title="Clean & "
           content="To ensure ease of SPAs maintenance I use a combination of 
           modern best practices coupled with the breakdown of complex logic 
@@ -50,4 +50,4 @@ const Methodologies = () => {
   );
 };
 
-export default Methodologies;
+export default HomeMethodologies;
