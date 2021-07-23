@@ -19,9 +19,10 @@ const Home = () => {
           enter="transform transition-all duration-1000 ease-in-out"
           enterFrom="-translate-y-40 opacity-0 ease-in-out"
           enterTo="opacity-100 translate-y-0 ease-in-out"
-          as="section"
+          as="p"
+          className="text-4xl md:text-6xl"
         >
-          <p className="text-4xl md:text-6xl">Nuno Carro</p>
+          Nuno Carro
         </Transition.Child>
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
@@ -35,14 +36,14 @@ const Home = () => {
           enter="transform transition-all duration-1000 ease-in-out"
           enterFrom="translate-x-96 opacity-0 ease-in-out"
           enterTo="opacity-100 translate-x-0 ease-in-out"
+          as="h1"
+          className="text-center text-2xl md:text-3xl lg:text-4xl"
         >
-          <h1 className="text-center text-2xl md:text-3xl lg:text-4xl">
-            <span className="block pb-2">
-              Front-End web developer.
-            </span>
-            I work with React to create modern single-page
-            web applications.
-          </h1>
+          <span className="block pb-2">
+            Front-End web developer.
+          </span>
+          I work with React to create modern single-page web
+          applications.
         </Transition.Child>
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"

@@ -3,14 +3,24 @@ import Button from "../ui/Button";
 import AboutPersonalStory from "../components/AboutPersonalStory";
 import AboutCareerPath from "../components/AboutCareerPath";
 import AboutDeveloper from "../components/AboutDeveloper";
+import { Transition } from "@headlessui/react";
 
 const About = () => {
   return (
     <main className="container">
-      <section
+      <Transition
+        as="section"
+        appear={true}
+        show={true}
         className={`hero-height pt-4 lg:gap-12 lg:pt-0 lg:grid  lg:grid-cols-2`}
       >
-        <div className="flex flex-col gap-6 items-center justify-center pb-4 h-1/2 lg:gap-16 lg:items-start lg:h-full">
+        <Transition.Child
+          enter="transform transition-all duration-1000 ease-in-out"
+          enterFrom="-translate-x-96 opacity-0"
+          enterTo="opacity-100 translate-x-0"
+          as="div"
+          className="flex flex-col gap-6 items-center justify-center pb-4 h-1/2 lg:gap-16 lg:items-start lg:h-full"
+        >
           <h2 className="text-center text-3xl font-bold md:text-5xl lg:text-left">
             Welcome!
           </h2>
@@ -24,13 +34,17 @@ const About = () => {
           >
             <Button text="Download CV" />
           </a>
-        </div>
-        <img
+        </Transition.Child>
+        <Transition.Child
+          enter="transform transition-all duration-1000 ease-in-out"
+          enterFrom="translate-x-96 opacity-0"
+          enterTo="opacity-100 translate-x-0"
+          as="img"
           className="self-center mx-auto p-6 w-full h-1/2 object-cover object-top lg:p-0 lg:h-3/4"
           src={myself}
-          alt=""
+          alt="Photograph of Nuno Carro"
         />
-      </section>
+      </Transition>
       <article>
         <AboutPersonalStory />
         <AboutCareerPath />

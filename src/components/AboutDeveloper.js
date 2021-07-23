@@ -15,22 +15,20 @@ const AboutDeveloper = () => {
       </h3>
       <p>
         I am focused, passionate and curious. Learning how
-        to code challenges me everyday and really makes me
-        think about problems in a different way.
+        to code challenges me every day and really makes me
+        think about problems in a more structred way.
       </p>
       <p>
         This whole notion that you never stop learning new
         things while working as a developer, may be draining
-        sometimes but for me it's actually one of it's
-        greatest benifits. Being able to learn new things
-        everyday, struggling with new concepts for awhile
+        sometimes but for me, it's actually one of its
+        greatest benefits. Being able to learn new things
+        every day, struggling with new concepts for a while
         until it becomes clear how they work is a very
-        rewarding feeling. Prevents me from getting bored
-        and keeps things fresh and interesting day in day
-        out.
+        rewarding feeling.
       </p>
       <p>
-        As a web developer there are a few concepts I
+        As a web developer, there are a few concepts I
         consider that every project needs to have in order
         to be a presentable work. Some of them I am still
         learning or perfecting and my goal is to have these

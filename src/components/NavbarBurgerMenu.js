@@ -22,7 +22,7 @@ const NavbarBurgerMenu = ({
       enter="transition-all duration-300"
       enterFrom="opacity-0"
       enterTo="opacity-100"
-      leave="transition-opacity duration-100"
+      leave="transition-opacity duration-50"
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
       className="dark:bg-darkBgSecondary
@@ -61,7 +61,7 @@ const NavbarBurgerMenu = ({
               );
             }}
           >
-           About 
+            About
           </NavLink>
         </li>
         <li className="flex-1 py-2">
