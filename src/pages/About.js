@@ -3,6 +3,7 @@ import Button from "../ui/Button";
 import AboutPersonalStory from "../components/AboutPersonalStory";
 import AboutCareerPath from "../components/AboutCareerPath";
 import AboutDeveloper from "../components/AboutDeveloper";
+import AboutStudent from "../components/AboutStudent";
 import { Transition } from "@headlessui/react";
 
 const About = () => {
@@ -49,6 +50,7 @@ const About = () => {
         <AboutPersonalStory />
         <AboutCareerPath />
         <AboutDeveloper />
+        <AboutStudent />
       </article>
     </main>
   );

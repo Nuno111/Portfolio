@@ -1,8 +1,3 @@
-figure out image contrast/greyscale/etc in darkmode
-manifest?
-robots?
-tests?
-resize colour them all png and make sure it's full quality
 Create touch icon
 Use a memorable logo as the touch icon so your website will make a good impression as a bookmark on mobile devices.
 Hide solution
