@@ -42,7 +42,7 @@ const Projects = () => {
             title="Automated Calories Tracker"
             img={automatedCaloriesTracker}
             alt="Macronutriens table on a google spreadsheet"
-            description="Exports data from MyFitnessPal into a Google Spreadsheet"
+            description="Exports calories data into a Google Spreadsheet"
             projectPath="/projects/AutomatedCaloriesTracker"
           />
           <ProjectsCard
@@ -62,7 +62,7 @@ const Projects = () => {
           rel="noreferrer"
           href="https://github.com/Nuno111"
         >
-          <Button text="Github" />
+          <Button text="Github" primary={true} />
         </a>
       </Transition>
     </main>

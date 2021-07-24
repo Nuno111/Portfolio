@@ -12,3 +12,7 @@ Save these files and name them 'apple-touch-icon-152x152-precomposed.png' and 'a
 
 
 Page title and description too short?
+
+
+24/07 work on As a student section, add images to as a web developer section, review personalStory images.
+work on colour them all png

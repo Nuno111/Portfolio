@@ -8,12 +8,12 @@ const HomeSampleProject = () => {
   return (
     <section className="container">
       <h3
-        className={`pt-12 text-center text-2xl font-bold
+        className={`py-12 text-center text-2xl font-bold
         md:text-3xl md:text-4xl lg:py-28`}
       >
         Sample Project - Colour Them All
       </h3>
-      <div className="grid grid-cols-1 xl:gap-12 xl:grid-cols-2">
+      <div className="grid gap-6 grid-cols-1 xl:gap-12 xl:grid-cols-2">
         <Image
           src={sampleProject}
           alt="Website game to colour circles"
@@ -70,7 +70,7 @@ const HomeSampleProject = () => {
             )
           }
         >
-          <Button text="Other projects" />
+          <Button text="Other projects" primary={true} />
         </Link>
         <a
           target="_blank"
@@ -85,7 +85,7 @@ const HomeSampleProject = () => {
             )
           }
         >
-          <Button text="Play it live" size="medium" />
+          <Button text="Play it live" />
         </a>
       </div>
     </section>

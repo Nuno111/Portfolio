@@ -22,9 +22,6 @@ const NavbarBurgerMenu = ({
       enter="transition-all duration-300"
       enterFrom="opacity-0"
       enterTo="opacity-100"
-      leave="transition-opacity duration-50"
-      leaveFrom="opacity-100"
-      leaveTo="opacity-0"
       className="dark:bg-darkBgSecondary
 			bg-lightBgSecondary w-full lg:hidden"
     >

@@ -26,13 +26,13 @@ const About = () => {
           </h2>
           <p className="text-center text-xl leading-loose lg:text-left xl:text-3xl">
             Please scroll down to read more about myself or
-            download my CV for a quick TLDR.
+            download my CV for a quick summary.
           </p>
           <a
             href="../assets/curriculum.pdf"
             className="self-center lg:self-start"
           >
-            <Button text="Download CV" />
+            <Button text="Download CV" primary={true} />
           </a>
         </Transition.Child>
         <Transition.Child

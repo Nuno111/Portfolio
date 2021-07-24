@@ -59,7 +59,7 @@ const AboutPersonalStory = () => {
       </p>
       <p>
         Since most of my days are spent sitting at a desk, I
-        like to have hobbies that involve movement. I go to
+        like to have hobbies that involve exercise. I go to
         the gym 3/4 weeks a week and try to cycle everywhere
         I can. I also enjoy other sport such as tennis and
         bouldering. On the other hand, I'm also a gamer so

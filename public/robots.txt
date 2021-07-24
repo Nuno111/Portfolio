@@ -3,4 +3,4 @@ allow: /about
 allow: /projects
 allow: /projects/cub3D
 allow: /projects/AutomatedCaloriesTracker
-allow: /FtPrintf
+allow: /projects/FtPrintf
