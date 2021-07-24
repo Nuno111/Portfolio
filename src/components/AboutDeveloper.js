@@ -18,7 +18,7 @@ const AboutDeveloper = () => {
       <p>
         I am focused, passionate and curious. Programming
         challenges me every day and really makes me think
-        about problems in a more structred way.
+        about problems in a more structured way.
       </p>
       <p>
         This whole notion that you never stop learning new

@@ -147,7 +147,7 @@ const AboutConcepts = () => {
           on their purpose
         </li>
         <li>
-          Commenting conplex code that might help someone
+          Commenting complex code that might help someone
           understand why it's there and what it does
         </li>
       </ul>

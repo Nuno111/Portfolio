@@ -14,7 +14,7 @@ const AboutStudent = () => {
       </h3>
       <p>
         Most of my knowledge regarding web development comes
-        from self study through different online courses and
+        from self-study through different online courses and
         then applying what I learned into my own personal
         projects.
       </p>
@@ -25,14 +25,15 @@ const AboutStudent = () => {
         learning.
       </p>
       <p>
-        Each projects has it's own specificatons of what you
+        Each project has its own specifications of what you
         are expected to do and all the learning has to be
         done on your own researching online and talking to
         your peers.
       </p>
       <p>
         The first few projects at 42 are mostly coded in c,
-        and some others are related to system adminstration.
+        and some others are related to system
+        administration.
       </p>
       <p>
         Once the c learning is done, we move to c++ and the

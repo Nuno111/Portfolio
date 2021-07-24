@@ -39,7 +39,7 @@ const AboutCareerPath = () => {
       </p>
       <p>
         It was while working here that I started exploring
-        web development, with a simple html/css course and
+        web development, with a simple HTML/CSS course and
         found out I enjoyed it.
       </p>
       <p>

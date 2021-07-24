@@ -23,7 +23,7 @@ const AboutPersonalStory = () => {
       </p>
       <p>
         I left Portugal in 2015 and moved to the UK where I
-        lived for about 5 years. Before this decision I was
+        lived for about 5 years. Before this decision, I was
         stuck working part-time jobs in the catering
         industry during the summer months and unemployed
         after that since work is scarce in the Algarve
