@@ -12,21 +12,33 @@ const AboutGallery = () => {
       <img
         src={mudKart}
         className={imgClass}
-        alt=""
+        alt="Nuno and friend driving a cart in muddy roads"
       />
-      <img className={imgClass} src={hatSriLanka} alt="" />
+      <img
+        className={imgClass}
+        src={hatSriLanka}
+        alt="Nuno with a tradicional hat"
+      />
       <img
         className={imgClass}
         src={nineArchBridge}
-        alt=""
+        alt="Nuno at Nine Arch Bridge in Ella"
       />
       <img
         className={imgClass}
         src={nineArchBridgeElla}
-        alt=""
+        alt="Nuno with friends at Nine Arch Bridge in Ella"
       />
-      <img className={imgClass} src={porto} alt="hh" />
-      <img className={imgClass} src={madeira} alt="" />
+      <img
+        className={imgClass}
+        src={porto}
+        alt="Nuno near a bridge in Porto"
+      />
+      <img
+        className={imgClass}
+        src={madeira}
+        alt="Nuno sitting with cliffs in the background"
+      />
     </section>
   );
 };

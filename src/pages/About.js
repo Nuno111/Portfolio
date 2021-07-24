@@ -20,7 +20,8 @@ const About = () => {
           enterFrom="-translate-x-96 opacity-0"
           enterTo="opacity-100 translate-x-0"
           as="div"
-          className="flex flex-col gap-6 items-center justify-center pb-4 h-1/2 lg:gap-16 lg:items-start lg:h-full"
+          className={`flex flex-col gap-6 items-center justify-center pb-4
+          h-1/2 lg:gap-16 lg:items-start lg:h-full`}
         >
           <h2 className="text-center text-3xl font-bold md:text-5xl lg:text-left">
             Welcome!
@@ -43,7 +44,7 @@ const About = () => {
           as="img"
           className="self-center mx-auto p-6 w-full h-1/2 object-cover object-top lg:p-0 lg:h-3/4"
           src={myself}
-          alt="Photograph of Nuno Carro"
+          alt="Photograph of Nuno Carro in Bath"
         />
       </Transition>
       <article>

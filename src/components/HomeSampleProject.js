@@ -22,7 +22,7 @@ const HomeSampleProject = () => {
         />
         <div
           className={`flex flex-col gap-8 justify-between
-          leading-loose lg:text-xl`}
+          leading-loose lg:text-2xl`}
         >
           <p>
             <span className="font-bold">
@@ -34,24 +34,23 @@ const HomeSampleProject = () => {
             browser game.
           </p>
           <p>
-            The objective of the game is to click on all
-            circles until they change colour, missing a
-            click will reset circle colours.
+            The objective is to click on all circles until
+            they change colour, missing a click will reset
+            circle colours.
           </p>
           <p>
             The biggest challenge I had was with code
-            organization and thought about doing a full
-            refactor once finished. This was mainly due to
-            the fact that I wasn't expecting to turn this
-            into an actual project with so many
+            organization since I wasn't expecting to turn
+            this into an actual project with so many
             functionalities like changing colour themes,
             difficulty settings, increasing levels, etc.
           </p>
           <p>
-            In the end, I decided a full refactor wasn't
-            needed but I made sure to protect the variables
-            by wrapping the content in an IIFE and adding
-            some structure so it's not a spaghetti mess.
+            I had thought about doing a full refactor but in
+            the end, decided it wasn't needed so I just made
+            sure to protect the variables by wrapping the
+            content in an IIFE and adding some structure so
+            it's not a spaghetti mess.
           </p>
         </div>
       </div>
