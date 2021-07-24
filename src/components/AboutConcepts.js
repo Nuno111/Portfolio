@@ -124,9 +124,9 @@ const AboutConcepts = () => {
       </h6>
       <p>
         Good maintainable code is something I always strive
-        to write. This can sometimes be hard to accomplish
-        since it's somewhat of a subjective matter,
-        therefore impossible to please everyone.
+        to achieve. This can sometimes be hard to do since
+        it's somewhat of a subjective matter, therefore
+        impossible to please everyone.
       </p>
       <p>
         Nonetheless, there are a few topics that most people
