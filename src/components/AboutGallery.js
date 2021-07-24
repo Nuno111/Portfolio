@@ -1,4 +1,4 @@
-import beachNightSriLanka from "../assets/beachNightSriLanka.jpg";
+import mudKart from "../assets/mudKart.jpg";
 import hatSriLanka from "../assets/hatSriLanka.jpg";
 import nineArchBridge from "../assets/nineArchBridge.jpg";
 import nineArchBridgeElla from "../assets/nineArchBridgeElla.jpg";
@@ -10,7 +10,7 @@ const AboutGallery = () => {
   return (
     <section className="flex flex-wrap gap-4 justify-center">
       <img
-        src={beachNightSriLanka}
+        src={mudKart}
         className={imgClass}
         alt=""
       />
