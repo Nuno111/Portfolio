@@ -16,9 +16,9 @@ const AboutDeveloper = () => {
         As a developer
       </h3>
       <p>
-        I am focused, passionate and curious. Learning how
-        to code challenges me every day and really makes me
-        think about problems in a more structred way.
+        I am focused, passionate and curious. Programming
+        challenges me every day and really makes me think
+        about problems in a more structred way.
       </p>
       <p>
         This whole notion that you never stop learning new
@@ -39,7 +39,7 @@ const AboutDeveloper = () => {
       <div className="mx-auto w-3/4">
         <Image
           src={workFromHome}
-          alt="person working at a computer"
+          alt="Nuno working at his desk"
         />
       </div>
       <AboutConcepts />

@@ -9,6 +9,9 @@ import helpers from "../utils/helpers";
 const Footer = () => {
   const svgClass =
     "w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current";
+
+  const scrollToTop = () => window.scrollTo({top:0, behavior:"smooth"});
+
   return (
     <footer
       className={`flex flex-col gap-2 items-center justify-center mt-10
@@ -22,10 +25,7 @@ const Footer = () => {
             to="/"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
             onClick={() => {
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              });
+              scrollToTop();
               helpers.trackEvent(
                 "Link",
                 "Home",
@@ -40,28 +40,30 @@ const Footer = () => {
           <Link
             to="/About"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
-            onClick={() =>
+            onClick={() => {
+              scrollToTop();
               helpers.trackEvent(
                 "Link",
                 "About",
                 "From Footer"
-              )
-            }
+              );
+            }}
           >
-            About 
+            About
           </Link>
         </li>
         <li>
           <Link
             to="/projects"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
-            onClick={() =>
+            onClick={() => {
+                scrollToTop()
               helpers.trackEvent(
                 "Link",
                 "About",
                 "From Footer"
               )
-            }
+            }}
           >
             Projects
           </Link>
