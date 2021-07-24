@@ -1,5 +1,7 @@
 import { ReactComponent as DeveloperSvg } from "../assets/developer.svg";
 import AboutConcepts from "./AboutConcepts";
+import Image from "../ui/Image";
+import workFromHome from "../assets/FullSizeRender-3.JPG";
 
 const AboutDeveloper = () => {
   const svgClass = `inline mr-4 w-12 h-12 dark:text-darkTxtPrimary
@@ -34,6 +36,12 @@ const AboutDeveloper = () => {
         learning or perfecting and my goal is to have these
         mastered as much as possible.
       </p>
+      <div className="mx-auto w-3/4">
+        <Image
+          src={workFromHome}
+          alt="person working at a computer"
+        />
+      </div>
       <AboutConcepts />
     </section>
   );

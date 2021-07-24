@@ -91,11 +91,6 @@ const AboutConcepts = () => {
         performant.
       </p>
       <p>
-        At the moment the way I handle this in React
-        applications is to make sure I am using the right
-        tool for the job.
-      </p>
-      <p>
         To accomplish this I use React.lazy to render
         content only when it's necessary, React.memo to
         avoid some components re-rendering and rethinking

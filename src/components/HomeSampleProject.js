@@ -30,7 +30,7 @@ const HomeSampleProject = () => {
             </span>
             is a project I created to understand Javascript
             canvas, it started as a simple attempt to create
-            an animated circle and evolved into a full
+            an animated circle and evolved into a desktop
             browser game.
           </p>
           <p>
