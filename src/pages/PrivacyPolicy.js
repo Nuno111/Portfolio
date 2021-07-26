@@ -1,10 +1,9 @@
 const PrivacyPolicy = () => {
   return (
     <main className="container flex flex-col gap-8">
-      <h3 className="self-center pt-40 text-2xl">
-        Privacy Policy for Nuno Carro Developer
-      </h3>
-
+      <h2 className="self-center py-20 text-center text-3xl font-bold md:text-5xl lg:text-left">
+        Privacy Policy
+      </h2>
       <p>
         At Nuno Carro Developer, accessible from
         https://nunocarro.com, one of our main priorities is
@@ -13,7 +12,6 @@ const PrivacyPolicy = () => {
         collected and recorded by Nuno Carro Developer and
         how we use it.
       </p>
-
       <p>
         If you have additional questions or require more
         information about our Privacy Policy, do not
@@ -28,16 +26,18 @@ const PrivacyPolicy = () => {
           GDPRPrivacyNotice.com
         </a>
       </p>
-      <h3>Google Analytics</h3>
+      <h3 className="text-1xl font-bold md:text-2xl">
+        Google Analytics
+      </h3>
       <p>
         How Google uses data when you use our partners'
         sites or apps, (located at
         www.google.com/policies/privacy/partners).
       </p>
-
-      <h3>General Data Protection Regulation (GDPR)</h3>
+      <h3 className="text-1xl font-bold md:text-2xl">
+        General Data Protection Regulation (GDPR)
+      </h3>
       <p>We are a Data Controller of your information.</p>
-
       <p>
         Nuno Carro Developer legal basis for collecting and
         using the personal information described in this
@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
         we collect and the specific context in which we
         collect the information:
       </p>
-      <ul>
+      <ul className="px-10 list-disc">
         <li>
           Nuno Carro Developer needs to perform a contract
           with you
@@ -62,7 +62,6 @@ const PrivacyPolicy = () => {
           Nuno Carro Developer needs to comply with the law
         </li>
       </ul>
-
       <p>
         Nuno Carro Developer will retain your personal
         information only for as long as is necessary for the
@@ -71,7 +70,6 @@ const PrivacyPolicy = () => {
         necessary to comply with our legal obligations,
         resolve disputes, and enforce our policies.
       </p>
-
       <p>
         If you are a resident of the European Economic Area
         (EEA), you have certain data protection rights. If
@@ -83,7 +81,7 @@ const PrivacyPolicy = () => {
         In certain circumstances, you have the following
         data protection rights:
       </p>
-      <ul>
+      <ul className="px-10 list-disc">
         <li>
           The right to access, update or to delete the
           information we have on you.
@@ -95,7 +93,9 @@ const PrivacyPolicy = () => {
         <li>The right to withdraw consent</li>
       </ul>
 
-      <h3>Log Files</h3>
+      <h3 className="text-1xl font-bold md:text-2xl">
+        Log Files
+      </h3>
 
       <p>
         Nuno Carro Developer follows a standard procedure of
@@ -113,7 +113,9 @@ const PrivacyPolicy = () => {
         demographic information.
       </p>
 
-      <h3>Cookies and Web Beacons</h3>
+      <h3 className="text-1xl font-bold md:text-2xl">
+        Cookies and Web Beacons
+      </h3>
 
       <p>
         Like any other website, Nuno Carro Developer uses
@@ -138,7 +140,9 @@ const PrivacyPolicy = () => {
         .
       </p>
 
-      <h3>Privacy Policies</h3>
+      <h3 className="text-1xl font-bold md:text-2xl">
+        Privacy Policies
+      </h3>
 
       <p>
         You may consult this list to find the Privacy Policy
@@ -165,7 +169,9 @@ const PrivacyPolicy = () => {
         third-party advertisers.
       </p>
 
-      <h3>Third Party Privacy Policies</h3>
+      <h3 className="text-1xl font-bold md:text-2xl">
+        Third Party Privacy Policies
+      </h3>
 
       <p>
         Nuno Carro Developer's Privacy Policy does not apply
@@ -185,7 +191,9 @@ const PrivacyPolicy = () => {
         respective websites.
       </p>
 
-      <h3>Children's Information</h3>
+      <h3 className="text-1xl font-bold md:text-2xl">
+        Children's Information
+      </h3>
 
       <p>
         Another part of our priority is adding protection
@@ -204,7 +212,9 @@ const PrivacyPolicy = () => {
         information from our records.
       </p>
 
-      <h3>Online Privacy Policy Only</h3>
+      <h3 className="text-1xl font-bold md:text-2xl">
+        Online Privacy Policy Only
+      </h3>
 
       <p>
         Our Privacy Policy applies only to our online
@@ -215,7 +225,9 @@ const PrivacyPolicy = () => {
         offline or via channels other than this website.
       </p>
 
-      <h3>Consent</h3>
+      <h3 className="text-1xl font-bold md:text-2xl">
+        Consent
+      </h3>
 
       <p>
         By using our website, you hereby consent to our
