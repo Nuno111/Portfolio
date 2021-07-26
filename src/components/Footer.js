@@ -10,7 +10,8 @@ const Footer = () => {
   const svgClass =
     "w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current";
 
-  const scrollToTop = () => window.scrollTo({top:0, behavior:"smooth"});
+  const scrollToTop = () =>
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <footer
@@ -57,12 +58,12 @@ const Footer = () => {
             to="/projects"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
             onClick={() => {
-                scrollToTop()
+              scrollToTop();
               helpers.trackEvent(
                 "Link",
                 "About",
                 "From Footer"
-              )
+              );
             }}
           >
             Projects
@@ -136,6 +137,12 @@ const Footer = () => {
           </span>
           arro
         </p>
+        <Link
+          className="text-xs text-gray-500 py-4"
+          to="/PrivacyPolicy"
+        >
+          Privacy Policy
+        </Link>
       </div>
     </footer>
   );

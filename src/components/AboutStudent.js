@@ -5,7 +5,7 @@ const AboutStudent = () => {
   text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
 
   return (
-    <section className="flex flex-col gap-6 py-6 md:text-xl xl:text-2xl">
+    <section className="flex flex-col gap-6 py-6 md:text-xl lg:gap-12 lg:py-20 xl:text-2xl">
       <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
         <span>
           <StudentSvg className={largeSvg} />
@@ -27,8 +27,7 @@ const AboutStudent = () => {
       <p>
         Each project has its own specifications of what you
         are expected to do and all the learning has to be
-        done on your own and talking to
-        your peers.
+        done on your own and talking to your peers.
       </p>
       <p>
         The first few projects at 42 are mostly coded in c,

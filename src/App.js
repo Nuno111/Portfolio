@@ -35,6 +35,9 @@ function App() {
         <Route path="/projects/AutomatedCaloriesTracker">
           <Lazy.AutomatedCaloriesTracker />
         </Route>
+        <Route path="/PrivacyPolicy">
+          <Lazy.PrivacyPolicy />
+        </Route>
       </Suspense>
       <Footer />
     </div>

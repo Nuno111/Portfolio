@@ -8,7 +8,7 @@ const AboutDeveloper = () => {
   text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
 
   return (
-    <section className="flex flex-col gap-6 py-6 md:text-xl xl:text-2xl">
+    <section className="flex flex-col gap-6 py-6 md:text-xl lg:gap-12 lg:py-20 xl:text-2xl">
       <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
         <span>
           <DeveloperSvg className={svgClass} />
