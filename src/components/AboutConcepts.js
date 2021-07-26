@@ -30,7 +30,7 @@ const AboutConcepts = () => {
           Responsively App
         </li>
         <li>
-          Percetanges and viewport units instead of fixed
+          Percentages and viewport units instead of fixed
           pixel dimensions
         </li>
         <li>CSS Flexbox and Grid Layout</li>
@@ -65,7 +65,7 @@ const AboutConcepts = () => {
         <li>Aria labels to help with website navigation</li>
         <li>
           Google Lighthouse to help identify any current
-          accessibilty issues
+          accessibility issues
         </li>
       </ul>
     </li>
@@ -106,7 +106,7 @@ const AboutConcepts = () => {
         Good maintainable code is something I always strive
         to achieve. This can sometimes be hard to do since
         it's somewhat of a subjective matter, therefore
-        impossible to please everyone. Here's how I try achieve it:
+        impossible to please everyone. Here's how I try to achieve it:
       </p>
       <ul className="px-10 space-y-4 list-disc">
         <li>

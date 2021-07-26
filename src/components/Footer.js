@@ -138,7 +138,7 @@ const Footer = () => {
           arro
         </p>
         <Link
-          className="text-xs text-gray-500 py-4"
+          className="py-4 text-gray-400 text-xs"
           to="/PrivacyPolicy"
         >
           Privacy Policy

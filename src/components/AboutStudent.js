@@ -15,7 +15,7 @@ const AboutStudent = () => {
       <p>
         Most of my knowledge regarding web development comes
         from self-study through different online courses and
-        then applying what I learned into my own personal
+        then applying what I learned to my own personal
         projects.
       </p>
       <p>
@@ -33,12 +33,6 @@ const AboutStudent = () => {
         The first few projects at 42 are mostly coded in c,
         and some others are related to system
         administration.
-      </p>
-      <p>
-        Once the c learning is done, we move to c++ and the
-        final project of the main cursus is a 5 person team
-        project based on front-end and back-end web
-        development.
       </p>
     </section>
   );

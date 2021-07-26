@@ -40,7 +40,7 @@ const Home = () => {
           className="text-center text-2xl md:text-3xl lg:text-4xl"
         >
           <span className="block pb-2">
-            Front-End web developer.
+            Front-End Web Developer.
           </span>
           I work with React to create modern single-page web
           applications.

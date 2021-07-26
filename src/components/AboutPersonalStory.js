@@ -25,11 +25,11 @@ const AboutPersonalStory = () => {
         industry.
       </p>
       <p>
-        In 2015 I moved to the UK in search for better
-        growth opportunities, I lived and worked there for
-        about 5 years before returning to Portugal to chase
-        a career in Web Development and to be closer to my
-        friends and family.
+        In 2015 I moved to the UK in search of better growth
+        opportunities, I lived and worked there for about 5
+        years before returning to Portugal to chase a career
+        in Web Development and to be closer to my friends
+        and family.
       </p>
       <p>
         Moving to the UK was the best decision I've ever

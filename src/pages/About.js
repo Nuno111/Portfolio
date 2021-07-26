@@ -27,8 +27,8 @@ const About = () => {
             Welcome!
           </h2>
           <p className="text-center text-xl leading-loose lg:text-left xl:text-3xl">
-            Let's build something together! Download my
-            curriculum or scroll down to read more about me.
+            I'm glad you're here! Download my curriculum or
+            scroll down to read more about me.
           </p>
           <a
             href="../assets/curriculum.pdf"

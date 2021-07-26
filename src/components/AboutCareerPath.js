@@ -13,11 +13,11 @@ const AboutCareerPath = () => {
         Career Path
       </h3>
       <p>
-        My work experience consists mostly on the Fruit &
+        My work experience consists mostly in the Fruit &
         Veg industry. When I arrived in the UK I started
         working as a picker-packer and quickly started
-        getting more and more responsabilities, over time I
-        held roles such as but no limited to:
+        getting more and more responsibilities, over time I
+        held roles such as but not limited to:
       </p>
       <ul className="px-10 list-disc">
         <li>E-Procurement Specialist</li>
