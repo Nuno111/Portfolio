@@ -28,7 +28,7 @@ const Projects = () => {
           enterFrom="-translate-x-96 opacity-0"
           enterTo="opacity-100 translate-x-0 "
           as="ul"
-          className="grid gap-8 grid-cols-1 lg:gap-16 lg:grid-cols-2"
+          className="grid gap-8 grid-cols-1 xl:gap-16 xl:grid-cols-2"
         >
           <ProjectsCard
             title="cub3D"
@@ -53,7 +53,7 @@ const Projects = () => {
             projectPath="/projects/FtPrintf"
           />
         </Transition.Child>
-        <p className="text-xl xl:text-3xl">
+        <p className="text-xl lg:text-3xl">
           For a full list of all my projects checkout my
           Github account on the link below.
         </p>

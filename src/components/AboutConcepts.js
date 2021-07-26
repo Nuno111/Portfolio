@@ -18,33 +18,29 @@ const AboutConcepts = () => {
       <p>
         In this day and age, apart from a few exceptions, a
         website MUST be responsive since most traffic now
-        comes from mobile devices.
+        comes from mobile devices. Here's how I handle it:
       </p>
+      <ul className="px-10 list-disc space-y-4">
+        <li>
+          Develop for mobile first and modify accordingly
+          for larger screens
+        </li>
+        <li>
+          Test extensively by using Chrome Dev tools and
+          Responsively App
+        </li>
+        <li>
+          Percetanges and viewport units instead of fixed
+          pixel dimensions
+        </li>
+        <li>CSS Flexbox and Grid Layout</li>
+      </ul>
       <p>
-        The way I handle this is to develop for mobile first
-        and then make modifications across a few
-        breakpoints. I test extensively by using Chrome dev
-        tools and apps like Responsively App where we can
-        see the same application running across multiple
-        devices at the same time.
-      </p>
-      <p>
-        I try to stay away as much as possible from pixels
-        based dimensions and use percentages and viewport
-        height units. This makes it easy to scale the same
-        content across all the different devices and their
-        specific dimensions.
-      </p>
-      <p>
-        Utilities like flex-box and grid layouts help
-        immensely to make things adaptable and responsive.
-      </p>
-      <p>
-        One change I am really looking forward to is for
-        aspect-ratio CSS properties to be supported across
-        all web browsers. It's a great tool to improve the
-        way we handle images and it's a shame it's not fully
-        supported across all browsers yet.
+        One change I am really looking forward to start
+        using is aspect-ratio CSS properties It's a great
+        tool to improve the way we handle images and it's a
+        shame it's not fully supported across all browsers
+        yet.
       </p>
     </li>
   );
@@ -59,23 +55,19 @@ const AboutConcepts = () => {
       </h6>
       <p>
         A public website's content should be accessible to
-        everyone, whether they have disabilities or not.
+        everyone, whether they have disabilities or not. I
+        still have plenty to improve in this area but at the
+        moment these are my strategies:
       </p>
-      <p>
-        This is something I still need to invest more time
-        into. At the moment the way I tackle this problem is
-        to follow some of the principles that have been
-        established by the web development community to
-        enhance website accessibility.
-      </p>
-      <p>
-        Having descriptive alt texts on images, properly
-        attaching aria tags to specific button components,
-        Google Lighthouse to flag issues that have been
-        missed as well as a good semantic HTML composition
-        are some of the concepts I use to accomplish
-        accessible applications.
-      </p>
+      <ul className="px-10 list-disc space-y-4">
+        <li>Descriptive alt texts on images</li>
+        <li>Good semantic HTML composition</li>
+        <li>Aria labels to help with website navigation</li>
+        <li>
+          Google Lighthouse to help identify any current
+          accessibilty issues
+        </li>
+      </ul>
     </li>
   );
   const performant = (
@@ -87,30 +79,18 @@ const AboutConcepts = () => {
         Performant
       </h6>
       <p>
-        There's much to say and do to make a website
-        performant.
+        There are many ways to achieve this, and it varies a
+        lot from application to application, but my general
+        approach is:
       </p>
-      <p>
-        To accomplish this I use React.lazy to render
-        content only when it's necessary, React.memo to
-        avoid some components re-rendering and rethinking
-        how state is handled if an application outgrew its
-        original expectations.
-      </p>
-      <p>
-        Another way I achieve performance is to investigate
-        loading times. Opening the network tab in Chrome dev
-        tools, and looking at what sources are taking the
-        longest to load and then finding ways to improve
-        their load times.
-      </p>
-      <p>
-        Finally, when building for production I make sure to
-        optimize images by reducing their original size to
-        something more performant and purge CSS files to
-        remove all unused classes that tailwind generates
-        thus making it considerably smaller.
-      </p>
+      <ul className="px-10 list-disc space-y-4">
+        <li>React.lazy to render content only when it's necessary</li>
+        <li>React.memo to avoid unnecessary component re-rendering</li>
+        <li>Handle state in different ways depending on the application complexity</li>
+        <li>Investigate and improve load times by inspecting Chrome Dev Tools network tab</li>
+        <li>Optimize image size for production</li>
+        <li>Purge unused CSS classes generated by TailwindCSS</li>
+      </ul>
     </li>
   );
 
@@ -126,14 +106,9 @@ const AboutConcepts = () => {
         Good maintainable code is something I always strive
         to achieve. This can sometimes be hard to do since
         it's somewhat of a subjective matter, therefore
-        impossible to please everyone.
+        impossible to please everyone. Here's how I try achieve it:
       </p>
-      <p>
-        Nonetheless, there are a few topics that most people
-        agree upon to achieve "clean code".
-      </p>
-      <p>Some of the strategies I use are:</p>
-      <ul className="px-8 list-disc">
+      <ul className="px-10 space-y-4 list-disc">
         <li>
           Each function/component only does one thing and
           does it well
@@ -147,8 +122,7 @@ const AboutConcepts = () => {
           on their purpose
         </li>
         <li>
-          Commenting complex code that might help someone
-          understand why it's there and what it does
+          Adding comments to explain complex logic 
         </li>
       </ul>
     </li>

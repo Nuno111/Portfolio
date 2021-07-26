@@ -22,40 +22,22 @@ const AboutPersonalStory = () => {
         quality of life.
       </p>
       <p>
-        I left Portugal in 2015 and moved to the UK where I
-        lived for about 5 years. Before this decision, I was
-        stuck working part-time jobs in the catering
-        industry during the summer months and unemployed
-        after that since work is scarce in the Algarve
-        region after the summer months.
+        I got my high school diploma in Economics and
+        started working summer jobs in the catering
+        industry.
       </p>
-      <figure className="py-4 lg:mx-auto lg:w-3/4">
-        <Image src={vilamoura} alt="Vilamoura" />
-        <figcaption className="text-center">
-          Vilamoura - Algarve
-        </figcaption>
-      </figure>
       <p>
-        I can safely say this was the best decision I've
+        In 2015 I moved to the UK in search for better
+        growth opportunities, I lived and worked there for
+        about 5 years before returning to Portugal to chase
+        a career in Web Development and to be closer to my friends and family.
+      </p>
+      <p>
+        Moving to the UK was the best decision I've
         ever made because moving away to another country
-        alone with just enough money to survive one or two
-        months and no job lined up made me who I am today.
-      </p>
-      <p>
-        I faced challenges I would never have had if I had
-        stayed close to home and learned how to fight for
-        myself and my objectives.
-      </p>
-      <p>
-        Moving away from everything I always took for
-        granted also gave me a different perspective on
-        everything I have and taught me to appreciate it
-        more.
-      </p>
-      <p>
-        I moved back to Portugal in 2021 to pursue my career
-        as a web developer and be closer to my friends and
-        family.
+        alone with just enough money to sustain myself for
+        about two months and no job lined up made me who I
+        am today.
       </p>
       <p>
         Since most of my days are spent sitting at a desk, I

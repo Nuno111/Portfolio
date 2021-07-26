@@ -10,9 +10,6 @@ const NavbarBurgerMenu = ({
   burgerOpen,
   toggleBurger,
 }) => {
-  const linkClass =
-    "dark:border-darkTxtPrimary border-lightTxtPrimary border-b-2";
-
   const linkActiveClass =
     "text-lightTxtPrimary dark:text-darkTxtPrimary";
 
@@ -31,7 +28,6 @@ const NavbarBurgerMenu = ({
             activeClassName={linkActiveClass}
             exact
             to="/"
-            className={linkClass}
             onClick={() => {
               toggleBurger();
               helpers.trackEvent(
@@ -48,7 +44,6 @@ const NavbarBurgerMenu = ({
           <NavLink
             activeClassName={linkActiveClass}
             to="/About"
-            className={linkClass}
             onClick={() => {
               toggleBurger();
               helpers.trackEvent(
@@ -65,7 +60,6 @@ const NavbarBurgerMenu = ({
           <NavLink
             activeClassName={linkActiveClass}
             to="/projects"
-            className={linkClass}
             onClick={() => {
               toggleBurger();
               helpers.trackEvent(
@@ -82,7 +76,6 @@ const NavbarBurgerMenu = ({
           <HashLink
             smooth
             to="/#contact"
-            className={linkClass}
             onClick={() => {
               toggleBurger();
               helpers.trackEvent(

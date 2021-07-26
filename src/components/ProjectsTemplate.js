@@ -83,7 +83,7 @@ const ProjectsTemplate = ({
           to="/projects"
           className="flex-center flex justify-center lg:col-start-2"
         >
-          <Button text="Back to projects" />
+          <Button text="Back to projects" primary={true} />
         </Link>
       </article>
     </main>

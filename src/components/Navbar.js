@@ -68,7 +68,7 @@ const Navbar = () => {
           </div>
           <ul
             className={`flex hidden gap-8 items-center justify-end
-            md:text-xl lg:flex`}
+            md:text-2xl lg:flex`}
           >
             <li>
               <NavLink

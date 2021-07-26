@@ -16,18 +16,10 @@ const AboutDeveloper = () => {
         As a developer
       </h3>
       <p>
-        I am focused, passionate and curious. Programming
-        challenges me every day and really makes me think
-        about problems in a more structured way.
-      </p>
-      <p>
-        This whole notion that you never stop learning new
-        things while working as a developer, may be draining
-        sometimes but for me, it's actually one of its
-        greatest benefits. Being able to learn new things
-        every day, struggling with new concepts for a while
-        until it becomes clear how they work is a very
-        rewarding feeling.
+        I am focused, passionate and curious. Being able to
+        learn new things every day, struggling with new
+        concepts for a while until it becomes clear how they
+        work is a very rewarding feeling.
       </p>
       <p>
         As a web developer, there are a few concepts I

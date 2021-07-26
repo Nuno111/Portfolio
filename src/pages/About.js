@@ -27,8 +27,8 @@ const About = () => {
             Welcome!
           </h2>
           <p className="text-center text-xl leading-loose lg:text-left xl:text-3xl">
-            Please scroll down to read more about myself or
-            download my CV for a quick summary.
+            Let's build something together! Download my
+            curriculum or scroll down read about me.
           </p>
           <a
             href="../assets/curriculum.pdf"

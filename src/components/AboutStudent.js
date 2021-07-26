@@ -19,15 +19,15 @@ const AboutStudent = () => {
         projects.
       </p>
       <p>
-        Then I am also a student at 42 Lisbon. The way 42
-        school works is that there are no teachers and all
-        the learning is projected based and peer-to-peer
+        I am also a student at 42 Lisbon. The way 42 school
+        works is that there are no teachers and all the
+        learning is projected based and peer-to-peer
         learning.
       </p>
       <p>
         Each project has its own specifications of what you
         are expected to do and all the learning has to be
-        done on your own researching online and talking to
+        done on your own and talking to
         your peers.
       </p>
       <p>

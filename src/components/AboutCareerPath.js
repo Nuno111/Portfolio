@@ -13,42 +13,19 @@ const AboutCareerPath = () => {
         Career Path
       </h3>
       <p>
-        My first job in the UK started 2 weeks after I
-        arrived in the country. I was a picker/packer in a
-        company that delivers fruit & veg all around London.
-        3 months later I was promoted to team leader, and 6
-        months I decided it was time to move and learn more
-        about the industry.
+        My work experience consists mostly on the Fruit &
+        Veg industry. When I arrived in the UK I started
+        working as a picker-packer and
+        quickly started getting more and more
+        responsabilities, over time I held roles such as but no limited to:
       </p>
-      <p>
-        My next job was as a fruit & veg buyer in the New
-        Covent Garden wholesale market and I loved every
-        minute of it. I was in charge of taking customers
-        orders, monitor stock levels, buy and negotiate
-        prices directly with the salesmen.
-      </p>
-      <p>
-        A year later I decided to learn new things again.
-        That's when I moved to a different fruit and veg
-        company where I stayed for about 3 years, now as an
-        office administrator where I had different roles
-        over time such as implement and manage customers
-        price lists, branch produce buyer, responsible for
-        all procurement work, general office duties and
-        stock controller.
-      </p>
-      <p>
-        It was while working here that I started exploring
-        web development, with a simple HTML/CSS course and
-        found out I enjoyed it.
-      </p>
-      <p>
-        From there I spent most of my days looking forward
-        to going home after work so I could study more.
-        Often to avoid traffic I would leave home at 6 am
-        and study for 2hours in my car or staff cafeteria
-        before starting work at 8:30 am.
-      </p>
+      <ul className="list-disc px-10">
+        <li>E-Procurement Specialist</li>
+        <li>Buyer</li>
+        <li>Warehouse Team Leader</li>
+        <li>Quality Controller</li>
+        <li>Stock Controller</li>
+      </ul>
     </section>
   );
 };
