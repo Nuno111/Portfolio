@@ -38,13 +38,13 @@ const HomeContact = () => {
           href="mailto:nuno_c11@hotmail.com"
           svg={emailSvg}
           title="Email"
-          content="Nuno_c11@hotmail.com"
+          content="nuno_c11@hotmail.com"
         />
         <HomeContactCard
           href="tel:+351912950619"
           svg={phoneSvg}
           title="Mobile"
-          content="+351 91 295 061 9"
+          content="+351 93 194 535 1"
         />
       </ul>
     </section>

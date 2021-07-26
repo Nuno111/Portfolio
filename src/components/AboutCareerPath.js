@@ -2,7 +2,7 @@ import { ReactComponent as ProfessionalSvg } from "../assets/professional.svg";
 
 const AboutCareerPath = () => {
   const largeSvg = `inline mr-4 w-12 h-12 dark:text-darkTxtPrimary
-  text-lightTxtPrimary fill-current lg:w-20 lg:h-16`;
+  text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
 
   return (
     <section className="flex flex-col gap-6 py-6 md:text-xl xl:text-2xl">
@@ -15,11 +15,11 @@ const AboutCareerPath = () => {
       <p>
         My work experience consists mostly on the Fruit &
         Veg industry. When I arrived in the UK I started
-        working as a picker-packer and
-        quickly started getting more and more
-        responsabilities, over time I held roles such as but no limited to:
+        working as a picker-packer and quickly started
+        getting more and more responsabilities, over time I
+        held roles such as but no limited to:
       </p>
-      <ul className="list-disc px-10">
+      <ul className="px-10 list-disc">
         <li>E-Procurement Specialist</li>
         <li>Buyer</li>
         <li>Warehouse Team Leader</li>
