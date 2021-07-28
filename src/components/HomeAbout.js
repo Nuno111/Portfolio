@@ -26,9 +26,10 @@ const HomeAbout = () => {
         <HomeAboutCard
           svg={what}
           title="What I Do"
-          content1="My main focus is creating SPAs as a front-end web developer,
-		      but I also enjoy exploring other fields such as game development,
-		      automation of repetitive tasks and working with systems."
+          content1="My main focus as a Front-end Web Developer is to create
+          fast and responsive SPAs, but I also enjoy exploring other fields
+          such as game development, automation of repetitive tasks and
+          working with systems."
           path="/projects"
           linkTxt="Projects"
           ariaLabel="Projects section"
