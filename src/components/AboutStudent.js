@@ -26,13 +26,9 @@ const AboutStudent = () => {
       </p>
       <p>
         Each project has its own specifications of what you
-        are expected to do and all the learning has to be
-        done on your own and talking to your peers.
-      </p>
-      <p>
-        The first few projects at 42 are mostly coded in c,
-        and some others are related to system
-        administration.
+        are expected to do and all the learning is done
+        through your own research and discussion with your
+        peers.
       </p>
     </section>
   );
