@@ -5,6 +5,7 @@ import AboutCareerPath from "../components/AboutCareerPath";
 import AboutDeveloper from "../components/AboutDeveloper";
 import AboutStudent from "../components/AboutStudent";
 import { Transition } from "@headlessui/react";
+import curriculum from "../assets/Nuno Carro Developer.pdf";
 
 const About = () => {
   return (
@@ -31,7 +32,8 @@ const About = () => {
             scroll down to read more about me.
           </p>
           <a
-            href="../assets/curriculum.pdf"
+            href={curriculum}
+            download="Nuno Carro Developer.pdf"
             className="self-center lg:self-start"
           >
             <Button text="Download CV" primary={true} />
