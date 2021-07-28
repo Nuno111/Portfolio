@@ -20,7 +20,7 @@ const AboutCareerPath = () => {
         held roles such as but not limited to:
       </p>
       <ul className="px-10 list-disc">
-        <li>E-Procurement Specialist</li>
+        <li>Procurement Officer</li>
         <li>Buyer</li>
         <li>Warehouse Team Leader</li>
         <li>Quality Controller</li>

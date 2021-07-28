@@ -28,7 +28,7 @@ const Home = () => {
           enter="transform transition-all duration-1000 ease-in-out"
           enterFrom="-translate-x-96 opacity-0 ease-in-out"
           enterTo="opacity-100 translate-x-0 ease-in-out"
-          className="w-3/4 h-1/2 md:w-2/3 lg:w-1/2"
+          className="w-3/4 h-1/2 md:w-2/3 lg:w-1/3"
         >
           <HeroSvg className="mx-auto w-full h-full" />
         </Transition.Child>

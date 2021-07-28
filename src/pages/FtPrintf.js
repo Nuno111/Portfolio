@@ -103,7 +103,7 @@ const Ft_Printf = () => {
         title="Bonus part of the project"
         content="As with most projects at 42 you have the mandatory and
 				the bonus parts for each project.
-				For this project I decided the bonus wasn't worth doing, 
+				For this project, I decided the bonus wasn't worth doing, 
         since it just required us to do a few extra flags and conversions by
         applying more or less the same logic as before."
       />

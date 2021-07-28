@@ -76,7 +76,7 @@ const CaloriesTracker = () => {
         testing.
       </p>
       <p>
-        Luckily the API didn't give me much troubles with
+        Luckily the API didn't give me many problems with
         installation and setup and in a few days, I was able
         to make this work as I wanted.
       </p>
