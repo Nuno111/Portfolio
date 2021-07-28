@@ -1,0 +1,583 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Looks for changes in UI 1`] = `
+<main>
+  <section
+    className="container flex flex-col gap-4 items-center
+      justify-between py-6 hero-height font-bold md:gap-8"
+  >
+    <p
+      className="text-4xl md:text-6xl"
+    >
+      Nuno Carro
+    </p>
+    <div
+      className="w-3/4 h-1/2 md:w-2/3 lg:w-1/2"
+    >
+      <svg
+        className="mx-auto w-full h-full"
+      >
+        hero.svg
+      </svg>
+    </div>
+    <h1
+      className="text-center text-2xl md:text-3xl lg:text-4xl"
+    >
+      <span
+        className="block pb-2"
+      >
+        Front-End Web Developer.
+      </span>
+      I work with React to create modern single-page web applications.
+    </h1>
+    <div>
+      <a
+        aria-label="Scroll down to about section"
+        href="/#HomeAbout"
+        onClick={[Function]}
+      >
+        <svg
+          className="inline w-12 h-12 lg:w-16 lg:h-16
+            dark:text-darkTxtPrimary text-lightTxtPrimary fill-current 
+            transform hover:scale-125 duration-500"
+        >
+          arrowdown.svg
+        </svg>
+      </a>
+    </div>
+  </section>
+  <section
+    className="container"
+    id="HomeAbout"
+  >
+    <ul
+      className="flex flex-col pt-4 divide-gray-500 divide-y"
+    >
+      <li
+        className="grid gap-10 grid-cols-1 items-center justify-items-center
+		py-6 lg:grid-cols-4"
+      >
+        <svg
+          className="w-20 h-20 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-28 lg:h-28"
+        >
+          who.svg
+        </svg>
+        <div
+          className="flex flex-col gap-6 items-center justify-center text-center
+        lg:col-end-4 lg:col-start-2 lg:items-start lg:justify-start lg:text-left"
+        >
+          <h2
+            className="text-2xl font-bold xl:text-3xl"
+          >
+            Who Am I
+          </h2>
+          <p
+            className="leading-loose lg:text-2xl"
+          >
+            I consider myself a friendly and enthusiastic person, easy to talk to and extremely curious about other people's passions. Currently living in Lisbon and studying at 42 Lisbon programming school.
+          </p>
+          <a
+            aria-label="About section"
+            className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
+            href="/about"
+            onClick={[Function]}
+          >
+            About
+            <svg
+              className="inline w-10 h-10 fill-current group-hover:animate-spin"
+            >
+              arrowright.svg
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li
+        className="grid gap-10 grid-cols-1 items-center justify-items-center
+		py-6 lg:grid-cols-4"
+      >
+        <svg
+          className="w-20 h-20 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-28 lg:h-28"
+        >
+          what.svg
+        </svg>
+        <div
+          className="flex flex-col gap-6 items-center justify-center text-center
+        lg:col-end-4 lg:col-start-2 lg:items-start lg:justify-start lg:text-left"
+        >
+          <h2
+            className="text-2xl font-bold xl:text-3xl"
+          >
+            What I Do
+          </h2>
+          <p
+            className="leading-loose lg:text-2xl"
+          >
+            My main focus is creating SPAs as a front-end web developer, but I also enjoy exploring other fields such as game development, automation of repetitive tasks and working with systems.
+          </p>
+          <a
+            aria-label="Projects section"
+            className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
+            href="/projects"
+            onClick={[Function]}
+          >
+            Projects
+            <svg
+              className="inline w-10 h-10 fill-current group-hover:animate-spin"
+            >
+              arrowright.svg
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li
+        className="grid gap-10 grid-cols-1 items-center justify-items-center
+		py-6 lg:grid-cols-4"
+      >
+        <svg
+          className="w-20 h-20 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-28 lg:h-28"
+        >
+          why.svg
+        </svg>
+        <div
+          className="flex flex-col gap-6 items-center justify-center text-center
+        lg:col-end-4 lg:col-start-2 lg:items-start lg:justify-start lg:text-left"
+        >
+          <h2
+            className="text-2xl font-bold xl:text-3xl"
+          >
+            Why This Portfolio Exists
+          </h2>
+          <p
+            className="leading-loose lg:text-2xl"
+          >
+            Whether you are a fellow student, developer or recruiter you're probably curious about me, hopefully, with this website I can convince you I am a good guy and an excellent asset to any team. If  you're up for a chat you can reach me via email or phone.
+          </p>
+          <a
+            aria-label="Contact section"
+            className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
+            href="/#contact"
+            onClick={[Function]}
+          >
+            Contact
+            <svg
+              className="inline w-10 h-10 fill-current group-hover:animate-spin"
+            >
+              arrowright.svg
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section
+    className="container"
+  >
+    <h3
+      className="py-12 text-center text-2xl font-bold 
+        md:text-3xl lg:py-28 lg:text-4xl"
+    >
+      Methodologies I use for Single-Page Applications (SPAs)
+    </h3>
+    <ul
+      className="grid gap-16 grid-cols-1 xl:grid-cols-3"
+    >
+      <li
+        className="flex flex-col dark:bg-darkBgSecondary rounded-lg gap-6
+      items-center p-6 shadow-2xl transform hover:scale-110
+      duration-300 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current"
+        >
+          responsive.svg
+        </svg>
+        <h3
+          className="text-xl font-bold md:text-2xl lg:text-3xl"
+        >
+          <span
+            className="dark:text-darkTxtPrimary text-lightTxtPrimary"
+          >
+            R
+          </span>
+          esponsive
+        </h3>
+        <p
+          className="dark:text-gray-300 text-gray-500 text-center leading-loose lg:text-2xl"
+        >
+          To achieve SPAs responsiveness I use Mobile-First Approach design alongside technologies like CSS flexbox/grid, Chrome dev tools and Tailwind responsive properties.
+        </p>
+      </li>
+      <li
+        className="flex flex-col dark:bg-darkBgSecondary rounded-lg gap-6
+      items-center p-6 shadow-2xl transform hover:scale-110
+      duration-300 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current"
+        >
+          performant.svg
+        </svg>
+        <h3
+          className="text-xl font-bold md:text-2xl lg:text-3xl"
+        >
+          <span
+            className="dark:text-darkTxtPrimary text-lightTxtPrimary"
+          >
+            P
+          </span>
+          erformant
+        </h3>
+        <p
+          className="dark:text-gray-300 text-gray-500 text-center leading-loose lg:text-2xl"
+        >
+          To accomplish SPAs performance I use a different tool-set of React Hooks for each project based on its complexities and optimize  all sources for production.
+        </p>
+      </li>
+      <li
+        className="flex flex-col dark:bg-darkBgSecondary rounded-lg gap-6
+      items-center p-6 shadow-2xl transform hover:scale-110
+      duration-300 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current"
+        >
+          maintainable.svg
+        </svg>
+        <h3
+          className="text-xl font-bold md:text-2xl lg:text-3xl"
+        >
+          <span
+            className="dark:text-darkTxtPrimary text-lightTxtPrimary"
+          >
+            M
+          </span>
+          aintainable
+        </h3>
+        <p
+          className="dark:text-gray-300 text-gray-500 text-center leading-loose lg:text-2xl"
+        >
+          To ensure ease of SPAs maintenance I use a combination of  modern best practices coupled with the breakdown of complex logic  into smaller individual blocks.
+        </p>
+      </li>
+    </ul>
+  </section>
+  <section
+    className="container"
+  >
+    <h3
+      className="py-12 text-center text-2xl font-bold
+        md:text-3xl lg:py-28 lg:text-4xl"
+    >
+      Tech Stack
+    </h3>
+    <ul
+      className="grid gap-10 grid-cols-3 text-sm sm:grid-cols-5
+        lg:text-xl xl:grid-cols-10"
+    >
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          html.svg
+        </svg>
+        <p>
+          HTML
+        </p>
+      </li>
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          css.svg
+        </svg>
+        <p>
+          CSS
+        </p>
+      </li>
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          javascript.svg
+        </svg>
+        <p>
+          JavaScript
+        </p>
+      </li>
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          react.svg
+        </svg>
+        <p>
+          React
+        </p>
+      </li>
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          tailwind.svg
+        </svg>
+        <p>
+          TailwindCSS
+        </p>
+      </li>
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          c.svg
+        </svg>
+        <p>
+          C
+        </p>
+      </li>
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          github.svg
+        </svg>
+        <p>
+          Github
+        </p>
+      </li>
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          git.svg
+        </svg>
+        <p>
+          Git
+        </p>
+      </li>
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          neovim.svg
+        </svg>
+        <p>
+          Neovim
+        </p>
+      </li>
+      <li
+        className="flex flex-col gap-4 items-center justify-center
+  transform hover:scale-125 duration-200 ease-linear"
+      >
+        <svg
+          className="w-12 h-12 lg:w-20 lg:h-20"
+        >
+          figma.svg
+        </svg>
+        <p>
+          Figma
+        </p>
+      </li>
+    </ul>
+  </section>
+  <section
+    className="container"
+  >
+    <h3
+      className="py-12 text-center text-2xl font-bold
+        md:text-3xl md:text-4xl lg:py-28"
+    >
+      Sample Project - Colour Them All
+    </h3>
+    <div
+      className="grid gap-6 grid-cols-1 xl:gap-12 xl:grid-cols-2"
+    >
+      <a
+        className="relative pb-3/4"
+        href="https://upbeat-hopper-d62a44.netlify.app/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Website game to colour circles"
+          className=" transform hover:scale-110 duration-500 ease-in-out absolute w-full h-full object-cover"
+          src="colourThemAll.png"
+        />
+      </a>
+      <div
+        className="flex flex-col gap-8 justify-between
+          leading-loose lg:text-2xl"
+      >
+        <p>
+          <span
+            className="font-bold"
+          >
+            Colour Them All
+             
+          </span>
+          is a project I created to understand Javascript canvas, it started as a simple attempt to create an animated circle and evolved into a desktop browser game.
+        </p>
+        <p>
+          The objective is to click on all circles until they change colour, missing a click will reset circle colours.
+        </p>
+        <p>
+          The biggest challenge I had was with code organization since I wasn't expecting to turn this into an actual project with so many functionalities like changing colour themes, difficulty settings, increasing levels, etc.
+        </p>
+        <p>
+          I had thought about doing a full refactor but in the end, decided it wasn't needed so I just made sure to protect the variables by wrapping the content in an IIFE and adding some structure so it's not a spaghetti mess.
+        </p>
+      </div>
+    </div>
+    <div
+      className="flex flex-col items-center justify-center
+        pt-8 lg:pt-20 md:flex-row gap-8 lg:gap-16"
+    >
+      <a
+        className="flex-center flex justify-center"
+        href="/projects"
+        onClick={[Function]}
+      >
+        <button
+          className="
+        px-4 py-2 whitespace-nowrap text-xl lg:px-8 lg:py-4 font-bold border-2
+        border-solid rounded-full transform hover:scale-110 transition-transform
+        duration-300 ease-linear dark:bg-darkBgPrimary dark:hover:text-darkTxtPrimary
+      dark:text-light dark:border-darkTxtPrimary border-lightTxtPrimary
+      text-lightTxtPrimary "
+          type="button"
+        >
+          Other projects
+        </button>
+      </a>
+      <a
+        className="flex-center flex justify-center"
+        href="https://upbeat-hopper-d62a44.netlify.app/"
+        onClick={[Function]}
+        rel="noreferrer"
+        target="_blank"
+      >
+        <button
+          className="
+        px-4 py-2 whitespace-nowrap text-xl lg:px-8 lg:py-4 font-bold border-2
+        border-solid rounded-full transform hover:scale-110 transition-transform
+        duration-300 ease-linear dark:bg-darkTxtPrimary dark:text-darkBgPrimary dark:border-darkBgPrimary
+      text-light bg-lightTxtPrimary "
+          type="button"
+        >
+          Play it live
+        </button>
+      </a>
+    </div>
+  </section>
+  <section
+    className="container flex flex-col items-center justify-center"
+    id="contact"
+  >
+    <h3
+      className="py-12 text-center text-2xl
+        font-bold md:text-3xl lg:py-20 lg:text-4xl"
+    >
+      Get In Touch
+    </h3>
+    <p
+      className="text-center text-xl leading-loose sm:px-4
+        md:text-2xl lg:px-8 lg:text-3xl xl:px-20"
+    >
+      I'd love to hear you from, whether you want to discuss new opportunities, talk about my projects, give some feedback or just want to have a chat.
+    </p>
+    <ul
+      className="justify-center flex flex-col gap-20
+        items-center py-20 sm:flex-row"
+    >
+      <li
+        className="group flex flex-col gap-4
+      items-center justify-center animate-bounce"
+      >
+        <a
+          className="flex flex-col gap-4 items-center justify-center"
+          href="mailto:nuno_c11@hotmail.com"
+          onClick={[Function]}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <svg
+            className="
+    dark:group-hover:text-darkTxtPrimary
+    w-20 h-20 group-hover:text-lightTxtPrimary fill-current"
+          >
+            email.svg
+          </svg>
+          <h4
+            className="text-xl sm:text-2xl lg:text-3xl"
+          >
+            Email
+          </h4>
+        </a>
+        <p
+          className="border-b-2 border-solid dark:border-darkTxtPrimary
+        border-lightTxtPrimary sm:text-xl lg:text-2xl"
+        >
+          nuno_c11@hotmail.com
+        </p>
+      </li>
+      <li
+        className="group flex flex-col gap-4
+      items-center justify-center animate-bounce"
+      >
+        <a
+          className="flex flex-col gap-4 items-center justify-center"
+          href="tel:+351912950619"
+          onClick={[Function]}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <svg
+            className="
+    dark:group-hover:text-darkTxtPrimary
+    w-20 h-20 group-hover:text-lightTxtPrimary fill-current"
+          >
+            phone.svg
+          </svg>
+          <h4
+            className="text-xl sm:text-2xl lg:text-3xl"
+          >
+            Mobile
+          </h4>
+        </a>
+        <p
+          className="border-b-2 border-solid dark:border-darkTxtPrimary
+        border-lightTxtPrimary sm:text-xl lg:text-2xl"
+        >
+          +351 93 194 535 1
+        </p>
+      </li>
+    </ul>
+  </section>
+</main>
+`;
