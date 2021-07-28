@@ -17,7 +17,7 @@ const AboutDeveloper = () => {
       </h3>
       <p>
         I am focused, passionate and curious. Being able to
-        learn new things every day, struggling with new
+        learn new things every day and struggling with new
         concepts for a while until it becomes clear how they
         work is a very rewarding feeling.
       </p>
