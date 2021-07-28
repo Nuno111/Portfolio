@@ -13,7 +13,7 @@ const HomeSampleProject = () => {
       >
         Sample Project - Colour Them All
       </h3>
-      <div className="grid gap-6 grid-cols-1 xl:gap-12 xl:grid-cols-2">
+      <div className="grid 2xl:gap-12 gap-6 grid-cols-1 2xl:grid-cols-2">
         <Image
           src={sampleProject}
           alt="Website game to colour circles"
