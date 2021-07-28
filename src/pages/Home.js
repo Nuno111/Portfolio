@@ -39,11 +39,8 @@ const Home = () => {
           as="h1"
           className="text-center text-2xl md:text-3xl lg:text-4xl"
         >
-          <span className="block pb-2">
-            Front-End Web Developer.
-          </span>
-          I work with React to create modern single-page web
-          applications.
+          I am an enthusiastic Front-End Web Developer who
+          creates modern single-page web applications.
         </Transition.Child>
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
