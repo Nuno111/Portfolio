@@ -28,16 +28,8 @@ const HomeMethodologies = () => {
         <HomeMethodologiesCard
           title="Responsive"
           content="To achieve SPAs responsiveness I use Mobile-First Approach
-          design alongside technologies like CSS flexbox/grid, Chrome dev tools
-          and Tailwind responsive properties."
+          design and test extensively across all devices."
           icon={responsive}
-        />
-        <HomeMethodologiesCard
-          title="Performant"
-          content="To accomplish SPAs performance I use a different tool-set of
-          React Hooks for each project based on its complexities and optimize 
-          all sources for production."
-          icon={performant}
         />
         <HomeMethodologiesCard
           title="Maintainable"
@@ -45,6 +37,13 @@ const HomeMethodologies = () => {
           modern best practices coupled with the breakdown of complex logic 
           into smaller individual blocks."
           icon={maintainable}
+        />
+        <HomeMethodologiesCard
+          title="Performant"
+          content="To accomplish SPAs performance I investigate HTTP requests,
+          optimize all sources for production and avoid unnecessary components
+          re-rendering."
+          icon={performant}
         />
       </ul>
     </section>
