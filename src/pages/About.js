@@ -5,7 +5,7 @@ import AboutCareerPath from "../components/AboutCareerPath";
 import AboutDeveloper from "../components/AboutDeveloper";
 import AboutStudent from "../components/AboutStudent";
 import { Transition } from "@headlessui/react";
-import curriculum from "../assets/Nuno Carro Developer.pdf";
+import resume from "../assets/Nuno Carro Developer.pdf";
 
 const About = () => {
   return (
@@ -28,11 +28,11 @@ const About = () => {
             Welcome!
           </h2>
           <p className="text-center text-xl leading-loose lg:text-left xl:text-3xl">
-            I'm glad you're here! Download my curriculum or
+            I'm glad you're here! Download my resume or
             scroll down to read more about me.
           </p>
           <a
-            href={curriculum}
+            href={resume}
             download="Nuno Carro Developer.pdf"
             className="self-center lg:self-start"
           >
