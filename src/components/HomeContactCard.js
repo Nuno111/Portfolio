@@ -4,7 +4,7 @@ const HomeContactCard = ({ href, svg, title, content }) => {
   return (
     <li
       className={`group flex flex-col gap-4
-      items-center justify-center animate-bounce`}
+      items-center justify-center`}
     >
       <a
         href={href}
