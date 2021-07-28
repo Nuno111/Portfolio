@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import LoadingPage from "./ui/LoadingPage";
 import Lazy from "./ui/Lazy";
 import useGoogleAnalytics from "./hooks/useGoogleAnalytics";
+import ScrollToTop from "./ui/ScrollToTop";
 
 function App() {
   useGoogleAnalytics();
@@ -15,6 +16,7 @@ function App() {
       className="text-dark dark:text-light font-sans text-lg
 			dark:bg-darkBgPrimary bg-lightBgPrimary"
     >
+      <ScrollToTop />
       <Navbar />
       <Route exact path="/">
         <Home />

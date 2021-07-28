@@ -1,4 +1,7 @@
-const NavbarThemeToggler = ({ onTogglerClick, darkMode }) => {
+const NavbarThemeToggler = ({
+  onTogglerClick,
+  darkMode,
+}) => {
   return (
     <button
       onClick={onTogglerClick}
