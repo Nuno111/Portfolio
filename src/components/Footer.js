@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { ReactComponent as InstagramSvg } from "../assets/instagram.svg";
 import { ReactComponent as FacebookSvg } from "../assets/facebook.svg";
@@ -22,7 +22,9 @@ const Footer = () => {
     >
       <ul className="flex flex-col gap-2 items-center my-6">
         <li>
-          <Link
+          <NavLink
+            activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+            exact
             to="/"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
             onClick={() => {
@@ -35,10 +37,12 @@ const Footer = () => {
             }}
           >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
+            activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+            exact
             to="/About"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
             onClick={() => {
@@ -51,11 +55,13 @@ const Footer = () => {
             }}
           >
             About
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
+            exact
             to="/projects"
+            activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
             onClick={() => {
               scrollToTop();
@@ -67,7 +73,7 @@ const Footer = () => {
             }}
           >
             Projects
-          </Link>
+          </NavLink>
         </li>
         <li>
           <HashLink
