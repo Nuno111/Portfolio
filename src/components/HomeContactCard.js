@@ -19,13 +19,13 @@ const HomeContactCard = ({ href, svg, title, content }) => {
         <h4 className="text-xl sm:text-2xl lg:text-3xl">
           {title}
         </h4>
-      </a>
-      <p
-        className={`border-b-2 border-solid dark:border-darkTxtPrimary
+        <p
+          className={`border-b-2 border-solid dark:border-darkTxtPrimary
         border-lightTxtPrimary sm:text-xl lg:text-2xl`}
-      >
-        {content}
-      </p>
+        >
+          {content}
+        </p>
+      </a>
     </li>
   );
 };
