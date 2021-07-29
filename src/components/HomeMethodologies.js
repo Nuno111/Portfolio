@@ -24,7 +24,7 @@ const HomeMethodologies = () => {
         Methodologies I use for Single-Page Applications
         (SPAs)
       </h3>
-      <ul className="grid gap-16 grid-cols-1 xl:grid-cols-3">
+      <section className="grid gap-16 grid-cols-1 xl:grid-cols-3">
         <HomeMethodologiesCard
           title="Responsive"
           content="To achieve SPAs responsiveness I use Mobile-First Approach
@@ -45,7 +45,7 @@ const HomeMethodologies = () => {
           re-rendering."
           icon={performant}
         />
-      </ul>
+      </section>
     </section>
   );
 };
