@@ -53,7 +53,7 @@ const Navbar = () => {
           >
             <img
               src={darkMode ? logo : logoLight}
-              alt="NC"
+              alt="Two letters N and C inside a semi open circle representing Nuno Carro"
               className="w-12 h-12"
               width="128"
               height="128"
