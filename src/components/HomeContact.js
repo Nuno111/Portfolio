@@ -44,7 +44,7 @@ const HomeContact = () => {
           href="tel:+351912950619"
           svg={phoneSvg}
           title="Mobile"
-          content="+351 93 194 535 1"
+          content="+351 931 945 351"
         />
       </ul>
     </section>
