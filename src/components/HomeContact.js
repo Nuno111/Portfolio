@@ -35,10 +35,10 @@ const HomeContact = () => {
         items-center py-20 sm:flex-row`}
       >
         <HomeContactCard
-          href="mailto:nuno_c11@hotmail.com"
+          href="mailto:nunocarro111@gmail.com"
           svg={emailSvg}
           title="Email"
-          content="nuno_c11@hotmail.com"
+          content="nunocarro111@gmail.com"
         />
         <HomeContactCard
           href="tel:+351912950619"
