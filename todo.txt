@@ -1,4 +1,4 @@
 Improve dark mode toggler accesibility with label
-Fix techstack responsiveness issues on galaxy s9
 preload components
 typography hierarchy
+padding between titles

@@ -43,7 +43,7 @@ const Footer = () => {
           <NavLink
             activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
             exact
-            to="/About"
+            to="/about"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
             onClick={() => {
               scrollToTop();
