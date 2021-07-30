@@ -7,3 +7,9 @@
 .hero-height {
   min-height: calc(100vh - 64px);
 }
+
+@layer components {
+  .section-title {
+    @apply pb-10 pt-16 text-center text-2xl font-bold md:text-3xl lg:pb-16 lg:pt-28 lg:text-4xl;
+  }
+}

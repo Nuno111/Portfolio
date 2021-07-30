@@ -7,10 +7,7 @@ import helpers from "../utils/helpers";
 const HomeSampleProject = () => {
   return (
     <section className="container">
-      <h3
-        className={`py-12 text-center text-2xl font-bold
-        md:text-3xl md:text-4xl lg:py-28`}
-      >
+      <h3 className="section-title">
         Sample Project - Colour Them All
       </h3>
       <div className="grid 2xl:gap-12 gap-6 grid-cols-1 2xl:grid-cols-2">

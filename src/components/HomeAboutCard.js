@@ -48,7 +48,7 @@ const HomeAboutCard = ({
         {svg}
         <div
           className={`flex flex-col gap-6 items-center justify-center text-center
-        lg:col-end-4 lg:col-start-2 lg:items-start lg:justify-start lg:text-left`}
+        lg:col-end-5 2xl:col-end-4 lg:col-start-2 lg:items-start lg:justify-start lg:text-left`}
         >
           <h2 className="text-2xl font-bold xl:text-3xl">
             {title}

@@ -51,8 +51,8 @@ const ProjectsTemplate = ({
         {title}
       </h2>
       {externalLinks}
-      <article className="flex flex-col gap-10 lg:gap-20">
-        <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
+      <article className="flex flex-col gap-5 lg:gap-8">
+        <h3 className="pt-6 text-2xl font-bold md:text-3xl lg:pt-12 lg:text-4xl">
           <span>
             <OverviewSvg className={largeSvg} />
           </span>
@@ -61,7 +61,7 @@ const ProjectsTemplate = ({
         <div className="flex flex-col gap-6 md:text-xl lg:gap-12 xl:text-2xl">
           {overview}
         </div>
-        <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
+        <h3 className="pt-6 text-2xl font-bold md:text-3xl lg:pt-12 lg:text-4xl">
           <span>
             <ApproachSvg className={largeSvg} />
           </span>
@@ -70,7 +70,7 @@ const ProjectsTemplate = ({
         <div className="flex flex-col gap-6 md:text-xl xl:text-2xl">
           {approach}
         </div>
-        <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
+        <h3 className="pt-6 text-2xl font-bold md:text-3xl lg:pt-12 lg:text-4xl">
           <span>
             <ChallengeSvg className={largeSvg} />
           </span>

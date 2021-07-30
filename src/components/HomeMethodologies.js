@@ -17,10 +17,7 @@ const HomeMethodologies = () => {
 
   return (
     <section className="container">
-      <h3
-        className={`py-12 text-center text-2xl font-bold 
-        md:text-3xl lg:py-28 lg:text-4xl`}
-      >
+      <h3 className="section-title">
         Methodologies I use for Single-Page Applications
         (SPAs)
       </h3>
