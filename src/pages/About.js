@@ -50,9 +50,9 @@ const About = () => {
         />
       </Transition>
       <article>
-        <AboutPersonalStory />
-        <AboutCareerPath />
         <AboutDeveloper />
+        <AboutCareerPath />
+        <AboutPersonalStory />
         <AboutStudent />
       </article>
     </main>

@@ -16,7 +16,7 @@ const HomeAbout = () => {
         <HomeAboutCard
           svg={who}
           title="Who Am I"
-          content1="I consider myself a friendly and enthusiastic person,
+          content1="I consider myself a friendly and flexible person,
 		      easy to talk to and extremely curious about other people's passions.
 		      Currently living in Lisbon and studying at 42 Lisbon programming school."
           path="/about"

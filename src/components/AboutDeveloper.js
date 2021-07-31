@@ -22,11 +22,11 @@ const AboutDeveloper = () => {
         work is a very rewarding feeling.
       </p>
       <p>
-        As a web developer, there are a few concepts I
-        consider that every project needs to have in order
-        to be a presentable work. Some of them I am still
-        learning or perfecting and my goal is to have these
-        mastered as much as possible.
+        There are a few concepts I consider that every
+        project needs to have in order to be a presentable
+        work. Some of them I am still learning or perfecting
+        and my goal is to have these mastered as much as
+        possible.
       </p>
       <div className="mx-auto w-3/4">
         <Image
