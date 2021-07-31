@@ -1,10 +1,12 @@
 import { Route } from "react-router-dom";
-import React, { Suspense } from "react";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Cub3D from "./pages/Cub3D";
+import FtPrintf from "./pages/FtPrintf";
+import AutomatedCaloriesTracker from "./pages/AutomatedCaloriesTracker";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import LoadingPage from "./ui/LoadingPage";
-import Lazy from "./ui/Lazy";
 import useGoogleAnalytics from "./hooks/useGoogleAnalytics";
 import ScrollToTop from "./ui/ScrollToTop";
 
@@ -21,26 +23,21 @@ function App() {
       <Route exact path="/">
         <Home />
       </Route>
-      <Suspense fallback={<LoadingPage />}>
         <Route path="/about">
-          <Lazy.About />
+          <About />
         </Route>
         <Route exact path="/projects">
-          <Lazy.Projects />
+          <Projects />
         </Route>
         <Route path="/projects/cub3D">
-          <Lazy.Cub3D />
+          <Cub3D />
         </Route>
         <Route path="/projects/FtPrintf">
-          <Lazy.FtPrintf />
+          <FtPrintf />
         </Route>
         <Route path="/projects/AutomatedCaloriesTracker">
-          <Lazy.AutomatedCaloriesTracker />
+          <AutomatedCaloriesTracker />
         </Route>
-        <Route path="/PrivacyPolicy">
-          <Lazy.PrivacyPolicy />
-        </Route>
-      </Suspense>
       <Footer />
     </div>
   );

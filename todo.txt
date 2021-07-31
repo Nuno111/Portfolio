@@ -1,4 +1,3 @@
 Improve dark mode toggler accesibility with label
 preload components
 typography hierarchy
-padding between titles
