@@ -1,5 +1,6 @@
 import myself from "../assets/myself.jpg";
 import Button from "../ui/Button";
+import helpers from "../utils/helpers";
 import AboutPersonalStory from "../components/AboutPersonalStory";
 import AboutCareerPath from "../components/AboutCareerPath";
 import AboutDeveloper from "../components/AboutDeveloper";
@@ -35,6 +36,9 @@ const About = () => {
             href={resume}
             download="Nuno Carro Developer.pdf"
             className="self-center lg:self-start"
+            onClick={() =>
+              helpers.trackEvent("Button", "Download")
+            }
           >
             <Button text="Download CV" primary={true} />
           </a>
