@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Cub3D from "./pages/Cub3D";
 import FtPrintf from "./pages/FtPrintf";
+import Portfolio from "./pages/Portfolio";
 import AutomatedCaloriesTracker from "./pages/AutomatedCaloriesTracker";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -23,21 +24,24 @@ function App() {
       <Route exact path="/">
         <Home />
       </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route exact path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/projects/cub3D">
-          <Cub3D />
-        </Route>
-        <Route path="/projects/FtPrintf">
-          <FtPrintf />
-        </Route>
-        <Route path="/projects/AutomatedCaloriesTracker">
-          <AutomatedCaloriesTracker />
-        </Route>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Route exact path="/projects">
+        <Projects />
+      </Route>
+      <Route exact path="/projects/portfolio">
+        <Portfolio />
+      </Route>
+      <Route path="/projects/cub3D">
+        <Cub3D />
+      </Route>
+      <Route path="/projects/FtPrintf">
+        <FtPrintf />
+      </Route>
+      <Route path="/projects/AutomatedCaloriesTracker">
+        <AutomatedCaloriesTracker />
+      </Route>
       <Footer />
     </div>
   );

@@ -3,6 +3,7 @@ import Button from "../ui/Button";
 import cub3D from "../assets/cub3d.png";
 import automatedCaloriesTracker from "../assets/automatedCaloriesTracker.png";
 import ftPrintf from "../assets/ftPrintf.png";
+import portfolio from "../assets/portfolio.png";
 import { Transition } from "@headlessui/react";
 
 const Projects = () => {
@@ -30,6 +31,13 @@ const Projects = () => {
           as="ul"
           className="grid gap-8 grid-cols-1 xl:gap-16 xl:grid-cols-2"
         >
+          <ProjectsCard
+            title="Personal Portfolio"
+            img={portfolio}
+            alt="Desktop monitor showing nunocarro.com website homepage"
+            description="Portfolio website to showcase projects and skills"
+            projectPath="/projects/portfolio"
+          />
           <ProjectsCard
             title="cub3D"
             img={cub3D}
