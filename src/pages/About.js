@@ -34,7 +34,7 @@ const About = () => {
           </p>
           <a
             href={resume}
-            download="Nuno Carro Developer.pdf"
+            download="Nuno Carro Frontend Developer.pdf"
             className="self-center lg:self-start"
             onClick={() =>
               helpers.trackEvent("Button", "Download")
