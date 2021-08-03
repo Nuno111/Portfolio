@@ -6,7 +6,7 @@ import AboutCareerPath from "../components/AboutCareerPath";
 import AboutDeveloper from "../components/AboutDeveloper";
 import AboutStudent from "../components/AboutStudent";
 import { Transition } from "@headlessui/react";
-import resume from "../assets/Nuno Carro Developer.pdf";
+import resume from "../assets/Nuno Carro Frontend Developer.pdf";
 
 const About = () => {
   return (
