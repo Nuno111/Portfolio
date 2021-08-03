@@ -83,7 +83,7 @@ const Cub3D = () => {
 				to implement it on my own. I was only able to render
 				untextured walls this way and they had uneven edges. 
 				After many tries and headaches, I finally decided
-				to do some research and find a way the logic to make them work."
+				to do some research and find a way to make them work."
         success={true}
       />
       <ProjectsChallenge

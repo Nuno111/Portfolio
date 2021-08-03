@@ -21,13 +21,13 @@ const ProjectsTemplate = ({
   hover:text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
 
   const externalLinks = (
-    <div className="flex gap-4 mb-6 lg:my-0">
+    <div className="flex gap-4 items-center justify-center mb-6 lg:my-0">
       {githubPath && (
         <a
           target="_blank"
           rel="noreferrer"
           href={githubPath}
-          className="flex items-center justify-center mx-auto"
+          className="flex items-center justify-center"
         >
           <GithubSvg className={smallSvg} />
         </a>
