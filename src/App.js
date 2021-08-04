@@ -16,8 +16,7 @@ function App() {
 
   return (
     <div
-      className="text-dark dark:text-light font-sans text-lg
-			dark:bg-darkBgPrimary bg-lightBgPrimary"
+      className="font-sans text-lg text-dark dark:text-light dark:bg-darkBgPrimary bg-lightBgPrimary"
     >
       <ScrollToTop />
       <Navbar />
