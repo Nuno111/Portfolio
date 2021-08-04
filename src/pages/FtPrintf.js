@@ -8,26 +8,23 @@ import ProjectsChallenge from "../components/ProjectsChallenge";
 
 const Ft_Printf = () => {
   const overview = (
-    <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="flex flex-col items-center justify-between">
         <p>
-          Ft_printf is a project from 42 school that
-          requires us to create a function that mimics the
-          printf function which is defined in stdio.h header
-          file.
+          Ft_printf is a project from 42 school that requires us to create a
+          function that mimics the printf function which is defined in stdio.h
+          header file.
         </p>
         <p>
-          As seen on the image, the requirements are quite
-          extensive, the function should be able to handle
-          at least 9 different conversions as well a minimum
-          of 4 flags, which can all be combined into a
-          single function call.
+          As seen on the image, the requirements are quite extensive, the
+          function should be able to handle at least 9 different conversions as
+          well a minimum of 4 flags, which can all be combined into a single
+          function call.
         </p>
         <p>
-          Not only that, and as per usual at 42, everything
-          has to work perfectly (which is one of the reasons
-          I love 42), no memory leaks are allowed, and the
-          behaviour must be exactly the same as the original
+          Not only that, and as per usual at 42, everything has to work
+          perfectly (which is one of the reasons I love 42), no memory leaks are
+          allowed, and the behaviour must be exactly the same as the original
           printf except for undefined behaviour.
         </p>
       </div>
@@ -42,23 +39,20 @@ const Ft_Printf = () => {
   const approach = (
     <Fragment>
       <p>
-        The first thing I did was to understand how width
-        and precision worked by reading and re-reading
-        extensively Microsoft docs.
+        The first thing I did was to understand how width and precision worked
+        by reading and re-reading extensively Microsoft docs.
       </p>
       <p>
-        Some tests were done and I started going for it.
-        Only to realise a bit later that this was much more
-        complicated than I had anticipated, especially how
-        width and precision are dependant on each other and
-        vary for each conversion.
+        Some tests were done and I started going for it. Only to realise a bit
+        later that this was much more complicated than I had anticipated,
+        especially how width and precision are dependant on each other and vary
+        for each conversion.
       </p>
       <p>
-        I went back to testing by running the original
-        printf function with every single combination of
-        flags and conversions I could think of in order to
-        understand the ins and outs of printf, before
-        rethinking my logic again.
+        I went back to testing by running the original printf function with
+        every single combination of flags and conversions I could think of in
+        order to understand the ins and outs of printf, before rethinking my
+        logic again.
       </p>
       <div
         className={`grid gap-8 grid-cols-1 px-4 py-4 lg:gap-12 lg:grid-cols-2`}

@@ -26,30 +26,19 @@ const Navbar = () => {
   useEffect(() => {
     const root = window.document.documentElement;
 
-    darkMode
-      ? root.classList.add("dark")
-      : root.classList.remove("dark");
+    darkMode ? root.classList.add("dark") : root.classList.remove("dark");
   }, [darkMode]);
 
   return (
     <header>
       <nav
-        className={`px-4 lg:px-10 font-bolg flex flex-col items-betwee justify-between py-2
+        className={`lg:px-10 px-4 font-bold flex flex-col items-between justify-between py-2
         dark:bg-darkBgSecondary bg-lightBgSecondary shadow-lg`}
       >
-        <div
-          className={`justify-between justify-center flex
-          items-center lg:grid lg:grid-cols-3`}
-        >
+        <div className="flex items-center justify-between lg:grid lg:grid-cols-3">
           <NavLink
             to="/"
-            onClick={() =>
-              helpers.trackEvent(
-                "Link",
-                "Home",
-                "From Logo"
-              )
-            }
+            onClick={() => helpers.trackEvent("Link", "Home", "From Logo")}
           >
             <img
               src={darkMode ? logo : logoLight}
@@ -59,7 +48,7 @@ const Navbar = () => {
               height="128"
             />
           </NavLink>
-          <div className="flex hidden justify-center lg:flex">
+          <div className="justify-center hidden lg:flex">
             <NavbarThemeToggler
               className="px-2 sm:px-8"
               onTogglerClick={toggleDarkMode}
@@ -67,7 +56,7 @@ const Navbar = () => {
             />
           </div>
           <ul
-            className={`flex hidden gap-8 items-center justify-end
+            className={`hidden gap-8 items-center justify-end
             md:text-2xl lg:flex`}
           >
             <li>
@@ -78,11 +67,7 @@ const Navbar = () => {
                 className={`dark:hover:text-darkTxtPrimary
                 hover:text-lightTxtPrimary`}
                 onClick={() =>
-                  helpers.trackEvent(
-                    "Link",
-                    "Home",
-                    "From Navbar"
-                  )
+                  helpers.trackEvent("Link", "Home", "From Navbar")
                 }
               >
                 Home
@@ -96,11 +81,7 @@ const Navbar = () => {
                 className={`dark:hover:text-darkTxtPrimary
                 hover:text-lightTxtPrimary`}
                 onClick={() =>
-                  helpers.trackEvent(
-                    "Link",
-                    "About",
-                    "From Navbar"
-                  )
+                  helpers.trackEvent("Link", "About", "From Navbar")
                 }
               >
                 About
@@ -114,11 +95,7 @@ const Navbar = () => {
                 className={`dark:hover:text-darkTxtPrimary 
                 hover:text-lightTxtPrimary`}
                 onClick={() =>
-                  helpers.trackEvent(
-                    "Link",
-                    "Projects",
-                    "From Navbar"
-                  )
+                  helpers.trackEvent("Link", "Projects", "From Navbar")
                 }
               >
                 Projects
@@ -131,11 +108,7 @@ const Navbar = () => {
                 className={`dark:hover:text-darkTxtPrimary
                 hover:text-lightTxtPrimary`}
                 onClick={() =>
-                  helpers.trackEvent(
-                    "Link",
-                    "Contact",
-                    "From Navbar"
-                  )
+                  helpers.trackEvent("Link", "Contact", "From Navbar")
                 }
               >
                 Contact

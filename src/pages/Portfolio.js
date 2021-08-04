@@ -6,16 +6,15 @@ const Portfolio = () => {
   const overview = (
     <Fragment>
       <p>
-        This portfolio was created to showcase my work as
-        well as a bit of who am I and my personality. I
-        intend to keep it up to date with projects, and I
-        also have the intention to add a blog page and
-        redesign it in the future.
+        This portfolio was created to showcase my work as well as a bit of who
+        am I and my personality. I intend to keep it up to date with projects,
+        and I also have the intention to add a blog page and redesign it in the
+        future.
       </p>
       <p>
-        The decision on which technologies to use wasn't
-        hard, I wanted to improve my react skills, and also
-        wanted to try out TailwindCSS so that was it.
+        The decision on which technologies to use wasn't hard, I wanted to
+        improve my react skills, and also wanted to try out TailwindCSS so that
+        was it.
       </p>
     </Fragment>
   );
@@ -23,22 +22,19 @@ const Portfolio = () => {
   const approach = (
     <Fragment>
       <p>
-        First I had to think about the design, which wasn't
-        easy at all, I designed the homepage in Figma, but
-        during development ended up not liking it, so it
-        went through various re-designs.
+        First I had to think about the design, which wasn't easy at all, I
+        designed the homepage in Figma, but during development ended up not
+        liking it, so it went through various re-designs.
       </p>
       <p>
-        Once the design was out of the way(or so I
-        thought..) it was time to focus on React to render
-        the barebones of the website. This wasn't hard since
-        I barely have any state management, so my focus was
-        directed to optimizing readability and maintenance.
+        Once the design was out of the way(or so I thought..) it was time to
+        focus on React to render the barebones of the website. This wasn't hard
+        since I barely have any state management, so my focus was directed to
+        optimizing readability and maintenance.
       </p>
       <p>
-        Later when it was time for production that's when I
-        had the most troubles, deciding what needed to be
-        optimized and how to achieve it.
+        Later when it was time for production that's when I had the most
+        troubles, deciding what needed to be optimized and how to achieve it.
       </p>
     </Fragment>
   );

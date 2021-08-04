@@ -12,8 +12,7 @@ const Projects = () => {
       <Transition
         appear={true}
         show={true}
-        className={`flex flex-col gap-12 items-center 
-        justify-center pt-12 md:gap-16`}
+        className="flex flex-col items-center justify-center gap-12 pt-12 md:gap-16"
       >
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
@@ -29,7 +28,7 @@ const Projects = () => {
           enterFrom="-translate-x-96 opacity-0"
           enterTo="opacity-100 translate-x-0 "
           as="ul"
-          className="grid gap-8 grid-cols-1 xl:gap-16 xl:grid-cols-2"
+          className="grid grid-cols-1 gap-8 xl:gap-16 xl:grid-cols-2"
         >
           <ProjectsCard
             title="Personal Portfolio"
@@ -62,14 +61,10 @@ const Projects = () => {
           />
         </Transition.Child>
         <p className="text-xl lg:text-3xl">
-          For a full list of all my projects checkout my
-          Github account on the link below.
+          For a full list of all my projects checkout my Github account on the
+          link below.
         </p>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/Nuno111"
-        >
+        <a target="_blank" rel="noreferrer" href="https://github.com/Nuno111">
           <Button text="Github" primary={true} />
         </a>
       </Transition>

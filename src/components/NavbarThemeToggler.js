@@ -1,16 +1,13 @@
-const NavbarThemeToggler = ({
-  onTogglerClick,
-  darkMode,
-}) => {
+const NavbarThemeToggler = ({ onTogglerClick, darkMode }) => {
   return (
     <button
       onClick={onTogglerClick}
-      className="transform hover:scale-150 duration-500"
+      className="duration-500 transform hover:scale-150"
       aria-label="Switch between dark/light theme"
     >
       {darkMode && (
         <svg
-          className="w-10 h-10 text-darkTxtPrimary fill-current"
+          className="w-10 h-10 fill-current text-darkTxtPrimary"
           viewBox="0 0 24 24"
         >
           <path
@@ -24,7 +21,7 @@ const NavbarThemeToggler = ({
       )}
       {!darkMode && (
         <svg
-          className="w-10 h-10 text-lightTxtPrimary fill-current"
+          className="w-10 h-10 fill-current text-lightTxtPrimary"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

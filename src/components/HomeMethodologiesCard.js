@@ -1,8 +1,4 @@
-const HomeMethodologiesCard = ({
-  title,
-  content,
-  icon,
-}) => {
+const HomeMethodologiesCard = ({ title, content, icon }) => {
   return (
     <article
       className={`flex flex-col dark:bg-darkBgSecondary rounded-lg gap-6
@@ -17,8 +13,7 @@ const HomeMethodologiesCard = ({
         {title.substring(1)}
       </h3>
       <p
-        className="dark:text-gray-300
-				text-gray-500 text-center leading-loose lg:text-2xl"
+        className="leading-loose text-center text-gray-500 dark:text-gray-300 lg:text-2xl"
       >
         {content}
       </p>

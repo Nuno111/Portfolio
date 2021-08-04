@@ -5,7 +5,7 @@ const AboutCareerPath = () => {
   text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
 
   return (
-    <section className="flex flex-col gap-12 gap-6 pb-6 pt-12 md:text-xl lg:pb-10 lg:pt-16 xl:text-2xl">
+    <section className="flex flex-col gap-6 pt-12 pb-6 md:text-xl lg:gap-12 lg:pb-10 lg:pt-16 xl:text-2xl">
       <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
         <span>
           <ProfessionalSvg className={largeSvg} />
@@ -13,11 +13,10 @@ const AboutCareerPath = () => {
         Career Path
       </h3>
       <p>
-        My work experience consists mostly in the Fruit &
-        Veg industry. When I arrived in the UK I started
-        working as a picker-packer and quickly started
-        getting more and more responsibilities, over time I
-        held roles such as but not limited to:
+        My work experience consists mostly in the Fruit & Veg industry. When I
+        arrived in the UK I started working as a picker-packer and quickly
+        started getting more and more responsibilities, over time I held roles
+        such as but not limited to:
       </p>
       <ul className="px-10 list-disc">
         <li>Procurement Officer</li>

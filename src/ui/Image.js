@@ -1,12 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Image = ({
-  src,
-  alt,
-  linkPath,
-  externalLink,
-  dynamicClasses,
-}) => {
+const Image = ({ src, alt, linkPath, externalLink, dynamicClasses }) => {
   const extraClasses = dynamicClasses ? dynamicClasses : "";
 
   /* Will only have transition scale if it's a link image*/

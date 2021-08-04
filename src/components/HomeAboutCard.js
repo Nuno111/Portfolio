@@ -20,7 +20,7 @@ const HomeAboutCard = ({
     <HashLink
       smooth
       to={path}
-      className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
+      className="text-xl font-bold group dark:text-darkTxtPrimary text-lightTxtPrimary"
       aria-label={ariaLabel}
       onClick={onClick}
     >
@@ -30,7 +30,7 @@ const HomeAboutCard = ({
   ) : (
     <Link
       to={path}
-      className="group dark:text-darkTxtPrimary text-lightTxtPrimary text-xl font-bold"
+      className="text-xl font-bold group dark:text-darkTxtPrimary text-lightTxtPrimary"
       aria-label={ariaLabel}
       onClick={onClick}
     >

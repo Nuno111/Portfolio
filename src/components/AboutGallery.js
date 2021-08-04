@@ -8,7 +8,7 @@ import madeira from "../assets/madeira.jpg";
 const AboutGallery = () => {
   const imgClass = "w-full lg:w-1/4";
   return (
-    <section className="flex flex-wrap gap-4 justify-center">
+    <section className="flex flex-wrap justify-center gap-4">
       <img
         src={mudKart}
         className={imgClass}
@@ -29,11 +29,7 @@ const AboutGallery = () => {
         src={nineArchBridgeElla}
         alt="Nuno with friends at Nine Arch Bridge in Ella"
       />
-      <img
-        className={imgClass}
-        src={porto}
-        alt="Nuno near a bridge in Porto"
-      />
+      <img className={imgClass} src={porto} alt="Nuno near a bridge in Porto" />
       <img
         className={imgClass}
         src={madeira}

@@ -3,9 +3,7 @@ import { ReactComponent as PhoneSvg } from "../assets/phone.svg";
 import HomeContactCard from "../components/HomeContactCard";
 
 const HomeContact = () => {
-  const svgClass = `
-    dark:group-hover:text-darkTxtPrimary
-    w-20 h-20 group-hover:text-lightTxtPrimary fill-current`;
+  const svgClass = "dark:group-hover:text-darkTxtPrimary w-20 h-20 group-hover:text-lightTxtPrimary fill-current";
 
   const emailSvg = <EmailSvg className={svgClass} />;
 

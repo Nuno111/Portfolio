@@ -12,7 +12,7 @@ const HomeAbout = () => {
 
   return (
     <section id="HomeAbout" className="container">
-      <ul className="flex flex-col pt-4 divide-gray-500 divide-y">
+      <ul className="flex flex-col pt-4 divide-y divide-gray-500">
         <HomeAboutCard
           svg={who}
           title="Who Am I"

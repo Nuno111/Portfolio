@@ -9,22 +9,19 @@ const Cub3D = () => {
   const overview = (
     <Fragment>
       <p>
-        Inspired by the world-famous Wolfenstein 3D, which
-        was the first FPS ever, cub3D is another project
-        from 42 school with the objective to code a
-        realistic 3D graphical representation of a maze from
-        a first-person perspective. It's written in C and
-        explores the ray-casting technique.
+        Inspired by the world-famous Wolfenstein 3D, which was the first FPS
+        ever, cub3D is another project from 42 school with the objective to code
+        a realistic 3D graphical representation of a maze from a first-person
+        perspective. It's written in C and explores the ray-casting technique.
       </p>
       <p>
-        This was a lengthy project but very interesting, it
-        allowed me to understand how game engines work
-        behind the hood since we are only allowed to use a
-        minimalistic graphics library. In order to render
-        the game, we have to work very closely with every
-        single pixel that is displayed on the screen.
+        This was a lengthy project but very interesting, it allowed me to
+        understand how game engines work behind the hood since we are only
+        allowed to use a minimalistic graphics library. In order to render the
+        game, we have to work very closely with every single pixel that is
+        displayed on the screen.
       </p>
-      <div className="grid gap-8 grid-cols-1 px-4 py-4 lg:gap-12 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-8 px-4 py-4 lg:gap-12 lg:grid-cols-2">
         <Image
           src={cub3dGameplay}
           alt="View of a maze in first person prespective game"
@@ -42,25 +39,20 @@ const Cub3D = () => {
   const approach = (
     <Fragment>
       <p>
-        I started by reading the docs of minilibx (42
-        minimalistic graphics library) to learn how to
-        render an image with basic elements such as squares
-        and rectangles.
+        I started by reading the docs of minilibx (42 minimalistic graphics
+        library) to learn how to render an image with basic elements such as
+        squares and rectangles.
       </p>
       <p>
-        Once that was out of the way I went on parsing all
-        user input and map settings. This was a slow and
-        tedious process, there was a lot of validation to be
-        done and plenty of ways for the user to give its
-        input.
+        Once that was out of the way I went on parsing all user input and map
+        settings. This was a slow and tedious process, there was a lot of
+        validation to be done and plenty of ways for the user to give its input.
       </p>
       <p>
-        For the next step, I decided that the best way to
-        learn the raycasting technique was to start by
-        rendering the minimap. This was a wise choice since
-        it allowed me to understand and implement the
-        raycasting technique which was then used as well to
-        render textured walls and sprites.
+        For the next step, I decided that the best way to learn the raycasting
+        technique was to start by rendering the minimap. This was a wise choice
+        since it allowed me to understand and implement the raycasting technique
+        which was then used as well to render textured walls and sprites.
       </p>
     </Fragment>
   );
