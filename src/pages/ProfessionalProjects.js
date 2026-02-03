@@ -44,7 +44,7 @@ const ProfessionalProjects = () => {
           enterFrom="-translate-y-40 opacity-0"
           enterTo="opacity-100 translate-y-0"
           as="h1"
-          className="text-4xl font-bold md:text-5xl"
+          className="text-center text-4xl font-bold md:text-5xl"
         >
           Professional Projects
         </Transition.Child>
@@ -53,14 +53,14 @@ const ProfessionalProjects = () => {
           enterFrom="-translate-x-96 opacity-0"
           enterTo="opacity-100 translate-x-0 "
           as="div"
-          className="flex flex-col gap-8 w-full max-w-4xl"
+          className="flex flex-col gap-8 mx-auto px-2 w-full max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl"
         >
           <div className="p-6 dark:bg-darkBgSecondary bg-lightBgSecondary rounded-lg shadow-md">
             <p className="text-darkTxtSecondary dark:text-lightTxtSecondary text-base md:text-lg">
               <strong>Disclaimer:</strong> {disclaimer}
             </p>
           </div>
-          <ul className="grid gap-8 grid-cols-1 xl:gap-16 xl:grid-cols-2">
+          <ul className="grid gap-8 grid-cols-1 w-full xl:gap-16 xl:grid-cols-2">
             {projects.map((project) => (
               <ProjectsCard
                 key={project.title}
