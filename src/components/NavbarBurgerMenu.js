@@ -49,13 +49,29 @@ const NavbarBurgerMenu = ({
         <li className="flex-1 py-2">
           <NavLink
             activeClassName={linkActiveClass}
-            to="/projects"
+            to="/professional-projects"
             onClick={() => {
               toggleBurger();
-              helpers.trackEvent("Link", "Projects", "From Burger");
+              helpers.trackEvent(
+                "Link",
+                "Professional Projects",
+                "From Burger",
+              );
             }}
           >
-            Projects
+            Professional Projects
+          </NavLink>
+        </li>
+        <li className="flex-1 py-2">
+          <NavLink
+            activeClassName={linkActiveClass}
+            to="/personal-projects"
+            onClick={() => {
+              toggleBurger();
+              helpers.trackEvent("Link", "Personal Projects", "From Burger");
+            }}
+          >
+            Personal Projects
           </NavLink>
         </li>
         <li className="flex-1 py-2">

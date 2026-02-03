@@ -4,7 +4,8 @@ import { ReactComponent as PerformantSvg } from "../assets/performant.svg";
 import { ReactComponent as MaintainableSvg } from "../assets/maintainable.svg";
 
 const AboutConcepts = () => {
-  const svgClass = "inline mr-4 w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-10 lg:h-10";
+  const svgClass =
+    "inline mr-4 w-8 h-8 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-10 lg:h-10";
 
   const responsive = (
     <li className="flex flex-col gap-10 px-4 lg:px-12">
@@ -15,24 +16,19 @@ const AboutConcepts = () => {
         Responsive
       </h6>
       <p>
-        In this day and age, apart from a few exceptions, a website MUST be
-        responsive since most traffic now comes from mobile devices. Here's how
-        I handle it:
+        Every modern website should look and work great on any device. I always
+        design mobile-first, use flexible layouts, and test across screen sizes
+        to ensure a smooth experience for everyone.
       </p>
-      <ul className="px-10 space-y-4 list-disc">
-        <li>
-          Develop for mobile first and modify accordingly for larger screens
-        </li>
-        <li>Test extensively by using Chrome Dev tools and Responsively App</li>
-        <li>
-          Percentages and viewport units instead of fixed pixel dimensions
-        </li>
-        <li>CSS Flexbox and Grid Layout</li>
+      <ul className="px-10 list-disc space-y-4">
+        <li>Mobile-first development and progressive enhancement</li>
+        <li>Thorough testing with Chrome DevTools and Responsively App</li>
+        <li>Flexible units (percentages, viewport units) over fixed pixels</li>
+        <li>CSS Flexbox and Grid for adaptable layouts</li>
       </ul>
       <p>
-        One change I am really looking forward to start using is aspect-ratio
-        CSS properties It's a great tool to improve the way we handle images and
-        it's a shame it's not fully supported across all browsers yet.
+        I’m excited to use new CSS features like <code>aspect-ratio</code> as
+        browser support improves, making image and media handling even better.
       </p>
     </li>
   );
@@ -46,20 +42,18 @@ const AboutConcepts = () => {
         Accessible
       </h6>
       <p>
-        A public website's content should be accessible to everyone, whether
-        they have disabilities or not. I still have plenty to improve in this
-        area but at the moment these are my strategies:
+        Accessibility is essential, everyone should be able to use the web. I'm
+        always learning, but here's how I make my projects more accessible:
       </p>
-      <ul className="px-10 space-y-4 list-disc">
-        <li>Descriptive alt texts on images</li>
-        <li>Good semantic HTML composition</li>
-        <li>Aria labels to help with website navigation</li>
-        <li>
-          Google Lighthouse to help identify any current accessibility issues
-        </li>
+      <ul className="px-10 list-disc space-y-4">
+        <li>Descriptive alt text for all images</li>
+        <li>Semantic HTML for clear structure</li>
+        <li>ARIA labels to improve navigation for assistive tech</li>
+        <li>Regular audits with Google Lighthouse and other tools</li>
       </ul>
     </li>
   );
+
   const performant = (
     <li className="flex flex-col gap-10 px-4 lg:px-12">
       <h6 className="text-2xl md:text-3xl lg:text-4xl">
@@ -69,18 +63,16 @@ const AboutConcepts = () => {
         Performant
       </h6>
       <p>
-        There are many ways to achieve this, and it varies a lot from
-        application to application, but my general approach is:
+        Fast, efficient websites keep users happy. I focus on performance from
+        the start, using these strategies:
       </p>
-      <ul className="px-10 space-y-4 list-disc">
-        <li>Lazy loading to render content only when it's necessary</li>
-        <li>Avoid unnecessary component re-rendering</li>
-        <li>
-          Handle state in different ways depending on the application complexity
-        </li>
-        <li>Investigate and improve load times by inspecting HTTP requests</li>
-        <li>Optimize image file size for production</li>
-        <li>Purge unused CSS classes </li>
+      <ul className="px-10 list-disc space-y-4">
+        <li>Lazy loading for images and components</li>
+        <li>Minimizing unnecessary re-renders</li>
+        <li>Choosing the right state management for each project</li>
+        <li>Optimizing load times by analyzing network requests</li>
+        <li>Compressing images and assets for production</li>
+        <li>Removing unused CSS and code</li>
       </ul>
     </li>
   );
@@ -94,17 +86,14 @@ const AboutConcepts = () => {
         Maintainable
       </h6>
       <p>
-        Good maintainable code is something I always strive to achieve. This can
-        sometimes be hard to do since it's somewhat of a subjective matter,
-        therefore impossible to please everyone. Here's how I try to achieve it:
+        Clean, maintainable code makes projects easier to update and scale.
+        Here’s how I keep my codebase organized:
       </p>
-      <ul className="px-10 space-y-4 list-disc">
-        <li>Each function/component only does one thing and does it well</li>
-        <li>Making re-usable and flexible components with the help of props</li>
-        <li>
-          Naming variables, functions and components based on their purpose
-        </li>
-        <li>Adding comments to explain complex logic</li>
+      <ul className="px-10 list-disc space-y-4">
+        <li>Single-responsibility functions and components</li>
+        <li>Reusable, flexible components with clear props</li>
+        <li>Meaningful names for variables and functions</li>
+        <li>Comments to explain complex logic when needed</li>
       </ul>
     </li>
   );

@@ -11,38 +11,31 @@ const HomeMethodologies = () => {
 
   const responsive = <ResponsiveSvg className={svgClass} />;
 
-  const maintainable = (
-    <MaintainableSvg className={svgClass} />
-  );
+  const maintainable = <MaintainableSvg className={svgClass} />;
 
   return (
     <section className="container">
-      <h3 className="section-title">
-        Methodologies I use for Single-Page Applications
-        (SPAs)
-      </h3>
-      <section className="grid grid-cols-1 gap-16 xl:grid-cols-3">
+      <h3 className="section-title">My Development Process</h3>
+
+      <section className="grid gap-16 grid-cols-1 xl:grid-cols-3">
         <HomeMethodologiesCard
-          title="Responsive"
-          content="To achieve SPAs responsiveness I use Mobile-First Approach
-          design and test extensively across all devices."
+          title="Analyze & Plan"
+          content="I dive deep into understanding the problem, gathering requirements,
+          and mapping out a clear plan before writing any code."
           icon={responsive}
         />
         <HomeMethodologiesCard
-          title="Maintainable"
-          content="To ensure ease of SPAs maintenance I use a combination of 
-          modern best practices coupled with the breakdown of complex logic 
-          into smaller individual blocks."
+          title="Execute & Adapt"
+          content="I build solutions methodically, staying flexible to handle edge cases and unexpected challenges as they arise."
           icon={maintainable}
         />
         <HomeMethodologiesCard
-          title="Performant"
-          content="To accomplish SPAs performance I investigate HTTP requests,
-          optimize all sources for production and avoid unnecessary components
-          re-rendering."
+          title="Review & Improve"
+          content="I value feedback and regularly review my work, always looking for ways to refine, optimize, and learn from others."
           icon={performant}
         />
       </section>
+
     </section>
   );
 };

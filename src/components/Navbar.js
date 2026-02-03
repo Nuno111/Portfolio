@@ -48,7 +48,7 @@ const Navbar = () => {
               height="128"
             />
           </NavLink>
-          <div className="justify-center hidden lg:flex">
+          <div className="hidden justify-center lg:flex">
             <NavbarThemeToggler
               className="px-2 sm:px-8"
               onTogglerClick={toggleDarkMode}
@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
           <ul
             className={`hidden gap-8 items-center justify-end
-            md:text-2xl lg:flex`}
+            md:text-xl lg:flex`}
           >
             <li>
               <NavLink
@@ -91,14 +91,32 @@ const Navbar = () => {
               <NavLink
                 activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
                 exact
-                to="/projects"
+                to="/professional-projects"
+                className={`dark:hover:text-darkTxtPrimary 
+                hover:text-lightTxtPrimary`}
+                onClick={() =>
+                  helpers.trackEvent(
+                    "Link",
+                    "Professional Projects",
+                    "From Navbar",
+                  )
+                }
+              >
+                Professional Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+                exact
+                to="/personal-projects"
                 className={`dark:hover:text-darkTxtPrimary 
                 hover:text-lightTxtPrimary`}
                 onClick={() =>
                   helpers.trackEvent("Link", "Projects", "From Navbar")
                 }
               >
-                Projects
+                Personal Projects
               </NavLink>
             </li>
             <li>

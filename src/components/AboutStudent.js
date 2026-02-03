@@ -2,10 +2,10 @@ import { ReactComponent as StudentSvg } from "../assets/student.svg";
 
 const AboutStudent = () => {
   return (
-    <section className="flex flex-col gap-6 pt-12 pb-6 md:text-xl lg:gap-12 lg:pb-10 lg:pt-16 xl:text-2xl">
+    <section className="flex flex-col gap-6 pb-6 pt-12 md:text-xl lg:gap-12 lg:pb-10 lg:pt-16 xl:text-2xl">
       <h3 className="text-2xl font-bold md:text-3xl lg:text-4xl">
         <span>
-          <StudentSvg className="inline w-12 h-12 mr-4 fill-current dark:text-darkTxtPrimary text-lightTxtPrimary lg:w-16 lg:h-16" />
+          <StudentSvg className="inline mr-4 w-12 h-12 dark:text-darkTxtPrimary text-lightTxtPrimary fill-current lg:w-16 lg:h-16" />
         </span>
         As a student
       </h3>
@@ -15,14 +15,19 @@ const AboutStudent = () => {
         own personal projects.
       </p>
       <p>
-        I am also a student at 42 Lisbon. The way 42 school works is that there
-        are no teachers and all the learning is projected based and peer-to-peer
-        learning.
+        I am a strong believer in continuous learning and always strive to
+        expand my skill set. I regularly explore new technologies, frameworks,
+        and best practices, both through structured courses and hands-on
+        experimentation. This curiosity has led me to dive into areas like
+        security, where I was able to identify and report critical
+        vulnerabilities in a professional environment, helping to improve the
+        safety and reliability of real-world applications.
       </p>
       <p>
-        Each project has its own specifications of what you are expected to do
-        and all the learning is done through your own research and discussion
-        with your peers.
+        Whether it's keeping up with the latest trends in software development,
+        experimenting with new tools, or tackling challenging problems, I am
+        committed to growing as a developer and staying adaptable in a
+        fast-changing field.
       </p>
     </section>
   );

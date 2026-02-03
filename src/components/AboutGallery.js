@@ -1,33 +1,23 @@
-import mudKart from "../assets/mudKart.jpg";
 import hatSriLanka from "../assets/hatSriLanka.jpg";
 import nineArchBridge from "../assets/nineArchBridge.jpg";
-import nineArchBridgeElla from "../assets/nineArchBridgeElla.jpg";
 import porto from "../assets/porto.jpg";
 import madeira from "../assets/madeira.jpg";
 
 const AboutGallery = () => {
-  const imgClass = "w-full lg:w-1/4";
+  const imgClass =
+    "w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105";
+
   return (
-    <section className="flex flex-wrap justify-center gap-4">
-      <img
-        src={mudKart}
-        className={imgClass}
-        alt="Nuno and friend driving a cart in muddy roads"
-      />
+    <section className="grid gap-6 grid-cols-1 justify-items-center mx-auto my-8 max-w-4xl sm:grid-cols-2 md:grid-cols-3">
       <img
         className={imgClass}
         src={hatSriLanka}
-        alt="Nuno with a tradicional hat"
+        alt="Nuno with a traditional hat"
       />
       <img
         className={imgClass}
         src={nineArchBridge}
         alt="Nuno at Nine Arch Bridge in Ella"
-      />
-      <img
-        className={imgClass}
-        src={nineArchBridgeElla}
-        alt="Nuno with friends at Nine Arch Bridge in Ella"
       />
       <img className={imgClass} src={porto} alt="Nuno near a bridge in Porto" />
       <img

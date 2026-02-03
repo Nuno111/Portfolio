@@ -30,17 +30,16 @@ const Home = () => {
           enterTo="opacity-100 translate-x-0 ease-in-out"
           className="w-3/4 h-1/2 md:w-2/3 lg:w-1/3"
         >
-          <HeroSvg className="w-full h-full mx-auto" />
+          <HeroSvg className="mx-auto w-full h-full" />
         </Transition.Child>
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
           enterFrom="translate-x-96 opacity-0 ease-in-out"
           enterTo="opacity-100 translate-x-0 ease-in-out"
           as="h1"
-          className="text-2xl text-center md:text-3xl lg:text-4xl"
+          className="text-center text-2xl md:text-3xl lg:text-4xl"
         >
-          I am an enthusiastic Front-End Web Developer who creates modern
-          single-page web applications.
+          Full Stack Software Developer | End-to-End Solutions
         </Transition.Child>
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"

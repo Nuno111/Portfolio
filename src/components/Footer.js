@@ -13,10 +13,8 @@ const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer
-      className="flex flex-col items-center justify-center gap-2 mt-10 font-bold border-t-2 border-solid dark:bg-darkBgSecondary bg-lightBgSecondary dark:border-darkTxtPrimary border-lightTxtPrimary lg:grid lg:gap-8 lg:grid-cols-3 lg:mt-20"
-    >
-      <ul className="flex flex-col items-center gap-2 my-6">
+    <footer className="flex flex-col gap-2 items-center justify-center mt-10 font-bold dark:bg-darkBgSecondary bg-lightBgSecondary border-t-2 border-solid dark:border-darkTxtPrimary border-lightTxtPrimary lg:grid lg:gap-8 lg:grid-cols-3 lg:mt-20">
+      <ul className="flex flex-col gap-2 items-center my-6">
         <li>
           <NavLink
             activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
@@ -48,15 +46,33 @@ const Footer = () => {
         <li>
           <NavLink
             exact
-            to="/projects"
+            to="/professional-projects"
             activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
             className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
             onClick={() => {
               scrollToTop();
-              helpers.trackEvent("Link", "About", "From Footer");
+              helpers.trackEvent(
+                "Link",
+                "Professional Projects",
+                "From Footer",
+              );
             }}
           >
-            Projects
+            Professional Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            exact
+            to="/personal-projects"
+            activeClassName="text-lightTxtPrimary dark:text-darkTxtPrimary"
+            className="dark:hover:text-darkTxtPrimary hover:text-lightTxtPrimary"
+            onClick={() => {
+              scrollToTop();
+              helpers.trackEvent("Link", "Personal Projects", "From Footer");
+            }}
+          >
+            Personal Projects
           </NavLink>
         </li>
         <li>
@@ -70,7 +86,7 @@ const Footer = () => {
           </HashLink>
         </li>
       </ul>
-      <ul className="flex items-center justify-center gap-8 my-6">
+      <ul className="flex gap-8 items-center justify-center my-6">
         <li>
           <a href="https://github.com/Nuno111" target="_blank" rel="noreferrer">
             <GithubSvg className={svgClass} />
@@ -105,7 +121,7 @@ const Footer = () => {
         </li>
       </ul>
       <div className="flex flex-col items-center justify-center my-6 text-xl">
-        <p>@ 2021</p>
+        <p>@ 2021 - {new Date().getFullYear()}</p>
         <p>
           Created By{" "}
           <span className="dark:text-darkTxtPrimary text-lightTxtPrimary">
@@ -117,7 +133,7 @@ const Footer = () => {
           </span>
           arro
         </p>
-        <Link className="py-4 text-xs text-gray-400" to="/PrivacyPolicy">
+        <Link className="py-4 text-gray-400 text-xs" to="/privacy-policy">
           Privacy Policy
         </Link>
       </div>

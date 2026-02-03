@@ -1,9 +1,9 @@
 const PrivacyPolicy = () => {
   return (
     <main className="container flex flex-col gap-8">
-      <h2 className="self-center py-20 text-3xl font-bold text-center md:text-5xl lg:text-left">
+      <h1 className="self-center py-20 text-center text-3xl font-bold md:text-5xl lg:text-left">
         Privacy Policy
-      </h2>
+      </h1>
       <p>
         At Nuno Carro Developer, accessible from https://nunocarro.com, one of
         our main priorities is the privacy of our visitors. This Privacy Policy
@@ -22,14 +22,14 @@ const PrivacyPolicy = () => {
           GDPR Privacy Policy Generator from GDPRPrivacyNotice.com
         </a>
       </p>
-      <h3 className="font-bold text-1xl md:text-2xl">Google Analytics</h3>
+      <h2 className="text-1xl font-bold md:text-2xl">Google Analytics</h2>
       <p>
         How Google uses data when you use our partners' sites or apps, (located
         at www.google.com/policies/privacy/partners).
       </p>
-      <h3 className="font-bold text-1xl md:text-2xl">
+      <h2 className="text-1xl font-bold md:text-2xl">
         General Data Protection Regulation (GDPR)
-      </h3>
+      </h2>
       <p>We are a Data Controller of your information.</p>
       <p>
         Nuno Carro Developer legal basis for collecting and using the personal
@@ -73,7 +73,7 @@ const PrivacyPolicy = () => {
         <li>The right to withdraw consent</li>
       </ul>
 
-      <h3 className="font-bold text-1xl md:text-2xl">Log Files</h3>
+      <h2 className="text-1xl font-bold md:text-2xl">Log Files</h2>
 
       <p>
         Nuno Carro Developer follows a standard procedure of using log files.
@@ -88,9 +88,9 @@ const PrivacyPolicy = () => {
         information.
       </p>
 
-      <h3 className="font-bold text-1xl md:text-2xl">
+      <h2 className="text-1xl font-bold md:text-2xl">
         Cookies and Web Beacons
-      </h3>
+      </h2>
 
       <p>
         Like any other website, Nuno Carro Developer uses 'cookies'. These
@@ -113,7 +113,7 @@ const PrivacyPolicy = () => {
         .
       </p>
 
-      <h3 className="font-bold text-1xl md:text-2xl">Privacy Policies</h3>
+      <h2 className="text-1xl font-bold md:text-2xl">Privacy Policies</h2>
 
       <p>
         You may consult this list to find the Privacy Policy for each of the
@@ -135,9 +135,9 @@ const PrivacyPolicy = () => {
         cookies that are used by third-party advertisers.
       </p>
 
-      <h3 className="font-bold text-1xl md:text-2xl">
+      <h2 className="text-1xl font-bold md:text-2xl">
         Third Party Privacy Policies
-      </h3>
+      </h2>
 
       <p>
         Nuno Carro Developer's Privacy Policy does not apply to other
@@ -154,7 +154,7 @@ const PrivacyPolicy = () => {
         websites.
       </p>
 
-      <h3 className="font-bold text-1xl md:text-2xl">Children's Information</h3>
+      <h2 className="text-1xl font-bold md:text-2xl">Children's Information</h2>
 
       <p>
         Another part of our priority is adding protection for children while
@@ -170,9 +170,9 @@ const PrivacyPolicy = () => {
         efforts to promptly remove such information from our records.
       </p>
 
-      <h3 className="font-bold text-1xl md:text-2xl">
+      <h2 className="text-1xl font-bold md:text-2xl">
         Online Privacy Policy Only
-      </h3>
+      </h2>
 
       <p>
         Our Privacy Policy applies only to our online activities and is valid
@@ -182,7 +182,7 @@ const PrivacyPolicy = () => {
         than this website.
       </p>
 
-      <h3 className="font-bold text-1xl md:text-2xl">Consent</h3>
+      <h2 className="text-1xl font-bold md:text-2xl">Consent</h2>
 
       <p>
         By using our website, you hereby consent to our Privacy Policy and agree

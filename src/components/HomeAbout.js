@@ -12,13 +12,12 @@ const HomeAbout = () => {
 
   return (
     <section id="HomeAbout" className="container">
-      <ul className="flex flex-col pt-4 divide-y divide-gray-500">
+      <ul className="flex flex-col pt-4 divide-gray-500 divide-y">
         <HomeAboutCard
           svg={who}
           title="Who Am I"
-          content1="I consider myself a friendly and flexible person,
-		      easy to talk to and extremely curious about other people's passions.
-		      Currently living in Lisbon and studying at 42 Lisbon programming school."
+          content1="I'm easygoing and curious, always up for a chat and keen to learn from those
+          around me. I enjoy taking on new challenges and working with people from all sorts of backgrounds."
           path="/about"
           linkTxt="About"
           ariaLabel="About section"
@@ -26,21 +25,19 @@ const HomeAbout = () => {
         <HomeAboutCard
           svg={what}
           title="What I Do"
-          content1="My main focus as a Front-end Web Developer is to create
-          fast and responsive SPAs, but I also enjoy exploring other fields
-          such as game development, automation of repetitive tasks and
-          working with systems."
-          path="/projects"
+          content1="I design and build software solutions across the stack, from web platforms and
+          APIs to automation tools and secure systems. I enjoy tackling diverse challenges, optimizing
+          workflows, and ensuring robust security in every project."
+          path="/professional-projects"
           linkTxt="Projects"
           ariaLabel="Projects section"
         />
         <HomeAboutCard
           svg={why}
           title="Why This Portfolio Exists"
-          content1="Whether you are a fellow student, developer or recruiter
-		      you're probably curious about me, hopefully, with this website I
-		      can convince you I am a good guy and an excellent asset to any team. If 
-		      you're up for a chat you can reach me via email or phone."
+          content1="This site is my way of saying hello! Whether you're a fellow developer, recruiter, or
+          just curious, I hope you enjoy exploring my work and getting to know me. If you'd like to chat
+          or connect, I'm always happy to hear from you!"
           path="/#contact"
           linkTxt="Contact"
           samePage={true}

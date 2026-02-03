@@ -21,7 +21,7 @@ const ProjectsTemplate = ({
   hover:text-lightTxtPrimary fill-current lg:w-16 lg:h-16`;
 
   const externalLinks = (
-    <div className="flex items-center justify-center gap-4 mb-6 lg:my-0">
+    <div className="flex gap-4 items-center justify-center mb-6 lg:my-0">
       {githubPath && (
         <a
           target="_blank"
@@ -37,7 +37,7 @@ const ProjectsTemplate = ({
           target="_blank"
           rel="noreferrer"
           href={livePath}
-          className="flex justify-center flex-center"
+          className="flex-center flex justify-center"
         >
           <LiveSvg className={smallSvg} />
         </a>
@@ -47,7 +47,7 @@ const ProjectsTemplate = ({
 
   return (
     <main className="container py-6">
-      <h2 className="py-6 text-4xl font-bold text-center md:text-6xl lg:py-12">
+      <h2 className="py-6 text-center text-4xl font-bold md:text-6xl lg:py-12">
         {title}
       </h2>
       {externalLinks}
@@ -80,8 +80,8 @@ const ProjectsTemplate = ({
           {challenges}
         </ul>
         <Link
-          to="/projects"
-          className="flex justify-center flex-center lg:col-start-2"
+          to="/personal-projects"
+          className="flex-center flex justify-center lg:col-start-2"
         >
           <Button text="Back to projects" primary={true} />
         </Link>

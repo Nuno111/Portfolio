@@ -12,30 +12,30 @@ const Projects = () => {
       <Transition
         appear={true}
         show={true}
-        className="flex flex-col items-center justify-center gap-12 pt-12 md:gap-16"
+        className="flex flex-col gap-12 items-center justify-center pt-12 md:gap-16"
       >
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
           enterFrom="-translate-y-40 opacity-0"
           enterTo="opacity-100 translate-y-0"
-          as="h2"
+          as="h1"
           className="text-4xl font-bold md:text-5xl"
         >
-          Projects
+          Personal Projects
         </Transition.Child>
         <Transition.Child
           enter="transform transition-all duration-1000 ease-in-out"
           enterFrom="-translate-x-96 opacity-0"
           enterTo="opacity-100 translate-x-0 "
           as="ul"
-          className="grid grid-cols-1 gap-8 xl:gap-16 xl:grid-cols-2"
+          className="grid gap-8 grid-cols-1 xl:gap-16 xl:grid-cols-2"
         >
           <ProjectsCard
             title="Personal Portfolio"
             img={portfolio}
             alt="Desktop monitor showing nunocarro.com website homepage"
             description="Portfolio website to showcase projects and skills"
-            projectPath="/projects/portfolio"
+            projectPath="/personal-projects/portfolio"
           />
           <ProjectsCard
             title="cub3D"
@@ -43,21 +43,21 @@ const Projects = () => {
             alt="3D shooter game"
             description="Simpler version of Wolfenstein 3D 1992 coded in c."
             githubLink="https://github.com/Nuno111/42Lisboa-level4-cub3D"
-            projectPath="/projects/cub3D"
+            projectPath="/personal-projects/cub3D"
           />
           <ProjectsCard
             title="Automated Calories Tracker"
             img={automatedCaloriesTracker}
             alt="Macronutriens table on a google spreadsheet"
             description="Exports calories data into a Google Spreadsheet"
-            projectPath="/projects/AutomatedCaloriesTracker"
+            projectPath="/personal-projects/AutomatedCaloriesTracker"
           />
           <ProjectsCard
             title="ft_printf"
             img={ftPrintf}
             alt="code representing printf function"
             description="Simpler version of the famous printf function."
-            projectPath="/projects/FtPrintf"
+            projectPath="/personal-projects/FtPrintf"
           />
         </Transition.Child>
         <p className="text-xl lg:text-3xl">
